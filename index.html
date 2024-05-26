@@ -1,0 +1,96 @@
+<head>
+    <title>Floopy Network</title>
+    <script>
+        window.onload = function() {
+            var popup = window.open('about:blank');
+            if (popup === null) {
+                var title = document.createElement('h1');
+                var undertext = document.createElement('p');
+                var hereshowtext = document.createElement('p');
+                var step1 = document.createElement('p');
+                var step2 = document.createElement('p');
+                var step3 = document.createElement('p');
+                var or = document.createElement('p');
+                var historyoff = document.createElement('button');
+
+                title.textContent = 'Pop-ups are disabled! Please read below!';
+                title.style.textAlign = 'center';
+                title.style.fontFamily = 'Arial, sans-serif';
+                title.style.color = 'red';
+                
+                undertext.textContent = 'Floopy Network uses history-protection and pop-ups make that work.';
+                undertext.style.textAlign = 'center';
+                undertext.style.fontFamily = 'Arial, sans-serif';
+                undertext.style.color = 'white';
+
+                hereshowtext.textContent = 'Please follow the steps below to enable pop-ups:';
+                hereshowtext.style.textAlign = 'center';
+                hereshowtext.style.fontFamily = 'Arial, sans-serif';
+                hereshowtext.style.color = 'white';
+
+                step1.textContent = '1. Click on a button that looks like this on the link bar: '; 
+                step1.style.textAlign = 'center';
+                step1.style.fontFamily = 'Arial, sans-serif';
+                step1.style.color = 'white';
+
+                var stepvar = document.createElement('img');
+                stepvar.src = 'img/popupsblockedbtn.png';
+                stepvar.alt = 'Loading Image...';
+                stepvar.style.border = '1px solid white';
+                step1.appendChild(stepvar);
+
+                step2.textContent = '2. Click on "Always allow pop-ups and redirects from ' + window.location.hostname + '" and then click "Done".';
+                step2.style.textAlign = 'center';
+                step2.style.fontFamily = 'Arial, sans-serif';
+                step2.style.color = 'white';
+
+                step3.textContent = '3. Refresh the page and you are good to go!';
+                step3.style.textAlign = 'center';
+                step3.style.fontFamily = 'Arial, sans-serif';
+                step3.style.color = 'white';
+
+                or.textContent = 'Or...';
+                or.style.textAlign = 'center';
+                or.style.fontFamily = 'Arial, sans-serif';
+                or.style.color = 'white';
+
+                historyoff.textContent = 'Open Floopy Network but with history protection off! (DANGEROUS)';
+                historyoff.style.textAlign = 'center';
+                historyoff.style.fontFamily = 'Arial, sans-serif';
+                historyoff.style.color = 'red';
+                historyoff.style.backgroundColor = 'black';
+                historyoff.style.border = '2px solid yellow';
+                historyoff.style.borderRadius = '5px';
+                historyoff.style.display = 'block';
+                historyoff.style.margin = 'auto';
+                historyoff.style.width = '50%';
+                historyoff.onclick = function() {
+                    window.location.href = 'home.html';
+                };
+
+                document.body.appendChild(title);
+                document.body.appendChild(undertext);
+                document.body.appendChild(hereshowtext);
+                document.body.appendChild(step1);
+                document.body.appendChild(step2);
+                document.body.appendChild(step3);
+                document.body.appendChild(or);
+                document.body.appendChild(historyoff);
+                document.body.style.backgroundColor = 'black';
+            } else {
+                fetch('home.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        popup.document.write(data);
+                        popup.document.close();
+                    })
+                    .catch(error => console.error('Error:', error));
+                window.location.href = 'https://www.google.com';
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

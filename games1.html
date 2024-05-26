@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Tab</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/menunav.js"></script>
+    <link rel="icon" href="img/fakechromeicon.jpg">
+    <script src="js/gameLoader.js"></script>
+</head>
+<body>
+    <div class="updatebar">
+        <p class="updatetext">🚀 Floopy Network is now out! Enjoy the best unblocked games on the internet! 🥳 <i>[v0.1]</i></p>
+        <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
+    </div>
+    <h1 id="top"><span class="floopy">Floopy</span> <span class="network">Network</span></h1>
+    <p class="undertop">Welcome to the games section.</p>
+    
+    <!-- <div class="dropdown-container">
+        <textarea class="gamesearchbar" placeholder="Search for games..."></textarea>
+        <button class="gamesearchbtn">Search</button>
+        <div class="dropdown">
+            <button class="dropbtn"><p style="font-weight: bold; padding: 0px 0px; margin-top: 1px; margin-bottom: -1px;">Category</p></button>
+            <div class="dropdown-content">
+                <button style="color:green;">Recently Added</button>
+                <button>Horror Games</button>
+                <button>Adventure Games</button>
+                <button>Multiplayer Games</button>
+                <button>Shooting Games</button>
+                <button>Strategy Games</button>
+                <button>Simulation Games</button>
+                <button>Role-Playing Games</button>
+                <button>Platformer Games</button>
+                <button>Survival Games</button>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const undertop = document.querySelector('.undertop');
+            const messages = ['Looking for games? Look here.', 'Welcome to games.', 'Games in class? Be a bit sneaky.', 'Lots of choices.. eh?', 'Pretty cool games here.', 'Oh, you found this site. Welcome.', 'This is the new meta of unblocked games.', 'Created by a dumb 12 year old.', 'What are you waiting for? Click a game.', 'Go ahead, play a game'];
+
+            setInterval(() => {
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                undertop.textContent = randomMessage;
+            }, 2000);
+                    
+        });
+    </script>
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.05c6ccc35ef412bdc98826415709ade0?rik=FXcvcM%2bTChYlxA&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="color: red;">Roblox</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.5Zu6XgojOcrwYMXbYZsjEgHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Tunnel Rush 2</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.HGRRtFdLoE2taBuSSluS7AAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Tunnel Rush</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.UbuylWR_8joJPFviRy54UQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Eaglercraft 1.8.8</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.8236922f79344ac0d169052e70f1937b?rik=%2fM%2fYMtMSOWO2dw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-CEjgSX0fJwg%2fUvqUohh0P6I%2fAAAAAAAAAqM%2fISEwAe145Cw%2fs1600%2fFlappy_Bird_Logo_Image.jpg&ehk=wOcE2ASklFQvFnhCvkEhjzzrULWWNKtoO77M3vE4y1s%3d&risl=&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Flappy Bird</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.mA_MuB2K7nM81BeAd6bgxQHaEc?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Google Baseball</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.d1c11b00b377ff765cc87738c0083768?rik=NJ%2f0m7vvlJi5PQ&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="color: red;">Krunker</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.FUglgd7ctGTXxClcqU9viQHaIB?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">FNAF 3</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.W0EhQx6E6ZcliHbzCHaOIAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">FNAF 2</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.6455d1bd8109b648d012df504148941d?rik=eMLozRiuygoOiw&riu=http%3a%2f%2forig07.deviantart.net%2f69a2%2ff%2f2016%2f361%2f5%2f6%2f_sfm_4k__fnaf_1_freddy_poster_by_evildoctorrealm-dat376v.png&ehk=P6sjWCd4IiGK8CE9QgNOHzjXagIGvc9KmOnUnED8G0g%3d&risl=1&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">FNAF 1</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.7ef6C_pHSKsEqaNc0PNtEwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Retro Bowl</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.A-pTeFCWZ4Ss_n_2djya3AHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Baldi's Basics</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.9492c55cb887d2cce2a58af52e97bfc2?rik=W5A%2b2lUC%2fXD5Mw&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Elastic Man</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP._zDxtlN9Kp8GYiiYAo8iugHaEl?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">HexGL</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.f3e08e3f8db8d2baa4b1a0d244afb2f4?rik=qCQFRLzRDD8gew&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">BitLife</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.Osg6TzeOTsN3ybaoiM6oPAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Slope</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.5vXow_Z6IzzomCeIAljSTgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+        <p class="gameundertext">1v1.lol</p>
+    </div>
+
+    
+
+
+
+
+
+    <div class="menu">
+        <p class="menu-label">Floopy Menu</p>
+        <a onclick="injectHome()"><button class="homebtn"><img src="/img/home.png" alt="Home"></button></a>
+        <a onclick="injectGames()"><button class="gamebtn"><img src="/img/game.png" alt="Games"></button></a>
+        <a onclick="injectApps()"><button class="appsbtn"><img src="/img/apps.png" alt="Apps"></button></a>
+        <a onclick="injectFreeweb()"><button class="freewebbtn"><img src="/img/freeweb.png" alt="Free Web"></button></a>
+        <button class="morebtn"><img src="/img/more.png" alt="More"></button>
+    </div>
+    <div class="star"></div>
+</body>
+</html>

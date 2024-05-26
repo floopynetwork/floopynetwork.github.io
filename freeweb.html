@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Tab</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/fakechromeicon.jpg">
+</head>
+<body>
+    <div class="updatebar">
+        <p class="updatetext">🚀 Floopy Network is now out! Enjoy the best unblocked games on the internet! 🥳 <i>[v0.1]</i></p>
+        <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
+    </div>
+
+    <h1 class="freewebtext">FLOOPY WEB</h1>
+    <p style="text-align: center; text-shadow: 0 0 15px red;">Welcome to Floopy Web, where freedom meets the internet. Enter anything on your mind in the box below, it could be a thing you want to search up, or you want to unblock a webpage. Just type what you want to search up or what link you want to unblock then press the "GO" button.</p>
+    <center>
+        <textarea style="border: none; outline: none; background-color: #f1f1f1; font-family: Arial, sans-serif; font-size: 18px; padding: 10px; border-radius: 10px; width: 900px;" class="floopywebsearchbar"></textarea>
+    </center>
+    <center>
+        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;" onmouseover="this.style.backgroundColor='lime'" onmouseout="this.style.backgroundColor='#4CAF50'" class="gobtn">GO</button>
+    </center>
+
+    <div class="menu">
+        <p class="menu-label">Floopy Menu</p>
+        <a onclick="injectHome()"><button class="homebtn"><img src="img/home.png" alt="Home"></button></a>
+        <a onclick="injectGames()"><button class="gamebtn"><img src="img/game.png" alt="Games"></button></a>
+        <a onclick="injectApps()"><button class="appsbtn"><img src="img/apps.png" alt="Apps"></button></a>
+        <a onclick="injectFreeweb()"><button class="freewebbtn"><img src="img/freeweb.png" alt="Free Web"></button></a>
+        <button class="morebtn"><img src="img/more.png" alt="More"></button>
+    </div>
+    <div class="star"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const goButton = document.querySelector('.gobtn');
+            const searchBar = document.querySelector('.floopywebsearchbar');
+
+            goButton.addEventListener('click', function() {
+                const query = searchBar.value.trim();
+
+                if (query) {
+                    // Clear the content of the body except for the menu
+                    const menu = document.querySelector('.menu');
+                    document.body.innerHTML = '';
+                    document.body.appendChild(menu);
+
+                    if (isValidURL(query)) {
+                        // Fetch and display the webpage
+                        fetchContent(query);
+                    } else {
+                        // Convert the query into a Google search URL
+                        const googleSearchURL = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+                        fetchContent(googleSearchURL);
+                    }
+                }
+            });
+
+            function isValidURL(string) {
+                try {
+                    new URL(string);
+                    return true;
+                } catch (_) {
+                    return false;
+                }
+            }
+
+            function fetchContent(url) {
+                const corsProxy = '';
+                const fullURL = `${corsProxy}${url}`;
+
+                fetch(fullURL)
+                    .then(response => response.text())
+                    .then(data => {
+                        const contentDiv = document.createElement('div');
+                        contentDiv.innerHTML = data;
+                        document.body.appendChild(contentDiv);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching content:', error);
+                        const errorMessage = document.createElement('p');
+                        errorMessage.textContent = 'Couldn\'t access Floopy Servers.' + ' ERROR: ' + error;
+                        document.body.appendChild(errorMessage);
+                    });
+            }
+        });
+    </script>
+</body>
+</html>

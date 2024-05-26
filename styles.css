@@ -1,0 +1,658 @@
+@keyframes gradientLeftToRight {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+@keyframes gradientRightToLeft {
+    0% {background-position: 100% 50%;}
+    50% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
+}
+
+#top {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.floopy {
+    background-image: linear-gradient(45deg, white, green, white, lime, white, lime);
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientLeftToRight 5s ease infinite;
+    text-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent, 0 0 40px green, 0 0 70px lime, 0 0 80px lime; /* Green glow */
+    color: transparent;
+    position: relative;
+    animation: glitch 2s infinite;
+}
+
+
+
+.network {
+    background-image: linear-gradient(45deg, DeepSkyBlue, SkyBlue, Blue, darkblue);
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientRightToLeft 7s ease infinite;
+    text-shadow: 0 0 20px rgba(0, 0, 255, 0.3), 0 0 40px rgba(0, 0, 255, 0.3); /* Blue glow */
+    color: transparent;
+}
+
+body {
+    background-color: #111111; /* This is a very dark gray, lighter than black */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::selection {
+    background: yellow;
+    color: red;
+}
+
+/* this is for firefox :) */
+::-moz-selection {
+    background: yellow;
+    color: red;
+}
+
+.undertop {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de;
+}
+
+@keyframes menuGradient {
+  0% {
+    border-image-source: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+  }
+}
+
+@keyframes homebtnGradient {
+    0% {
+      border-image-source: linear-gradient(45deg, grey, black, grey black, grey, black);
+    }
+    50% {
+      border-image-source: linear-gradient(45deg, black, grey, black, grey, black, grey);
+    }
+    100% {
+      border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+    }
+}
+
+@keyframes menuBtnPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    width: 488px;
+    height: 100px;
+    z-index: 1000;
+    border: 4px solid; /* adjust border thickness here */
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    border-image-slice: 1;
+    animation: menuGradient 5s linear infinite;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.menu-label {
+    transform: translate(-50%, -450%);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de;
+}
+
+.homebtn {
+  position: absolute;
+  top: 3px;
+  left: 4px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.homebtn:hover {
+    animation: menuBtnPop 0.5s ease-in-out infinite;
+    border: 4px solid whitesmoke;
+}
+
+.gamebtn {
+  position: absolute;
+  top: 3px;
+  left: 100px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.gamebtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.appsbtn {
+  position: absolute;
+  top: 3px;
+  left: 197px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.appsbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.freewebbtn {
+  position: absolute;
+  top: 3px;
+  left: 294px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.freewebbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.morebtn {
+  position: absolute;
+  top: 3px;
+  left: 390px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, red, black, red, black, red, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.morebtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.backbtn {
+  position: absolute;
+  top: 3px;
+  left: 4px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, deepskyblue, black, skyblue, black, deepskyblue, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.backbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.unblockedwebsitesbtn {
+  position: absolute;
+  top: 3px;
+  left: 100px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.unblockedwebsitesbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.tvbtn {
+  position: absolute;
+  top: 3px;
+  left: 197px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.tvbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.settingsbtn {
+  position: absolute;
+  top: 3px;
+  left: 294px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.settingsbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.changelogbtn {
+  position: absolute;
+  top: 3px;
+  left: 390px; 
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: 0.5s; /* move the button to the left by 5px and down by 1px */
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5 ease-in-out;
+}
+
+.changelogbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  
+}
+
+.updatebar {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center;
+}
+  
+.updatetext {
+    color: black;
+    font-weight: bold;
+    grid-column: 2;
+}
+  
+.changelogminibtn {
+    background-color: #1c1c1c;
+    color: white;
+    border: 3px solid lime;
+    border-radius: 20px;
+    padding: 3px 3px;
+    cursor: pointer;
+    grid-column: 3;
+    justify-self: end;
+    margin-right: 30px;
+}
+
+.changelogminibtn:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 223, 0, 0.5); /* Semi-transparent gold */
+  clip-path: polygon(
+      50% 0%,
+      61.8% 38.2%,
+      100% 38.2%,
+      69.1% 61.8%,
+      80.9% 100%,
+      50% 76.4%,
+      19.1% 100%,
+      30.9% 61.8%,
+      0% 38.2%,
+      38.2% 38.2%
+  ); /* Star shape */
+  animation: slideAcross 10s linear infinite, colorPulse 2s infinite alternate;
+}
+
+@keyframes colorPulse {
+  0% {
+      background-color: #FFD700; 
+  }
+  50% {
+      background-color: #B8860B; 
+  }
+  100% {
+      background-color: #FFD700; 
+  }
+}
+
+@keyframes slideAcross {
+  from {
+      transform: translate(0%, 0%);
+  }
+  to {
+      transform: translate(-4000%, 4000%);
+  }
+}
+
+.logo {
+  border-radius: 50%;
+  border: red 2px solid;
+  width: 100px;
+  height: 100px;
+  left: 20px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* This is needed for absolute positioning of .dropbtn */
+}
+
+.dropdown {
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  animation: menuBtnPop 0.5s ease-in-out;
+}
+
+.dropdown:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+}
+
+.dropbtn {
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-image-source: linear-gradient(45deg, orange, black, orange, black, orange, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5s ease-in-out;
+  top: 100%; /* This will position the button directly under the .gamesearchbtn */
+  right: 0; /* This will align the button to the right of .gamesearchbtn */
+  margin-top: 5px; /* This will add 5px of space above the button */
+}
+
+.dropbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  color: red;
+  border: 4px solid whitesmoke;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px white;
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bolder;
+  width: 300px;
+  background-color: black;
+}
+
+.dropdown-content button:hover {
+  color: red;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: yellow;}
+
+.gamesearchbar {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1px 30px;
+  font-size: 16px;
+  background-color: #1c1c1c;
+  color: white;
+  transition: 0.5s;
+  border-image-source: linear-gradient(45deg, grey, black, grey, black, grey, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5s ease-in-out;
+}
+
+.gamesearchbar:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  color: red;
+}
+
+.gamesearchbtn {
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  border-image-source: linear-gradient(45deg, lime, black, green, black, lime, black);
+  border-image-slice: 1;
+  animation: menuBtnPop 0.5s ease-in-out;
+  position: relative;
+}
+
+.gamesearchbtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+  color: red;
+}
+
+.gamesearchbar,
+.gamesearchbtn {
+  margin-right: 10px; /* This will add 10px of space to the right of these elements */
+}
+
+.choicegamebtn {
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0px 0px;
+  border-image-source: linear-gradient(45deg, white, black, white, black, white, black);
+  border-image-slice: 1;
+}
+
+.choicegamebtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid yellow;
+}
+
+.gamediv {
+  display: inline-block;
+}
+
+.gamediv:hover {
+  display: inline-block;
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  color: red;
+}
+
+.gameundertext {
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de;
+  border: none;
+  background-color: transparent;
+  font-weight: bolder;
+  user-select: none;
+  text-align: center; /* Add this line */
+}
+
+.tvchoicebtn {
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0px 0px;
+  border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+  border-image-slice: 1;
+}
+
+.tvchoicebtn:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid yellow;
+  color: red;
+}
+
+.freewebtext {
+  color: orangered;
+  border: none;
+  background-color: transparent;
+  font-weight: bolder;
+  user-select: none;
+  text-align: center; 
+  font-size: 90px;
+  animation: fire 0.5s linear infinite;
+}
+
+@keyframes fire {
+  0% { text-shadow: 0 0 4px #ff3, 0 -5px 4px #ff7, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20; }
+  50% { text-shadow: 0 0 4px #ff3, 0 -5px 4px #ff7, -2px -10px 6px #fd3, 2px -15px 11px #f80, -2px -18px 18px #f20; }
+  100% { text-shadow: 0 0 4px #ff3, 0 -5px 4px #ff7, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20; }
+}
+
+.rainbow-text {
+  background-image: linear-gradient(45deg, red, orange, yellow, green, blue, purple, red, orange, yellow, green, blue, purple);
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  animation: rainbowGradient 5s ease infinite;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  color: transparent;
+  font-size: 60px;
+  font-weight: bolder;
+  user-select: none;
+  text-align: center;
+}
+
+@keyframes rainbowGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
