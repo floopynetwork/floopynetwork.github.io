@@ -68,6 +68,7 @@ function deleteGameDivs(event) {
     frameContainer.style.alignItems = 'center';
     frameContainer.style.width = '100vw';
     frameContainer.style.height = '100vh';
+    frameContainer.style.flexDirection = 'column'; // Add this line to stack elements vertically
 
     const frame = document.createElement('iframe');
     frame.style.width = '800px';
@@ -79,6 +80,9 @@ function deleteGameDivs(event) {
     description.style.color = 'white';
     description.textContent = 'Loading...';
     description.style.fontWeight = 'bold';
+
+    frameContainer.appendChild(frame);
+    frameContainer.appendChild(description);
 
     const gameLinks = {
         '1v1.lol': 'https://dontlookbehindyoubuddy.github.io/games/1v1-lol/index.htm',
@@ -96,6 +100,16 @@ function deleteGameDivs(event) {
         'FNAF 1': 'https://dontlookbehindyoubuddy.github.io/games/FNAF1/index.html',
         'FNAF 2': 'https://dontlookbehindyoubuddy.github.io/games/FNAF2/index.html',
         'FNAF 3': 'https://dontlookbehindyoubuddy.github.io/games/3/index.html',
+        'Geometry Dash': 'https://scratch.mit.edu/projects/105500895/embed',
+        'Geometry Dash Subzero': 'https://scratch.mit.edu/projects/216343253/embed',
+        'Geometry Dash Meltdown': 'https://scratch.mit.edu/projects/143663274/embed',
+        'Geometry Dash World Toxic Factory': 'https://scratch.mit.edu/projects/224236914/embed',
+        'Basketball Stars': 'https://floopynetworkgamingservice.github.io/cfjhvdjkvbhfdjkg/',
+        'Basket Random': 'https://floopynetworkgamingservice.github.io/kghjfkogljhl/',
+        'Basketball Legends': 'https://floopynetworkgamingservice.github.io/gjhjkcvbdg/',
+        'OvO': 'https://floopynetworkgamingservice.github.io/fdgdfghfdgh/',
+        'Eggy Car': 'https://floopynetworkgamingservice.github.io/dfgdfgjdfjhg/',
+        'Cookie Clicker': 'https://floopynetworkgamingservice.github.io/vghjfghjkghjfk/'
     };
 
     const gameDescriptions = {
@@ -114,6 +128,16 @@ function deleteGameDivs(event) {
         'FNAF 1': 'Five Nights at Freddy\'s (FNAF) is a popular horror game series created by Scott Cawthon. The first installment in the series, FNAF 1, introduces players to Freddy Fazbear\'s Pizza, a haunted animatronic-filled restaurant where players must survive five nights as a night security guard. The game features tense gameplay, jump scares, and a chilling atmosphere that has captivated players worldwide. With its unique premise, engaging lore, and memorable characters, FNAF 1 has become a cult classic in the horror genre and spawned numerous sequels, spin-offs, and merchandise. The game\'s blend of suspense, strategy, and storytelling has made it a favorite among horror game enthusiasts and content creators alike.',
         'FNAF 2': 'Five Nights at Freddy\'s 2 (FNAF 2) is the second installment in the popular horror game series created by Scott Cawthon. Building on the success of the original game, FNAF 2 introduces new animatronics, gameplay mechanics, and challenges for players to overcome. Set in a new location, players take on the role of a night security guard at Freddy Fazbear\'s Pizza, where they must survive five nights while avoiding the haunted animatronics that roam the establishment. With its intense gameplay, jump scares, and intricate lore, FNAF 2 expands on the series\'s mythology and deepens the mystery surrounding the haunted pizzeria. The game\'s blend of horror, strategy, and storytelling has made it a fan favorite and a staple of the horror game genre.',
         'FNAF 3': 'Five Nights at Freddy\'s 3 (FNAF 3) is the third installment in the popular horror game series created by Scott Cawthon. Continuing the story of the haunted animatronics at Freddy Fazbear\'s Pizza, the game introduces new characters, locations, and gameplay mechanics for players to explore. Set in a horror attraction based on the infamous pizzeria, players must survive five nights as a night security guard while avoiding the phantom animatronics that lurk in the shadows. With its tense atmosphere, jump scares, and intricate storytelling, FNAF 3 deepens the series\'s lore and expands on the mysteries surrounding the haunted franchise. The game\'s blend of horror, strategy, and suspense has made it a fan favorite and a standout entry in the horror game genre.',
+        'Geometry Dash': 'Geometry Dash is a rhythm-based platformer game developed by Robert Topala. In the game, players control a square-shaped character that must navigate through various obstacles and challenges by jumping, flying, and flipping to the beat of the music. With its fast-paced gameplay, catchy soundtrack, and vibrant visuals, Geometry Dash offers an engaging and addictive experience that tests players\' reflexes and timing. The game features a level editor that allows players to create and share their custom levels, adding to its replay value and community-driven content. With its challenging levels and creative gameplay, Geometry Dash has become a popular choice for gamers looking for a fun and rewarding platforming experience.',
+        'Geometry Dash Subzero': 'Geometry Dash Subzero is a free mini version of the popular rhythm-based platformer game Geometry Dash. Developed by Robert Topala, the game features three challenging levels with unique obstacles and gameplay mechanics. Players control a square-shaped character that must jump, fly, and flip through each level to the beat of the music, avoiding hazards and collecting coins along the way. With its fast-paced gameplay, catchy soundtrack, and vibrant visuals, Geometry Dash Subzero offers an engaging and addictive experience that tests players\' reflexes and timing. The game\'s challenging levels and creative design make it a popular choice for fans of the series and players looking for a fun and rewarding platforming experience.',
+        'Geometry Dash Meltdown': 'Geometry Dash Meltdown is a free mini version of the popular rhythm-based platformer game Geometry Dash. Developed by Robert Topala, the game features three challenging levels with unique obstacles and gameplay mechanics. Players control a square-shaped character that must jump, fly, and flip through each level to the beat of the music, avoiding hazards and collecting coins along the way. With its fast-paced gameplay, catchy soundtrack, and vibrant visuals, Geometry Dash Meltdown offers an engaging and addictive experience that tests players\' reflexes and timing. The game\'s challenging levels and creative design make it a popular choice for fans of the series and players looking for a fun and rewarding platforming experience.',
+        'Geometry Dash World Toxic Factory': 'Geometry Dash World Toxic Factory is a custom level created by the Geometry Dash community that showcases the game\'s level editor and user-generated content. Developed by RobTop, the level features a challenging and visually striking design set in a toxic factory environment. Players control a square-shaped character that must navigate through hazardous obstacles and traps to reach the end of the level. With its fast-paced gameplay, catchy soundtrack, and creative level design, Geometry Dash World Toxic Factory offers an engaging and challenging experience that tests players\' reflexes and timing. The level demonstrates the creativity and skill of the Geometry Dash community and highlights the game\'s vibrant and active player base.',
+        'Basketball Stars': 'Basketball Stars is a fast-paced multiplayer basketball game that challenges players to compete in one-on-one duels or shootouts against opponents from around the world. Developed by Madpuffers, the game features intuitive controls, realistic physics, and smooth animations that capture the excitement and intensity of real basketball games. Players can customize their characters, upgrade their skills, and unlock new courts and equipment as they progress through the game. With its engaging gameplay, vibrant graphics, and competitive multiplayer modes, Basketball Stars offers an immersive and thrilling basketball experience that appeals to sports fans and gamers alike.',
+        'Basket Random': 'Basket Random is a wacky and unpredictable basketball game that pits players against each other in chaotic one-on-one matches. Developed by Madpuffers, the game features quirky characters, bizarre power-ups, and unconventional basketball courts that add a humorous and unpredictable twist to the sport. Players must use their skills and reflexes to outmaneuver their opponents, score baskets, and win matches in a variety of zany environments. With its colorful graphics, fast-paced gameplay, and lighthearted tone, Basket Random offers a fun and entertaining basketball experience that is sure to delight players of all ages.',
+        'Basketball Legends': 'Basketball Legends is a popular basketball game that allows players to compete in one-on-one or two-on-two matches with famous basketball players. Developed by MadPuffers, the game features intuitive controls, smooth animations, and realistic physics that capture the excitement and intensity of real basketball games. Players can choose from a roster of legendary basketball stars, each with unique skills and abilities, and compete in tournaments or quick matches to prove their basketball prowess. With its engaging gameplay, vibrant graphics, and competitive multiplayer modes, Basketball Legends offers an immersive and thrilling basketball experience that appeals to sports fans and gamers alike.',
+        'OvO': 'OvO by Dedra Games is a fast-paced platformer that challenges players with its minimalistic design and precise controls. In this game, you guide a small character through a series of increasingly complex levels filled with obstacles, traps, and puzzles. The game features smooth, responsive controls that allow for fluid movement and quick reflexes, essential for navigating the intricate platforming challenges. OvO\'s clean graphics and engaging level design keep players hooked as they strive to complete each stage and achieve the fastest times. With its blend of simplicity and difficulty, OvO offers a rewarding experience for fans of skill-based platformers.',
+        'Eggy Car': 'Eggy Car by Beedo Games is a delightful and challenging driving game where players must transport a fragile egg over a series of bumpy and unpredictable terrains. The goal is to keep the egg balanced on top of the car without letting it fall off as you navigate hills, valleys, and obstacles. The game\'s physics-based mechanics require careful driving and precise control to avoid losing the egg. With its charming graphics, simple controls, and addictive gameplay, Eggy Car provides an entertaining and engaging experience that tests your patience and driving skills.',
+        'Cookie Clicker': 'Cookie Clicker is an incremental idle game that challenges players to bake as many cookies as possible by clicking on a giant cookie on the screen. Developed by Orteil, the game features simple mechanics and addictive gameplay that encourages players to click furiously to increase their cookie production. Players can use the cookies they earn to purchase upgrades, buildings, and power-ups that automate the baking process and boost their cookie output. With its charming graphics, humorous writing, and endless progression, Cookie Clicker offers a relaxing and rewarding experience that keeps players coming back for more. The game has inspired a genre of idle games and continues to receive updates and new content regularly.',
     }
 
     if (gameName in gameLinks) {
@@ -135,6 +159,7 @@ function deleteGameDivs(event) {
     fullscreenBtn.style.justifyContent = 'center';
     fullscreenBtn.style.alignItems = 'center';
     fullscreenBtn.style.padding = '10px';
+    fullscreenBtn.style.flexDirection = 'row';
     fullscreenBtn.style.border = 'none';
     fullscreenBtn.style.backgroundColor = 'red';
     fullscreenBtn.style.color = 'white';

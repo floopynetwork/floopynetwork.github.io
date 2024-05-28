@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="updatebar">
-        <p class="updatetext">🚀 Floopy Network is now out! Enjoy the best unblocked games on the internet! 🥳 <i>[v0.1]</i></p>
+        <p class="updatetext">🚀 The second update is out! 10 NEW Games added and improvements! 💻 <i>[v0.2]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
     <h1 id="top"><span class="floopy">Floopy</span> <span class="network">Network</span></h1>
@@ -47,10 +47,82 @@
                     
         });
     </script>
+    <div class="gamediv" onclick="deleteGameDivs(event)" style="display: none;">
+        <a>
+            <button class="choicegamebtn"><img src="" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext"></p>
+            <!-- PLACEHOLDER DIV PLEASE IGNORE -->
+        </a>
+    </div>
+
     <div class="gamediv" onclick="deleteGameDivs(event)">
         <a>
-            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.05c6ccc35ef412bdc98826415709ade0?rik=FXcvcM%2bTChYlxA&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
-            <p class="gameundertext" style="color: red;">Roblox</p>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP._ojbOJNVpfwDZzbIAy51aQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Cookie Clicker</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.NcoINH5t9hBSS7QK-v9ZeQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Eggy Car</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.323f49b62a2ef5afbc52b5f00c74ac42?rik=r4roGPXF5WCvOA&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">OvO</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.k3w-_cQmfiM024A_rFm0mQHaDL?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Basketball Legends</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.Mnn3DuxS17bBpOcgIf6bSQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Basket Random</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.N0l4iK5V_BVusT3yUq3B4gAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Basketball Stars</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.d560c870d1fe379f8e72fcb782ae2326?rik=u0CF5W1qvIxyEw&pid=ImgRaw&r=0&sres=1&sresct=1&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">Geometry Dash <br>World Toxic Factory</br></p>
+        </a>
+    </div>
+
+
+    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://dontlookbehindyoubuddy.github.io/game_img/geometrydashmeltdown.png" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">Geometry Dash <br>Meltdown</br></p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://dontlookbehindyoubuddy.github.io/game_img/geometrydashsubzero.png" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">Geometry Dash <br>Subzero</br></p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="deleteGameDivs(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://dontlookbehindyoubuddy.github.io/game_img/geometrydash.jpg" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Geometry Dash</p>
         </a>
     </div>
 
@@ -175,7 +247,7 @@
         <a onclick="injectHome()"><button class="homebtn"><img src="/img/home.png" alt="Home"></button></a>
         <a onclick="injectGames()"><button class="gamebtn"><img src="/img/game.png" alt="Games"></button></a>
         <a onclick="injectApps()"><button class="appsbtn"><img src="/img/apps.png" alt="Apps"></button></a>
-        <a onclick="injectFreeweb()"><button class="freewebbtn"><img src="/img/freeweb.png" alt="Free Web"></button></a>
+        <a onclick="injectfloopyweb()"><button class="floopywebbtn"><img src="/img/floopyweb.png" alt="floopy Web"></button></a>
         <button class="morebtn"><img src="/img/more.png" alt="More"></button>
     </div>
     <div class="star"></div>

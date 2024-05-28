@@ -102,16 +102,16 @@ function attachEventListeners() {
                 appsLink.appendChild(appsButton);
                 menu.appendChild(appsLink);
 
-                const freewebLink = document.createElement('a');
-                freewebLink.addEventListener('click', injectFreeweb);
-                const freewebButton = document.createElement('button');
-                freewebButton.classList.add('freewebbtn');
-                const freewebButtonImage = document.createElement('img');
-                freewebButtonImage.src = 'img/freeweb.png';
-                freewebButtonImage.alt = 'Free Web';
-                freewebButton.appendChild(freewebButtonImage);
-                freewebLink.appendChild(freewebButton);
-                menu.appendChild(freewebLink);
+                const floopywebLink = document.createElement('a');
+                floopywebLink.addEventListener('click', injectfloopyweb);
+                const floopywebButton = document.createElement('button');
+                floopywebButton.classList.add('floopywebbtn');
+                const floopywebButtonImage = document.createElement('img');
+                floopywebButtonImage.src = 'img/floopyweb.png';
+                floopywebButtonImage.alt = 'floopy Web';
+                floopywebButton.appendChild(floopywebButtonImage);
+                floopywebLink.appendChild(floopywebButton);
+                menu.appendChild(floopywebLink);
 
                 const moreButton = document.createElement('button');
                 moreButton.classList.add('morebtn');
@@ -208,9 +208,9 @@ function injectApps() {
         });
 }
 
-function injectFreeweb() {
+function injectfloopyweb() {
     document.body.innerHTML = '';
-    fetch('freeweb.html')
+    fetch('floopyweb.html')
         .then(response => response.text())
         .then(data => {
             document.body.innerHTML = data;
