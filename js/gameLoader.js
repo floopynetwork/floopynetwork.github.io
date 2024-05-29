@@ -48,6 +48,36 @@ function deleteGameDivs(event) {
         star.remove();
     }
 
+    const rainbowText = document.querySelector('.rainbow-text');
+    if (rainbowText) {
+        rainbowText.remove();
+    }
+
+    const rainbowText2 = document.querySelector('.rainbow-text');
+    if (rainbowText2) {
+        rainbowText2.remove();
+    }
+
+    const rainbowText3 = document.querySelector('.rainbow-text');
+    if (rainbowText3) {
+        rainbowText3.remove();
+    }
+
+    const substitute = document.querySelector('.substitute');
+    if (substitute) {
+        substitute.remove();
+    }
+
+    const substitute2 = document.querySelector('.substitute');
+    if (substitute2) {
+        substitute2.remove();
+    }
+
+    const substitute3 = document.querySelector('.substitute');
+    if (substitute3) {
+        substitute3.remove();
+    }
+
     const clickedDiv = event.target.closest('.gamediv');
     const gameName = clickedDiv.querySelector('.gameundertext').textContent;
     if (clickedDiv) {
@@ -109,7 +139,12 @@ function deleteGameDivs(event) {
         'Basketball Legends': 'https://floopynetworkgamingservice.github.io/gjhjkcvbdg/',
         'OvO': 'https://floopynetworkgamingservice.github.io/fdgdfghfdgh/',
         'Eggy Car': 'https://floopynetworkgamingservice.github.io/dfgdfgjdfjhg/',
-        'Cookie Clicker': 'https://floopynetworkgamingservice.github.io/vghjfghjkghjfk/'
+        'Cookie Clicker': 'https://floopynetworkgamingservice.github.io/vghjfghjkghjfk/',
+        'Super Mario Wonder': 'https://floopynetworkgamingservice.github.io/fghjghghjghj/',
+        'Fruit Ninja': 'https://floopynetworkgamingservice.github.io/ghjfghjghjghjf/',
+        'Spacebar Clicker': 'https://floopynetworkgamingservice.github.io/dhdfjghjklgdf/',
+        'Subway Surfers': 'https://floopynetworkgamingservice.github.io/fghjfghjfghj/',
+        'Crossy Road': 'https://floopynetworkgamingservice.github.io/vnghfghjvbfgh/',
     };
 
     const gameDescriptions = {
@@ -138,6 +173,11 @@ function deleteGameDivs(event) {
         'OvO': 'OvO by Dedra Games is a fast-paced platformer that challenges players with its minimalistic design and precise controls. In this game, you guide a small character through a series of increasingly complex levels filled with obstacles, traps, and puzzles. The game features smooth, responsive controls that allow for fluid movement and quick reflexes, essential for navigating the intricate platforming challenges. OvO\'s clean graphics and engaging level design keep players hooked as they strive to complete each stage and achieve the fastest times. With its blend of simplicity and difficulty, OvO offers a rewarding experience for fans of skill-based platformers.',
         'Eggy Car': 'Eggy Car by Beedo Games is a delightful and challenging driving game where players must transport a fragile egg over a series of bumpy and unpredictable terrains. The goal is to keep the egg balanced on top of the car without letting it fall off as you navigate hills, valleys, and obstacles. The game\'s physics-based mechanics require careful driving and precise control to avoid losing the egg. With its charming graphics, simple controls, and addictive gameplay, Eggy Car provides an entertaining and engaging experience that tests your patience and driving skills.',
         'Cookie Clicker': 'Cookie Clicker is an incremental idle game that challenges players to bake as many cookies as possible by clicking on a giant cookie on the screen. Developed by Orteil, the game features simple mechanics and addictive gameplay that encourages players to click furiously to increase their cookie production. Players can use the cookies they earn to purchase upgrades, buildings, and power-ups that automate the baking process and boost their cookie output. With its charming graphics, humorous writing, and endless progression, Cookie Clicker offers a relaxing and rewarding experience that keeps players coming back for more. The game has inspired a genre of idle games and continues to receive updates and new content regularly.',
+        'Super Mario Wonder': 'Super Mario Wonder is a fan-made platformer game that pays homage to the classic Super Mario series. Developed by a dedicated fan, the game features familiar characters, enemies, and power-ups in a new and challenging adventure. Players control Mario as he navigates through colorful levels, defeats enemies, and collects coins to reach the flagpole at the end of each stage. With its retro graphics, catchy music, and engaging gameplay, Super Mario Wonder captures the essence of the beloved franchise while adding its own unique twists and surprises. The game offers a nostalgic and entertaining experience for fans of the Super Mario series and platformer games in general.',
+        'Fruit Ninja': 'Fruit Ninja is a popular mobile game that challenges players to slice and dice various fruits with a swipe of their finger. Developed by Halfbrick Studios, the game features fast-paced gameplay, colorful graphics, and satisfying fruit-slicing mechanics that make it a fun and addictive experience. Players must slice as many fruits as possible while avoiding bombs and other obstacles to achieve high scores and unlock new blades and backgrounds. With its simple controls, engaging gameplay, and competitive leaderboards, Fruit Ninja offers a casual and entertaining gaming experience that appeals to players of all ages.',
+        'Spacebar Clicker': 'Spacebar Clicker is a simple and addictive web-based game that challenges players to click the spacebar as many times as possible within a limited time frame. The game features a countdown timer and a counter that tracks the number of times the spacebar is pressed, allowing players to compete against themselves or others for the highest score. With its minimalist design and straightforward mechanics, Spacebar Clicker offers a quick and engaging diversion that tests players\' speed and dexterity. The game\'s competitive nature and easy accessibility make it a popular choice for players looking for a fun and challenging clicker game experience.',
+        'Subway Surfers': 'Subway Surfers is an endless runner mobile game developed by Kiloo and SYBO Games. In the game, players take on the role of young graffiti artists who run through subway tracks to escape from the grumpy inspector and his dog. Players must dodge obstacles, collect coins, and power-ups while running through vibrant and diverse environments. With its colorful graphics, catchy music, and fast-paced gameplay, Subway Surfers offers an exciting and addictive experience that keeps players coming back for more. The game has become a global phenomenon, with millions of downloads and a dedicated fan base that continues to enjoy new updates and content.',
+        'Crossy Road': 'Crossy Road is a popular mobile game developed by Hipster Whale that combines the classic arcade gameplay of Frogger with modern graphics and mechanics. In the game, players control a character as they navigate through traffic, rivers, and other obstacles to reach the other side of the screen. With its charming voxel art style, quirky characters, and endless gameplay, Crossy Road offers a fun and addictive experience that appeals to players of all ages. The game features a variety of unlockable characters, challenging levels, and competitive leaderboards that keep players engaged and coming back for more.',
     }
 
     if (gameName in gameLinks) {

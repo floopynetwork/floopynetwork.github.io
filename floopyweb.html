@@ -6,21 +6,46 @@
     <link rel="icon" href="img/fakechromeicon.jpg">
     <script src="js/menunav.js"></script>
     <link rel="stylesheet" type="text/css" href="/styles.css">
+
 </head>
 <body>
     <div class="updatebar">
-        <p class="updatetext">🚀 The second update is out! 10 NEW Games added and improvements! 💻 <i>[v0.2]</i></p>
+        <p class="updatetext">😜 THIRD UPDATE IS HERE!!! 5 NEW GAMES AND IMPROVEMENTS! 💻 <i>[v0.3]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
 
     <h1 class="floopywebtext">FLOOPY WEB</h1>
-    <p style="text-align: center; text-shadow: 0 0 15px red;" class="floopywebdesc">Welcome to Floopy Web, where freedom meets the internet. Enter anything on your mind in the box below, it could be a thing you want to search up, or you want to unblock a webpage. Just type what you want to search up or what link you want to unblock then press the "GO" button.<br><b><i>PLEASE NOTE THAT FLOOPY WEB IS STILL IN BETA, THE SERVERS WILL BE SLOW AND SOME CONTENT MAY NOT SHOW UP. THIS HASN'T BEEN TESTED ON CHROMEBOOKS YET</i></b></br></p>
+    <p style="text-align: center; text-shadow: 0 0 15px red;" class="floopywebdesc">Welcome to Floopy Web, where freedom meets the internet. Enter anything on your mind in the box below, it could be a thing you want to search up, or you want to unblock a webpage. Just type what you want to search up or what link you want to unblock then press the "GO" button.<br><b><i>PLEASE NOTE THAT FLOOPY WEB IS STILL IN IS NOT RELIABLE FOR INTENSE USE, THE SERVERS ARE SLOW AND SOMETIMES THE WEBPAGE MIGHT NOT WORK.</i></b></br></p>
     <center>
         <textarea id="floopywebsearchbar" style="border: none; outline: none; background-color: #f1f1f1; font-family: Arial, sans-serif; font-size: 18px; padding: 10px; border-radius: 10px; width: 900px;" class="floopywebsearchbar"></textarea>
     </center>
     <center>
         <button id="gobtn" style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;" onmouseover="this.style.backgroundColor='lime'" onmouseout="this.style.backgroundColor='#4CAF50'" class="gobtn">GO</button>
     </center>
+
+    <center>
+        <div class="gamediv" onclick="unblockLink('https://www.google.com'); removeGameDivs();">
+            <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.01f28c2dfe2b297ec4a8e480569ba321?rik=1Q1LvXtv0pzIoQ&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="120"></button>
+            <p class="gameundertext">Google</p>
+            </a>
+        </div>
+
+        <div class="gamediv" onclick="unblockLink('https://www.youtube.com'); removeGameDivs();">
+            <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.3rSTYI2unlM-9raJQJW3lwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="120"></button>
+            <p class="gameundertext">YouTube</p>
+            </a>
+        </div>
+
+        <div class="gamediv" onclick="unblockLink('https://www.now.gg'); removeGameDivs();">
+            <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.8QsiPAgxFe3XTE4Ep9_cxQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="120"></button>
+            <p class="gameundertext">now.gg</p>
+            </a>
+        </div>
+    </center>
+    
 
     <div class="menu">
         <p class="menu-label">Floopy Menu</p>
@@ -63,6 +88,11 @@
             fetchAndDisplay(url);
         }
 
+        function removeGameDivs() {
+            let gameDivs = document.querySelectorAll('.gamediv');
+            gameDivs.forEach(div => div.remove());
+        }
+
         function removeElements() {
             let goBtn = document.getElementById('gobtn');
             if (goBtn) goBtn.remove();
@@ -84,11 +114,12 @@
 
             let menu = document.querySelector('.menu');
             if (menu) menu.remove();
+
+            removeGameDivs();
         }
 
         function fetchAndDisplay(url, index = 0) {
             let proxies = [
-                'https://corsproxy.io/?',
                 'https://api.codetabs.com/v1/proxy/?quest=',
                 'https://api.allorigins.win/raw?url=',
                 'https://api.allorigins.win/get?url='
@@ -121,6 +152,8 @@
             loadingText.style.left = '45%';
             loadingScreen.appendChild(loadingText);
 
+            
+
             // Remove the link to styles.css
             let stylesLink = document.querySelector('link[href="/styles.css"]');
 
@@ -131,18 +164,20 @@
                     }
                     return response.text(); // Assuming the proxy returns the HTML content
                 })
+
                 .then(data => {
-                    console.log('Data received:', data);
                     let end = performance.now();
-                    console.log('Time taken:', end - start, 'ms');
-                    loadingText.textContent = 'DISPLAYING CONTENT...';
-                    let modifiedContent = updateLinks(data, proxyUrl);
-                    if (stylesLink) stylesLink.remove();
-                    displayContent(modifiedContent);
+                    console.log('Data fetched in', (end - start).toFixed(2), 'ms');
+                    let content = updateLinks(data, proxyUrl);
+                    displayContent(content);
                     // Remove the loading screen
                     loadingScreen.remove();
                     loadingText.remove();
+                    let gameDivs = document.querySelectorAll('.gamediv');
+                    if (stylesLink) stylesLink.remove();
                 })
+
+
                 .catch(error => {
                     console.error('Error fetching data:', error);
                     loadingText.textContent = 'ERROR OCCURRED. RETRYING PROXY...';
