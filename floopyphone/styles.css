@@ -1,0 +1,72 @@
+@keyframes gradientLeftToRight {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+@keyframes gradientRightToLeft {
+    0% {background-position: 100% 50%;}
+    50% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.floopy {
+    background-image: linear-gradient(45deg, white, green, white, lime, white, lime);
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientLeftToRight 5s ease infinite;
+    text-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent, 0 0 40px green, 0 0 70px lime, 0 0 80px lime; /* Green glow */
+    color: transparent;
+    position: relative;
+}
+
+.phone {
+    background-image: linear-gradient(45deg, white, green, white, lime, white, lime);
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    animation: gradientRightToLeft 5s ease infinite;
+    text-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent, 0 0 40px green, 0 0 70px lime, 0 0 80px lime; /* Green glow */
+    color: transparent;
+    position: relative;
+}
+
+body {
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+a {
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: lime;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: green;
+    font-weight: bolder;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}

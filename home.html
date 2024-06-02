@@ -9,14 +9,34 @@
     <script src="js/homeMessages.js"></script>
     <script src="js/gameLoader.js"></script>
     <link rel="icon" href="img/fakechromeicon.jpg">
+    <script>
+        function deletePhoneDiv() {
+            var phoneDiv = document.querySelector(".phonediv");
+            if (phoneDiv) {
+                phoneDiv.remove();
+                console('Deleted phone div')
+            }
+        }
+
+        function phoneFullscreen() {
+            var phoneFrame = document.querySelector(".phoneframe");
+            phoneFrame.requestFullscreen();
+        }
+    </script>
 </head>
 <body>
     <div class="updatebar">
-        <p class="updatetext">🤪 FOURTH UPDATE IS HERE! SEVEN NEW GAMES AND BUG FIXES! 👌 <i>[v0.4]</i></p>
+        <p class="updatetext">📢 v0.5 JUST DROPPED! FIFTEEN NEW GAMES, FLOOPY PHONE, AND MORE! 😎 <i>[v0.5]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
     <h1 id="top"><span class="floopy">Floopy</span> <span class="network">Network</span></h1>
     <p class="undertop">Welcome to Floopy Network.</p>
+
+    <div style="position: absolute; top: 2px; left: 2px; transform: translate(-2px, 2px); border: lime solid 2px;" class="phonediv" draggable="true" ondragstart="drag(event)">
+        <button style="position: absolute; top: 0; right: 0; background-color: red; color: white; font-weight: bold; padding: 5px 10px; border: none; cursor: pointer;" onclick="deletePhoneDiv()">X</button>
+        <button style="position: absolute; top: 0; left: 0; background-color: blue; color: white; font-weight: bold; padding: 5px 10px; border: none; cursor: pointer;" onclick="phoneFullscreen()">FULLSCREEN</button>
+        <iframe src="floopyphone/index.html" width="300" height="400" class="phoneframe"></iframe>
+    </div>
 
     <h2 style="color: deepskyblue; text-align: center;">We are now partnered with Shark Networks!</h2>
 
@@ -65,12 +85,12 @@
     <h2 class="rainbow-text">Unblocked News</h2>
 
     <center>
-        <p style="font-size: larger; font-weight: bold;" class="substitute"><span style="color: yellow;">5/28/2024</span> News | Floopy Network has announced that the Floopy Phone feature, the feature where you could directly open a phone in your browser is coming in v0.5, v0.5 is estimated that it will release on Friday, May 30th. Floopy Network has made the decision that they will partner with <span style="color: deepskyblue">Shark Networks</span>.</p>
+        <p style="font-size: larger; font-weight: bold;" class="substitute"><span style="color: yellow;">6/2/2024</span> News | Floopy Phone feature just dropped! Now not only can you play games in class, you can use a phone too! Floopy Network is also now a week old!</p>
     </center>
 
     <h2 class="rainbow-text">What is coming next on Floopy Network?</h2>
     <center>
-        <p style="font-size: larger; font-weight: bold;" class="substitute">There will be a search bar for games and you could filter games by category. In v0.5, there will be a Floopy Phone option where you can open a phone directly in your browser.</p>
+        <p style="font-size: larger; font-weight: bold;" class="substitute">There will be a search bar for games and you could filter games by category.</p>
     <center>
 
     

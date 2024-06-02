@@ -18,25 +18,24 @@
 }
 
 .floopy {
-    background-image: linear-gradient(45deg, white, green, white, lime, white, lime);
-    -webkit-background-clip: text;
-    background-size: 200% 200%;
-    animation: gradientLeftToRight 5s ease infinite;
-    text-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent, 0 0 40px green, 0 0 70px lime, 0 0 80px lime; /* Green glow */
-    color: transparent;
-    position: relative;
-    animation: glitch 2s infinite;
+  background-image: linear-gradient(45deg, white, green, white, lime, white, lime);
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  animation: gradientLeftToRight 5s ease infinite;
+  text-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent, 0 0 40px green, 0 0 70px lime, 0 0 80px lime; /* Green glow */
+  color: transparent;
+  position: relative;
 }
 
 
 
 .network {
-    background-image: linear-gradient(45deg, DeepSkyBlue, SkyBlue, Blue, darkblue);
-    -webkit-background-clip: text;
-    background-size: 200% 200%;
-    animation: gradientRightToLeft 7s ease infinite;
-    text-shadow: 0 0 20px rgba(0, 0, 255, 0.3), 0 0 40px rgba(0, 0, 255, 0.3); /* Blue glow */
-    color: transparent;
+  background-image: linear-gradient(45deg, DeepSkyBlue, SkyBlue, Blue, darkblue);
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+  animation: gradientRightToLeft 7s ease infinite;
+  text-shadow: 0 0 20px rgba(0, 0, 255, 0.3), 0 0 40px rgba(0, 0, 255, 0.3); /* Blue glow */
+  color: transparent;
 }
 
 body {
