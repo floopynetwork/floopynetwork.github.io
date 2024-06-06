@@ -10,31 +10,11 @@
 </head>
 <body>
     <div class="updatebar">
-        <p class="updatetext">👾 Eighth update is here! 8 NEW games! 😁 <i>[v0.8]</i></p>
+        <p class="updatetext">💻 Ninth update is here! 7 NEW games and new features! 😄 <i>[v0.9]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
     <h1 id="top"><span class="floopy">Floopy</span> <span class="network">Network</span></h1>
     <p class="undertop">Welcome to the games section.</p>
-    
-    <!-- <div class="dropdown-container">
-        <textarea class="gamesearchbar" placeholder="Search for games..."></textarea>
-        <button class="gamesearchbtn">Search</button>
-        <div class="dropdown">
-            <button class="dropbtn"><p style="font-weight: bold; padding: 0px 0px; margin-top: 1px; margin-bottom: -1px;">Category</p></button>
-            <div class="dropdown-content">
-                <button style="color:green;">Recently Added</button>
-                <button>Horror Games</button>
-                <button>Adventure Games</button>
-                <button>Multiplayer Games</button>
-                <button>Shooting Games</button>
-                <button>Strategy Games</button>
-                <button>Simulation Games</button>
-                <button>Role-Playing Games</button>
-                <button>Platformer Games</button>
-                <button>Survival Games</button>
-            </div>
-        </div>
-    </div> -->
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const undertop = document.querySelector('.undertop');
@@ -48,9 +28,33 @@
         });
     </script>
 
-    <h2 style="text-align: center;"><span class="game-count-1">PLAY</span> <span class="game-count-2">72</span> <span class="game-count-1">GAMES</span></h2>
+    <h2 style="text-align: center;"><span class="game-count-1">PLAY</span> <span class="game-count-2">79</span> <span class="game-count-1">GAMES</span></h2>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="display: none;">
+    <div class="dropdown-container">
+        <textarea class="gamesearchbar" placeholder="Search for games..." onclick="alert('COMING IN v1.3!!!')"></textarea>
+        <button class="gamesearchbtn" onclick="alert('COMING IN v1.3!!!')">Search</button>
+        <div class="dropdown">
+            <button class="dropbtn" onmouseover="alert('COMING IN v1.3!!!')"><p style="font-weight: bold; padding: 0px 0px; margin-top: 1px; margin-bottom: -1px;">Category</p></button>
+            <div class="dropdown-content">
+            <button style="color:green;">Recently Added</button>
+            <button>Horror Games</button>
+            <button>Adventure Games</button>
+            <button>Multiplayer Games</button>
+            <button>Shooting Games</button>
+            <button>Strategy Games</button>
+            <button>Simulation Games</button>
+            <button>Role-Playing Games</button>
+            <button>Platformer Games</button>
+            <button>Survival Games</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <button class="randombtn" onclick="randomGame()">RANDOM GAME</button>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="display: none;">
         <a>
             <button class="choicegamebtn"><img src="" alt="Game" width="150" height="150"></button>
             <p class="gameundertext"></p>
@@ -58,371 +62,420 @@
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.ebce4c6e5043eb04e639f4fda90eebc0?rik=R5x4UhqHPgi6Bw&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Bad Ice Cream 3</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.RtUu1mTUXo0ucfgvljEOwwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Bad Ice Cream 2</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.e6lrwyfGnpGZGQhLCmBK5QHaFj?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Bad Ice Cream</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.nIbm4s40z285przK_ZpeYAHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">EatTheFish.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.pGGIy99thdBr3dmp-qaG0wHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Trains.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.-jt7CyDf5gkDyS-fYH_-tgHaDH?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Super Mario 64</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.7PcgoVs7U_-LG-UgGH6SnwHaFj?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">WarriorSurvival.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.j2wINEMCRvsivOrNABUbdQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Stair Race 3D</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.O4H9ehsj6k6Bb_FUUNB6sAHaD4?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Drift Dudes</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.lQjF35vmby1uhA0js4JJ3QAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Animal.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.toOkR184VIOEMHXJRQ7jegHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">DeathCar.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.D7NAyPtjx_vZdZYHw1D-sAHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Wormate.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.3b4adc4e5ffec36588a373d11f9e0b90?rik=T2S6rNlJhf2wWA&pid=ImgRaw&r=0&sres=1&sresct=1&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Aquapark.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.aRd6Fh9Ctgq_9fq9ux0aowHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Hole.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.TQ4eW01LP8_GQUn2CofHiwHaG4?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Brawl Stars <br>(Scratch)</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.02zFp0hj9cvY6BMBAQK5gQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Paper.io 2</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.DOWDofrP9Jx4G_HUCocLrgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Paper.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.de2c1217fddf3516717b18649ceb8216?rik=ce8649Qhg%2bUN3w&pid=ImgRaw&r=0&sres=1&sresct=1&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Agar.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://raw.githubusercontent.com/floopynetworkgamingservice/IMG/master/appel.png" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Appel</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.6n-g8rAYt6SMntIwVIFfogAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Slither.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAUVBMVEX///9mZmZjY2NfX1+JiYl1dXXQ0NDMzMxsbGz39/dcXFzu7u5YWFiUlJSzs7Ofn5+5ubmsrKylpaXe3t6/v799fX3Y2NiDg4PFxcXn5+dOTk7EGwvrAAADjUlEQVR4nO3d69aiIBgF4EIt1DzlIZv7v9Cp+RRsZBTzFcHZ+19LRZ5sFSjQ6WQivncehXkybLz5mxixqDA8Ke4iAY1mN0xQDrYnh8IoPobAAAMMMMAAA0yHeQ62Z65jqkak9B1vzryamjIklF0x9AEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABhgDDlsZiDF8eezFpc1kaezGNmaotzxcYBoyJALN3pf+V/x1zrG+zfPJ3ppw/qUWYM/MmWi63LHQKM5kIGGCAAQYYRzCxDDE2lCU/DGEGXeicVlPWXwyO825a+ZUo6yqKYSwlxgSLrwfjSaqV4qo85aAkcszikZcsWHdTwjKM+h3XDTBaAQYYEWDUCctmmNZpTJnUH1k+Kt4izCWIPp+XOI2p1062AAYYYICxAdPYhClkp13z4PgjVwJMFY+j/x4PiqqTPprXqMmSYXy+elIffyTjXLU1w/elX9Ii8vUuzZVHHvFKGMOVNbrKMP0bLcoSdTFEa19M887AAAMMMN9i1HdyHcX4pdavrxOY1w+x/5PHfXzE5V50Sajmvg+qPupyr8aIMiN/fEQakRNGpx6+Xo3po8IU22FY0J7Cd06VeByyLWbDKyO7AK04CTDAAAMMAcbz4/DvHnmx3SyFbTEsKEYhWr5nBnMT3WaPCmM4EtP0DapXWjKMYmaHCUxYPkV0b3xZe2W+y971/wgwwBgIMMAYCDDAGAgwwBgIMMAYyGqMiR6kbtZiyJfmXZO1mLJPtXqwyP4YqXoAA8yxMf036gEwvGr7POcrajeG1eTzFHfEBBtgvJ3aAltg/PNOjYENMHHbTRvMU8MfuA0wP6MJ3gMK4mzbMRgmMFIFDDDAAAOMdZgkOpto14jhhlz/4fjyNFWXvN6Qwov+NPqjFlaF6I8ulZiaqO+imxAYYIABBpg5TGAcE1FO9ftj6Of7Rdw0pupnZNx9IkstSiy2bMQoNX3idP2M0ne87CnKNGwZqPIzCSbKTF8PYIABBpgDY2geDdiBae59Zp4RML/bL1PxrcDItsDc1EaWdjsqlwSzAyMzM7PJy7v9DoFJu/2AMR1ggDGQGQw7wLeZGB0ZFd1+JY/GoyTcwPBALPvc7SfXaw64W5igFdsVfXu5LLgLmJmBYo5heDt1CDBGAgwwBnJYjLylfwCMWFwxm/zzKxcwjFdiAYLJe/puYDT/YAEYIwEGmKX5DeaRjE6YLewTAAAAAElFTkSuQmCC" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Dino Game</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.4Ji_d6jRIQ2wnsEryHSZ0gAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Stick Merge 2</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.v8f2lkcwygajfHy9npZlrgHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Stick Merge</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.NRGUX_zniDrD4eVXzFNkoAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Fruita Crush</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.94sIM3BILt6jUzITka8hDQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Car Rush</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.0vC4Xl6un_O_EAbfmoo4TgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Basketball Line</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.BA1sYfqCiCyUawgQ1C_OEAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Mutazone</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.yuXH6vK9sW0pjljRpGAjCwAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Rusher Crusher</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.FGLfztv3d5e40UWbtKL8xAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Mr.Bullet <br>3D</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.Ld6KRU6oD9CCm1SfuWfOUwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Doodle Jump</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.XlJ3VGpBRDsFvhdxj1NsvAHaFj?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Idle <br>Restaurants</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.cQeNYqDOIibjrQ2B4FmOlgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Tower Crash <br>3D</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.IRNwkeMzs4UKbWyACCaQxgHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Soccer Heads</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.98502ac486a5f7bbbfa5cc123fe20972?rik=N2UQThHtXzaGeQ&riu=http%3a%2f%2fwww.pou.me%2fpou.png&ehk=obMUk9hTQeB0UCOSBEtcnneqih5mBPOzNfu4G%2b5mx1g%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Pou</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.zvrwJ_CJy6yEcI9ddUTmowAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Drive Mad</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.ltya4K_4Zfk3Vrkwq3JkkAHaE8?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Impostor.io</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.V3scLg1_Qal28D2EK1yTwwAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Swingo</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.GLJsuDs6pDWS46FhWEbRzgHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Pixel Smash <br>Duel</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.c4GhRaJDxB5Ban5GknduLQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Hide and Smash</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.b-mxkbke8-DwSvdGx5WAWAHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Monkey Mart</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://raw.githubusercontent.com/skempisty/rocket_league_2d/master/assets/rocket-league-header.png" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Rocket League <br>2D</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.759f2c11a1ee489ef4dfe17057d6bc8e?rik=aDmUvnG9po7W1w&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Geometry Dash <br>Classic</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.jhbXcHx0Eh1-N5WDjE9VTQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Rooftop Snipers</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.6QLx6-8zOkh7KT5Km-jvmQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Crazy Cars</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.4XqpeZFWXeioDa5bWaav0gHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Vex 8</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.l3LrCoPdsfNmGhEdhYUBpAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Boxing Random</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://raw.githubusercontent.com/floopynetworkgamingservice/IMG/master/FlightSim.png" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Flight Simulator <br>3D v2.8</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.YLVOsb_9OPh61gtplXxCaQHaEK?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Wordle Unlimited</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.oltqZOiuVHNLYkttVtvinwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Crossy Road</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.3d64f891a5e176a2cdd9985dd3522828?rik=AI4IZCaPS8iSxA&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Subway Surfers</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.u0sJOBNtSP2My1g-CLf9sQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Spacebar Clicker</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.RnDsPlEjjGVX7C478s-GsQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Fruit Ninja</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.5pcmiB4YqA99v2y0afTB5wHaFf?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Super Mario <br>Wonder</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP._ojbOJNVpfwDZzbIAy51aQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Cookie Clicker</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.NcoINH5t9hBSS7QK-v9ZeQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Eggy Car</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.323f49b62a2ef5afbc52b5f00c74ac42?rik=r4roGPXF5WCvOA&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">OvO</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.k3w-_cQmfiM024A_rFm0mQHaDL?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Basketball Legends</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.Mnn3DuxS17bBpOcgIf6bSQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Basket Random</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.N0l4iK5V_BVusT3yUq3B4gAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Basketball Stars</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.d560c870d1fe379f8e72fcb782ae2326?rik=u0CF5W1qvIxyEw&pid=ImgRaw&r=0&sres=1&sresct=1&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Geometry Dash <br>World Toxic Factory</br></p>
@@ -430,133 +483,133 @@
     </div>
 
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://dontlookbehindyoubuddy.github.io/game_img/geometrydashmeltdown.png" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Geometry Dash <br>Meltdown</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)" style="position: relative; top: 15px;">
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
         <a>
             <button class="choicegamebtn"><img src="https://dontlookbehindyoubuddy.github.io/game_img/geometrydashsubzero.png" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="font-size: 14px;">Geometry Dash <br>Subzero</br></p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://dontlookbehindyoubuddy.github.io/game_img/geometrydash.jpg" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Geometry Dash</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.5Zu6XgojOcrwYMXbYZsjEgHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Tunnel Rush 2</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.HGRRtFdLoE2taBuSSluS7AAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Tunnel Rush</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.UbuylWR_8joJPFviRy54UQAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Eaglercraft 1.8.8</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.8236922f79344ac0d169052e70f1937b?rik=%2fM%2fYMtMSOWO2dw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-CEjgSX0fJwg%2fUvqUohh0P6I%2fAAAAAAAAAqM%2fISEwAe145Cw%2fs1600%2fFlappy_Bird_Logo_Image.jpg&ehk=wOcE2ASklFQvFnhCvkEhjzzrULWWNKtoO77M3vE4y1s%3d&risl=&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Flappy Bird</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.mA_MuB2K7nM81BeAd6bgxQHaEc?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Google Baseball</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.d1c11b00b377ff765cc87738c0083768?rik=NJ%2f0m7vvlJi5PQ&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext" style="color: red;">Krunker</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.FUglgd7ctGTXxClcqU9viQHaIB?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">FNAF 3</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.W0EhQx6E6ZcliHbzCHaOIAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">FNAF 2</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.6455d1bd8109b648d012df504148941d?rik=eMLozRiuygoOiw&riu=http%3a%2f%2forig07.deviantart.net%2f69a2%2ff%2f2016%2f361%2f5%2f6%2f_sfm_4k__fnaf_1_freddy_poster_by_evildoctorrealm-dat376v.png&ehk=P6sjWCd4IiGK8CE9QgNOHzjXagIGvc9KmOnUnED8G0g%3d&risl=1&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">FNAF 1</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.7ef6C_pHSKsEqaNc0PNtEwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Retro Bowl</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.A-pTeFCWZ4Ss_n_2djya3AHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Baldi's Basics</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.9492c55cb887d2cce2a58af52e97bfc2?rik=W5A%2b2lUC%2fXD5Mw&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Elastic Man</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP._zDxtlN9Kp8GYiiYAo8iugHaEl?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">HexGL</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.f3e08e3f8db8d2baa4b1a0d244afb2f4?rik=qCQFRLzRDD8gew&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">BitLife</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <a>
             <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.Osg6TzeOTsN3ybaoiM6oPAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
             <p class="gameundertext">Slope</p>
         </a>
     </div>
 
-    <div class="gamediv" onclick="deleteGameDivs(event)">
+    <div class="gamediv" onclick="loadGameByDiv(event)">
         <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.5vXow_Z6IzzomCeIAljSTgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
         <p class="gameundertext">1v1.lol</p>
     </div>
