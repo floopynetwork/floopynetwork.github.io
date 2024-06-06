@@ -163,20 +163,20 @@ const gameDescriptions = {
 
 
 function deleteGameDivs(event) {
-    // const dropdownContainer = document.querySelector('.dropdown-container');
-    // if (dropdownContainer) {
-    //     dropdownContainer.remove();
-    // }
+    const dropdownContainer = document.querySelector('.dropdown-container');
+    if (dropdownContainer) {
+        dropdownContainer.remove();
+    }
 
-    // const gameSearchBtn = document.querySelector('.gamesearchbtn');
-    // if (gameSearchBtn) {
-    //     gameSearchBtn.remove();
-    // }
+    const gameSearchBtn = document.querySelector('.gamesearchbtn');
+    if (gameSearchBtn) {
+        gameSearchBtn.remove();
+    }
 
-    // const gameSearchBar = document.querySelector('.gamesearchbar');
-    // if (gameSearchBar) {
-    //     gameSearchBar.remove();
-    // }
+    const gameSearchBar = document.querySelector('.gamesearchbar');
+    if (gameSearchBar) {
+        gameSearchBar.remove();
+    }
 
     const metaViewport = document.createElement('meta');
     metaViewport.setAttribute('name', 'viewport');
