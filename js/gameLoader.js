@@ -61,7 +61,7 @@ const gameLinks = {
     'Appel': 'https://scratch.mit.edu/projects/60917032/embed',
     'Agar.io': 'https://scratch.mit.edu/projects/66146572/embed',
     'Paper.io': 'https://scratch.mit.edu/projects/539460754/embed',
-    'Paper.io 2': 'https://scratch.mit.edu/projects/549817033/embed',
+    'Paper.io 2': 'https://floopynetworkgamingservice.github.io/ghjghjghjg/',
     'Brawl Stars (Scratch)': 'https://scratch.mit.edu/projects/331223613/embed',
     'Hole.io': 'https://floopynetworkgamingservice.github.io/dfghdfghfghj/',
     'Aquapark.io': 'https://floopynetworkgamingservice.github.io/dsfgdfgs/',
@@ -77,6 +77,13 @@ const gameLinks = {
     'Bad Ice Cream': 'https://floopynetworkgamingservice.github.io/fghfghfghhy/',
     'Bad Ice Cream 2': 'https://floopynetworkgamingservice.github.io/fghjhjkughjk/',
     'Bad Ice Cream 3': 'https://floopynetworkgamingservice.github.io/dfghfghfghgf/',
+    'JustFall.LOL': 'https://floopynetworkgamingservice.github.io/fgdhfgdhdfhgd/',
+    'Tetris': 'https://floopynetworkgamingservice.github.io/tytyurtyurtyu/',
+    'Google Snake': 'https://floopynetworkgamingservice.github.io/ydfgudfghfghd/',
+    'NitroKnights.io': 'https://floopynetworkgamingservice.github.io/ghfdfghdfgh/',
+    'BumperBall.io': 'https://floopynetworkgamingservice.github.io/hghgghjghjgh/',
+    'Archers.io': 'https://floopynetworkgamingservice.github.io/fghfghdfghg/',
+    'Snake.io war': 'https://floopynetworkgamingservice.github.io/dfghdfghfghg/',
 };
 
 const gameDescriptions = {
@@ -158,6 +165,13 @@ const gameDescriptions = {
     'Bad Ice Cream': 'Bad Ice Cream is a popular multiplayer online game that challenges players to control a colorful ice cream character and collect fruits while avoiding enemies and obstacles. Developed by Nitrome, the game features simple controls and addictive gameplay that encourages players to strategize and outmaneuver opponents. With its vibrant graphics, competitive multiplayer mode, and dynamic gameplay, Bad Ice Cream offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
     'Bad Ice Cream 2': 'Bad Ice Cream 2 is a sequel to the popular multiplayer online game Bad Ice Cream, offering new features, levels, and challenges for players to enjoy. Developed by Nitrome, the game retains the core gameplay mechanics of the original, where players control a colorful ice cream character and collect fruits while avoiding enemies and obstacles. With its simple controls, addictive gameplay, and competitive multiplayer mode, Bad Ice Cream 2 offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
     'Bad Ice Cream 3': 'Bad Ice Cream 3 is the third installment in the popular multiplayer online game series, offering new levels, challenges, and features for players to enjoy. Developed by Nitrome, the game continues the core gameplay mechanics of the original, where players control a colorful ice cream character and collect fruits while avoiding enemies and obstacles. With its simple controls, addictive gameplay, and competitive multiplayer mode, Bad Ice Cream 3 offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
+    'JustFall.LOL': 'JustFall.LOL is a fast-paced and action-packed multiplayer online game that challenges players to control a character and survive in a chaotic arena filled with obstacles and opponents. Players must navigate through the map, avoiding hazards and outmaneuvering other players to be the last one standing. With its vibrant graphics, dynamic environments, and intense gameplay, JustFall.LOL offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'Tetris': 'Tetris is a classic puzzle game developed by Alexey Pajitnov that challenges players to arrange falling blocks into complete lines to clear them from the screen. In the game, players must use their spatial reasoning and quick reflexes to rotate and position the blocks strategically, creating solid lines to score points and prevent the screen from filling up. With its simple yet addictive gameplay, colorful graphics, and catchy music, Tetris offers a fun and engaging experience that appeals to players of all ages. The game has become a timeless favorite and a cultural icon, inspiring countless variations and adaptations across different platforms and devices.',
+    'Google Snake': 'Google Snake is a browser-based game inspired by the classic Snake game that challenges players to control a growing snake as it moves around the screen, consuming food to grow longer while avoiding collisions with itself and the walls. In the game, players must use their reflexes and spatial awareness to navigate the snake through the maze, collecting as much food as possible to achieve a high score. With its simple controls, minimalist graphics, and addictive gameplay, Google Snake offers a fun and nostalgic experience that harkens back to the early days of computer gaming. The game has become a popular pastime for players looking to test their skills and challenge themselves in a familiar and entertaining setting.',
+    'NitroKnights.io': 'NitroKnights.io is a fast-paced and action-packed multiplayer online game that challenges players to control a knight and battle against opponents in a medieval arena. Players must navigate through the map, collecting power-ups and weapons to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, NitroKnights.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'BumperBall.io': 'BumperBall.io is a fun and addictive multiplayer online game that challenges players to control a bumper car and compete against others in a chaotic arena. Players must navigate through the map, bumping into opponents and avoiding the ocean to become the last ball standing. With its vibrant graphics, dynamic environments, and intense gameplay, BumperBall.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of vehicular combat and online multiplayer games.',
+    'Archers.io': 'Archers.io is a fast-paced and action-packed multiplayer online game that challenges players to control an archer and battle against opponents in a medieval arena. Players must navigate through the map, collecting arrows and power-ups to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, Archers.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'Snake.io war': 'Snake.io war is a popular multiplayer online game that challenges players to control a colorful snake and consume food to grow in size while avoiding other snakes that can consume them. The game features simple controls and addictive gameplay that encourages players to strategize and outmaneuver opponents. With its vibrant graphics, competitive multiplayer mode, and dynamic gameplay, Snake.io war offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
 }
 
 
@@ -255,6 +269,11 @@ function deleteGameDivs(event) {
     const randomGameBtn = document.querySelector('.randombtn');
     if (randomGameBtn) {
         randomGameBtn.remove();
+    }
+
+    const noResults = document.querySelector('.noresults');
+    if (noResults) {
+        noResults.remove();
     }
 }
 
@@ -358,4 +377,38 @@ function randomGame() {
     const games = Object.keys(gameLinks);
     const randomGame = games[Math.floor(Math.random() * games.length)];
     loadGame(randomGame);
+}
+
+function searchGame(event) {
+    const searchInput = document.querySelector('.gamesearchbar');
+    const searchValue = searchInput.value;
+    
+    // Check if search bar is empty
+    if (searchValue.trim() === '') {
+        return;
+    }
+    
+    const gameDivs = document.querySelectorAll('.gamediv');
+    let foundResults = false;
+    gameDivs.forEach((div) => {
+        const gameName = div.querySelector('.gameundertext').textContent;
+        if (gameName.toLowerCase().includes(searchValue.toLowerCase())) {
+            div.style.display = 'inline-block';
+            foundResults = true;
+        } else {
+            div.style.display = 'none';
+        }
+    });
+
+    if (!foundResults) {
+        const noResults = document.createElement('p');
+        noResults.textContent = 'No results found.';
+        noResults.style.textAlign = 'center';
+        noResults.style.fontFamily = 'Arial, sans-serif';
+        noResults.style.color = 'white';
+        noResults.style.fontWeight = 'bold';
+        noResults.style.fontSize = '24px';
+        noResults.className = 'noresults';
+        document.body.appendChild(noResults);
+    }
 }

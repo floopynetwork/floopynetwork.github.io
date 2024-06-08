@@ -28,15 +28,15 @@
         });
     </script>
 
-    <h2 style="text-align: center;"><span class="game-count-1">PLAY</span> <span class="game-count-2">79</span> <span class="game-count-1">GAMES</span></h2>
+    <h2 style="text-align: center;"><span class="game-count-1">PLAY</span> <span class="game-count-2">86</span> <span class="game-count-1">GAMES</span></h2>
 
     <div class="dropdown-container">
-        <textarea class="gamesearchbar" placeholder="Search for games..." onclick="alert('COMING IN v1.3!!!')"></textarea>
-        <button class="gamesearchbtn" onclick="alert('COMING IN v1.3!!!')">Search</button>
+        <textarea class="gamesearchbar" placeholder="Search for games..."></textarea>
+        <button class="gamesearchbtn" onclick="searchGame()">Search</button>
         <div class="dropdown">
-            <button class="dropbtn" onmouseover="alert('COMING IN v1.3!!!')"><p style="font-weight: bold; padding: 0px 0px; margin-top: 1px; margin-bottom: -1px;">Category</p></button>
+            <button class="dropbtn"><p style="font-weight: bold; padding: 0px 0px; margin-top: 1px; margin-bottom: -1px;">Category</p></button>
             <div class="dropdown-content">
-            <button style="color:green;">Recently Added</button>
+            <button style="color:green;">Recently Added (All Games)</button>
             <button>Horror Games</button>
             <button>Adventure Games</button>
             <button>Multiplayer Games</button>
@@ -59,6 +59,55 @@
             <button class="choicegamebtn"><img src="" alt="Game" width="150" height="150"></button>
             <p class="gameundertext"></p>
             <!-- PLACEHOLDER DIV PLEASE IGNORE -->
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://raw.githubusercontent.com/floopynetworkgamingservice/IMG/master/snakeiowar.PNG" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Snake.io war</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.svFafRZqNQK2mSq-Ob8jnwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Archers.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.N3u0U8wJ3pmEiE0-9nS0bAHaE6?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">BumperBall.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.djymezYLLsq10NDnlEJ51gAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">NitroKnights.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.93bb3dc525cb83aea100169950430930?rik=a7niMFryrJzLdg&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Google Snake</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.P_a7nXHSBmhHI723OxWgrgHaFI?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Tetris</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.dNr3YkvBAbyJSfAqCEIcQQHaG7?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">JustFall.LOL</p>
         </a>
     </div>
 
