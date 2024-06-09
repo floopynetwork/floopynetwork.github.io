@@ -178,7 +178,7 @@ function injectGames() {
             attachEventListeners();
         })
         .catch(error => {
-            console.error(error);
+            console.error(`failed to fetch games.html: ${error}`);
         });
 }
 
