@@ -157,10 +157,9 @@ function injectHome() {
         });
 }
 
-// Similarly for the rest of the inject functions
 function injectGames() {
     document.body.innerHTML = '';
-    fetch('games1.html')
+    fetch('games.html')
         .then(response => response.text())
         .then(data => {
             document.body.innerHTML = data;
@@ -182,6 +181,7 @@ function injectGames() {
             console.error(error);
         });
 }
+
 
 function injectApps() {
     document.body.innerHTML = '';

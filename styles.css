@@ -475,10 +475,6 @@ body {
   animation: menuBtnPop 0.5s ease-in-out;
 }
 
-.dropdown:hover {
-  animation: menuBtnPop 0.5s ease-in-out infinite;
-}
-
 .dropbtn {
   display: inline-block;
   background-color: #1c1c1c;
@@ -515,7 +511,7 @@ body {
 
 .dropdown-content button {
   color: white;
-  padding: 12px 16px;
+  padding: 7px 11px;
   text-decoration: none;
   display: block;
   font-weight: bolder;

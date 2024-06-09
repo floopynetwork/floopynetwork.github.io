@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="updatebar">
-        <p class="updatetext">💻 Ninth update is here! 7 NEW games and new features! 😄 <i>[v0.9]</i></p>
+        <p class="updatetext">😲 v1.0 just dropped! Fifteen new games, and cool features! 🤯 <i>[v1.0]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
     <h1 id="top"><span class="floopy">Floopy</span> <span class="network">Network</span></h1>
@@ -28,24 +28,32 @@
         });
     </script>
 
-    <h2 style="text-align: center;"><span class="game-count-1">PLAY</span> <span class="game-count-2">79</span> <span class="game-count-1">GAMES</span></h2>
+    <h2 style="text-align: center;">
+        <span class="game-count-1">PLAY</span> 
+        <span class="game-count-2" id="game-count">94</span> 
+        <span class="game-count-1">GAMES</span>
+    </h2>
 
     <div class="dropdown-container">
-        <textarea class="gamesearchbar" placeholder="Search for games..." onclick="alert('COMING IN v1.3!!!')"></textarea>
-        <button class="gamesearchbtn" onclick="alert('COMING IN v1.3!!!')">Search</button>
+        <textarea class="gamesearchbar" placeholder="Search for games..."></textarea>
+        <button class="gamesearchbtn" onclick="searchGame()">Search</button>
         <div class="dropdown">
-            <button class="dropbtn" onmouseover="alert('COMING IN v1.3!!!')"><p style="font-weight: bold; padding: 0px 0px; margin-top: 1px; margin-bottom: -1px;">Category</p></button>
+            <button class="dropbtn"><p style="font-weight: bold; padding: 0px 0px; margin-top: 1px; margin-bottom: -1px;">Category</p></button>
             <div class="dropdown-content">
-            <button style="color:green;">Recently Added</button>
-            <button>Horror Games</button>
-            <button>Adventure Games</button>
-            <button>Multiplayer Games</button>
-            <button>Shooting Games</button>
-            <button>Strategy Games</button>
-            <button>Simulation Games</button>
-            <button>Role-Playing Games</button>
-            <button>Platformer Games</button>
-            <button>Survival Games</button>
+                <button onclick="showAllGames()">Recently Added (All Games)</button>
+                <button onclick="showHorrorGames()">Horror Games</button>
+                <button onclick="showAdventureGames()">Adventure Games</button>
+                <button onclick="showMultiplayerGames()">Multiplayer Games</button>
+                <button onclick="showShootingGames()">Shooting Games</button>
+                <button onclick="showStrategyGames()">Strategy Games</button>
+                <button onclick="showSimulationGames()">Simulation Games</button>
+                <button onclick="showRolePlayingGames()">Role-Playing Games</button>
+                <button onclick="showPlatformerGames()">Platformer Games</button>
+                <button onclick="showSurvivalGames()">Survival Games</button>
+                <button onclick="showPuzzleGames()">Puzzle Games</button>
+                <button onclick="showSportsGames()">Sports Games</button>
+                <button onclick="showRacingGames()">Racing Games</button>
+                <button onclick="showIOGames()">IO Games</button>
             </div>
         </div>
     </div>
@@ -59,6 +67,111 @@
             <button class="choicegamebtn"><img src="" alt="Game" width="150" height="150"></button>
             <p class="gameundertext"></p>
             <!-- PLACEHOLDER DIV PLEASE IGNORE!!! -->
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.WrPdrNeiygKQCjJNdaWwdQHaD4?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Cubes2048.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.OXw-NjPt3ELOI1OBChEpDgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Transporters.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.kuY1tuO5u4dX03k4bmMfeQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Knives.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.anSKrCmn8zFjmMRR86hlQwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">GoTet.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.e4TZrMdlRdbrQUS1vdHvlwAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">HammerMaster.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.a1a59d5c56fdf22e4380201a56832ba2?rik=BXqr6YTzm8G5dQ&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">SuperHero.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.tiM-ynRg3e6x_V5Hsga8NQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Tall.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.uW2Edu5FzhdEKNiCA14ojAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">SuperTornado.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://raw.githubusercontent.com/floopynetworkgamingservice/IMG/master/snakeiowar.PNG" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Snake.io war</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.svFafRZqNQK2mSq-Ob8jnwHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Archers.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.N3u0U8wJ3pmEiE0-9nS0bAHaE6?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">BumperBall.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.djymezYLLsq10NDnlEJ51gAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">NitroKnights.io</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.93bb3dc525cb83aea100169950430930?rik=a7niMFryrJzLdg&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Google Snake</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.P_a7nXHSBmhHI723OxWgrgHaFI?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Tetris</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.dNr3YkvBAbyJSfAqCEIcQQHaG7?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">JustFall.LOL</p>
         </a>
     </div>
 

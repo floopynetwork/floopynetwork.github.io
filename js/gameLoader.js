@@ -61,7 +61,7 @@ const gameLinks = {
     'Appel': 'https://scratch.mit.edu/projects/60917032/embed',
     'Agar.io': 'https://scratch.mit.edu/projects/66146572/embed',
     'Paper.io': 'https://scratch.mit.edu/projects/539460754/embed',
-    'Paper.io 2': 'https://scratch.mit.edu/projects/549817033/embed',
+    'Paper.io 2': 'https://floopynetworkgamingservice.github.io/ghjghjghjg/',
     'Brawl Stars (Scratch)': 'https://scratch.mit.edu/projects/331223613/embed',
     'Hole.io': 'https://floopynetworkgamingservice.github.io/dfghdfghfghj/',
     'Aquapark.io': 'https://floopynetworkgamingservice.github.io/dsfgdfgs/',
@@ -77,6 +77,21 @@ const gameLinks = {
     'Bad Ice Cream': 'https://floopynetworkgamingservice.github.io/fghfghfghhy/',
     'Bad Ice Cream 2': 'https://floopynetworkgamingservice.github.io/fghjhjkughjk/',
     'Bad Ice Cream 3': 'https://floopynetworkgamingservice.github.io/dfghfghfghgf/',
+    'JustFall.LOL': 'https://floopynetworkgamingservice.github.io/fgdhfgdhdfhgd/',
+    'Tetris': 'https://floopynetworkgamingservice.github.io/tytyurtyurtyu/',
+    'Google Snake': 'https://floopynetworkgamingservice.github.io/ydfgudfghfghd/',
+    'NitroKnights.io': 'https://floopynetworkgamingservice.github.io/ghfdfghdfgh/',
+    'BumperBall.io': 'https://floopynetworkgamingservice.github.io/hghgghjghjgh/',
+    'Archers.io': 'https://floopynetworkgamingservice.github.io/fghfghdfghg/',
+    'Snake.io war': 'https://floopynetworkgamingservice.github.io/dfghdfghfghg/',
+    'SuperTornado.io': 'https://floopynetworkgamingservice.github.io/fghghfghhg/',
+    'Tall.io': 'https://floopynetworkgamingservice.github.io/nhvhnhjvgn/',
+    'SuperHero.io': 'https://floopynetworkgamingservice.github.io/gxcbfghfgdh/',
+    'HammerMaster.io': 'https://floopynetworkgamingservice.github.io/fghdfghfghd/',
+    'GoTet.io': 'https://floopynetworkgamingservice.github.io/fghfghddfgh/',
+    'Knives.io': 'https://floopynetworkgamingservice.github.io/fgydfghdfghdfgh/',
+    'Transporters.io': 'https://floopynetworkgamingservice.github.io/ghjuighjghjghj/',
+    'Cubes2048.io': 'https://floopynetworkgamingservice.github.io/dfsgsdfgsdfg/',
 };
 
 const gameDescriptions = {
@@ -158,7 +173,385 @@ const gameDescriptions = {
     'Bad Ice Cream': 'Bad Ice Cream is a popular multiplayer online game that challenges players to control a colorful ice cream character and collect fruits while avoiding enemies and obstacles. Developed by Nitrome, the game features simple controls and addictive gameplay that encourages players to strategize and outmaneuver opponents. With its vibrant graphics, competitive multiplayer mode, and dynamic gameplay, Bad Ice Cream offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
     'Bad Ice Cream 2': 'Bad Ice Cream 2 is a sequel to the popular multiplayer online game Bad Ice Cream, offering new features, levels, and challenges for players to enjoy. Developed by Nitrome, the game retains the core gameplay mechanics of the original, where players control a colorful ice cream character and collect fruits while avoiding enemies and obstacles. With its simple controls, addictive gameplay, and competitive multiplayer mode, Bad Ice Cream 2 offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
     'Bad Ice Cream 3': 'Bad Ice Cream 3 is the third installment in the popular multiplayer online game series, offering new levels, challenges, and features for players to enjoy. Developed by Nitrome, the game continues the core gameplay mechanics of the original, where players control a colorful ice cream character and collect fruits while avoiding enemies and obstacles. With its simple controls, addictive gameplay, and competitive multiplayer mode, Bad Ice Cream 3 offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
+    'JustFall.LOL': 'JustFall.LOL is a fast-paced and action-packed multiplayer online game that challenges players to control a character and survive in a chaotic arena filled with obstacles and opponents. Players must navigate through the map, avoiding hazards and outmaneuvering other players to be the last one standing. With its vibrant graphics, dynamic environments, and intense gameplay, JustFall.LOL offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'Tetris': 'Tetris is a classic puzzle game developed by Alexey Pajitnov that challenges players to arrange falling blocks into complete lines to clear them from the screen. In the game, players must use their spatial reasoning and quick reflexes to rotate and position the blocks strategically, creating solid lines to score points and prevent the screen from filling up. With its simple yet addictive gameplay, colorful graphics, and catchy music, Tetris offers a fun and engaging experience that appeals to players of all ages. The game has become a timeless favorite and a cultural icon, inspiring countless variations and adaptations across different platforms and devices.',
+    'Google Snake': 'Google Snake is a browser-based game inspired by the classic Snake game that challenges players to control a growing snake as it moves around the screen, consuming food to grow longer while avoiding collisions with itself and the walls. In the game, players must use their reflexes and spatial awareness to navigate the snake through the maze, collecting as much food as possible to achieve a high score. With its simple controls, minimalist graphics, and addictive gameplay, Google Snake offers a fun and nostalgic experience that harkens back to the early days of computer gaming. The game has become a popular pastime for players looking to test their skills and challenge themselves in a familiar and entertaining setting.',
+    'NitroKnights.io': 'NitroKnights.io is a fast-paced and action-packed multiplayer online game that challenges players to control a knight and battle against opponents in a medieval arena. Players must navigate through the map, collecting power-ups and weapons to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, NitroKnights.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'BumperBall.io': 'BumperBall.io is a fun and addictive multiplayer online game that challenges players to control a bumper car and compete against others in a chaotic arena. Players must navigate through the map, bumping into opponents and avoiding the ocean to become the last ball standing. With its vibrant graphics, dynamic environments, and intense gameplay, BumperBall.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of vehicular combat and online multiplayer games.',
+    'Archers.io': 'Archers.io is a fast-paced and action-packed multiplayer online game that challenges players to control an archer and battle against opponents in a medieval arena. Players must navigate through the map, collecting arrows and power-ups to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, Archers.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'Snake.io war': 'Snake.io war is a popular multiplayer online game that challenges players to control a colorful snake and consume food to grow in size while avoiding other snakes that can consume them. The game features simple controls and addictive gameplay that encourages players to strategize and outmaneuver opponents. With its vibrant graphics, competitive multiplayer mode, and dynamic gameplay, Snake.io war offers an engaging and thrilling experience that keeps players coming back for more. The game has gained a large following and continues to receive updates and new content regularly, making it a favorite among fans of browser-based games and casual gaming.',
+    'SuperTornado.io': 'SuperTornado.io is a fast-paced and action-packed multiplayer online game that challenges players to control a tornado and consume objects and opponents to grow in size. Players must navigate through the map, collecting debris and avoiding hazards to become the most powerful tornado. With its vibrant graphics, dynamic environments, and intense gameplay, SuperTornado.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'Tall.io': 'Tall.io is a fun and addictive multiplayer online game that challenges players to control a stack of blocks and build the tallest tower while avoiding obstacles and other players. Players must strategically place blocks to create a stable and towering structure, outpacing opponents and reaching new heights. With its vibrant graphics, dynamic environments, and intense gameplay, Tall.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of puzzle and multiplayer games.',
+    'SuperHero.io': 'SuperHero.io is a fast-paced and action-packed multiplayer online game that challenges players to control a superhero and battle against opponents in a chaotic arena. Players must navigate through the map, collecting power-ups and weapons to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, SuperHero.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'HammerMaster.io': 'HammerMaster.io is a fun and addictive multiplayer online game that challenges players to control a hammer and smash objects and opponents to grow in size. Players must navigate through the map, collecting power-ups and avoiding hazards to become the most powerful hammer. With its vibrant graphics, dynamic environments, and intense gameplay, HammerMaster.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'GoTet.io': 'GoTet.io is a fast-paced and action-packed multiplayer online game that challenges players to control a tetromino and clear lines to score points while avoiding collisions with other players. Players must strategically place tetrominoes to create solid lines and outmaneuver opponents to achieve victory. With its vibrant graphics, dynamic environments, and intense gameplay, GoTet.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of puzzle and multiplayer games.',
+    'Knives.io': 'Knives.io is a popular multiplayer online game that challenges players to control a knife and eliminate opponents in a chaotic arena. Players must navigate through the map, collecting knives and power-ups to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, Knives.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'Transporters.io': 'Transporters.io is a fun and addictive multiplayer online game that challenges players to control a transporter and deliver goods to various destinations while avoiding obstacles and other players. Players must strategically navigate through the map, collecting and delivering cargo to earn points and outpace opponents. With its vibrant graphics, dynamic environments, and intense gameplay, Transporters.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of simulation and multiplayer games.',
+    'Cubes2048.io': 'Cubes2048.io is a fast-paced and addictive multiplayer online game that challenges players to control a cube and merge identical cubes to create larger numbers while avoiding collisions with other players. Players must strategically combine cubes to reach the number 2048 and outmaneuver opponents to achieve victory. With its vibrant graphics, dynamic environments, and intense gameplay, Cubes2048.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of puzzle and multiplayer games.',
 }
+
+const gameKeys = Object.keys(gameLinks);
+console.log(gameKeys)
+
+
+const gameCategories = {
+    'Recently Added (All Games)': [
+        gameKeys
+    ],
+    'Horror Games': [
+        "Baldi's Basics",
+        "FNAF 1",
+        "FNAF 2",
+        "FNAF 3"
+    ],
+    'Adventure Games': [
+        "Subway Surfers",
+        "Super Mario Wonder",
+        "Crossy Road",
+        "Super Mario 64"
+    ],
+    'Multiplayer Games': [
+        "1v1.lol",
+        "Eaglercraft 1.8.8",
+        "Basketball Stars",
+        "Basket Random",
+        "Basketball Legends",
+        "OvO",
+        "Rooftop Snipers",
+        "Rocket League 2D",
+        "Hide and Smash",
+        "Pixel Smash Duel",
+        "Impostor.io",
+        "Brawl Stars (Scratch)",
+        "Hole.io",
+        "Aquapark.io",
+        "WarriorSurvival.io",
+        "JustFall.LOL",
+        "NitroKnights.io",
+        "BumperBall.io",
+        "Archers.io",
+        "Snake.io war",
+        "SuperTornado.io",
+        "Tall.io",
+        "SuperHero.io",
+        "HammerMaster.io",
+        "GoTet.io",
+        "Knives.io",
+        "Transporters.io",
+        "Cubes2048.io"
+    ],
+    'Shooting Games': [
+        "Mr.Bullet 3D",
+        "Rooftop Snipers",
+        "1v1.lol",
+        "Stick Merge",
+        "Stick Merge 2",
+        "WarriorSurvival.io"
+    ],
+    'Strategy Games': [
+        "BitLife",
+        "Monkey Mart",
+        "Idle Restaurants",
+        "GoTet.io",
+        "Cubes2048.io"
+    ],
+    'Simulation Games': [
+        "BitLife",
+        "Flight Simulator 3D v2.8",
+        "Cookie Clicker",
+        "Pou"
+    ],
+    'Role-Playing Games': [
+        "BitLife",
+        "Pou"
+    ],
+    'Platformer Games': [
+        "Geometry Dash",
+        "Geometry Dash Subzero",
+        "Geometry Dash Meltdown",
+        "Geometry Dash World Toxic Factory",
+        "Geometry Dash Classic",
+        "Vex 8",
+        "Doodle Jump",
+        "Appel"
+    ],
+    'Survival Games': [
+        "WarriorSurvival.io",
+        "Slither.io",
+        "Agar.io",
+        "Paper.io",
+        "Paper.io 2",
+        "Wormate.io",
+        "DeathCar.io",
+        "Animal.io",
+        "Trains.io",
+        "EatTheFish.io"
+    ],
+    'Puzzle Games': [
+        "Elastic Man",
+        "Spacebar Clicker",
+        "Tetris",
+        "Fruita Crush",
+        "Stick Merge",
+        "Stick Merge 2",
+        "Dino Game",
+        "Google Snake",
+        "Wordle Unlimited"
+    ],
+    'Racing Games': [
+        "Slope",
+        "HexGL",
+        "Tunnel Rush",
+        "Tunnel Rush 2",
+        "Crazy Cars",
+        "Car Rush",
+        "Drift Dudes"
+    ],
+    'Sports Games': [
+        "Google Baseball",
+        "Retro Bowl",
+        "Basketball Stars",
+        "Basket Random",
+        "Basketball Legends",
+        "Soccer Heads",
+        "Basketball Line",
+        "Boxing Random"
+    ],
+    'IO Games': [
+        "Slither.io",
+        "Agar.io",
+        "Paper.io",
+        "Paper.io 2",
+        "Wormate.io",
+        "DeathCar.io",
+        "Animal.io",
+        "Hole.io",
+        "Aquapark.io",
+        "WarriorSurvival.io",
+        "JustFall.LOL",
+        "NitroKnights.io",
+        "BumperBall.io",
+        "Archers.io",
+        "Snake.io war",
+        "SuperTornado.io",
+        "Tall.io",
+        "SuperHero.io",
+        "HammerMaster.io",
+        "GoTet.io",
+        "Knives.io",
+        "Transporters.io",
+        "Cubes2048.io"
+    ],
+    'Arcade Games': [
+        "Flappy Bird",
+        "Fruit Ninja",
+        "Eggy Car",
+        "Doodle Jump",
+        "Crossy Road",
+        "Subway Surfers",
+        "Geometry Dash",
+        "Geometry Dash Subzero",
+        "Geometry Dash Meltdown",
+        "Geometry Dash World Toxic Factory",
+        "Geometry Dash Classic",
+        "Vex 8",
+        "Rusher Crusher",
+        "Appel",
+        "Swingo",
+        "Drive Mad",
+        "Tower Crash 3D",
+        "Stair Race 3D",
+        "Mutazone",
+        "Bad Ice Cream",
+        "Bad Ice Cream 2",
+        "Bad Ice Cream 3"
+    ]
+};
+
+
+const horrorGames = gameCategories['Horror Games'];
+const adventureGames = gameCategories['Adventure Games'];
+const multiplayerGames = gameCategories['Multiplayer Games'];
+const shootingGames = gameCategories['Shooting Games'];
+const strategyGames = gameCategories['Strategy Games'];
+const simulationGames = gameCategories['Simulation Games'];
+const rolePlayingGames = gameCategories['Role-Playing Games'];
+const platformerGames = gameCategories['Platformer Games'];
+const survivalGames = gameCategories['Survival Games'];
+const puzzleGames = gameCategories['Puzzle Games'];
+const racingGames = gameCategories['Racing Games'];
+const sportsGames = gameCategories['Sports Games'];
+const ioGames = gameCategories['IO Games'];
+
+function showAllGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !gameKeys.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+
+function showHorrorGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !horrorGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showAdventureGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !adventureGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showMultiplayerGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !multiplayerGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showShootingGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !shootingGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showStrategyGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !strategyGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showSimulationGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !simulationGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showRolePlayingGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !rolePlayingGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showPlatformerGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !platformerGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showSurvivalGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !survivalGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showPuzzleGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !puzzleGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showRacingGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !racingGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showSportsGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !sportsGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
+function showIOGames() {
+    const gameDivs = document.querySelectorAll('.gamediv');
+    gameDivs.forEach((div) => {
+        const pTag = div.querySelector('p');
+        if (pTag && !ioGames.includes(pTag.textContent)) {
+            div.style.display = 'none';
+        } else {
+            div.style.display = 'inline-block';
+        }
+    });
+}
+
 
 
 
@@ -255,6 +648,11 @@ function deleteGameDivs(event) {
     const randomGameBtn = document.querySelector('.randombtn');
     if (randomGameBtn) {
         randomGameBtn.remove();
+    }
+
+    const noResults = document.querySelector('.noresults');
+    if (noResults) {
+        noResults.remove();
     }
 }
 
@@ -358,4 +756,38 @@ function randomGame() {
     const games = Object.keys(gameLinks);
     const randomGame = games[Math.floor(Math.random() * games.length)];
     loadGame(randomGame);
+}
+
+function searchGame(event) {
+    const searchInput = document.querySelector('.gamesearchbar');
+    const searchValue = searchInput.value;
+    
+    // Check if search bar is empty
+    if (searchValue.trim() === '') {
+        return;
+    }
+    
+    const gameDivs = document.querySelectorAll('.gamediv');
+    let foundResults = false;
+    gameDivs.forEach((div) => {
+        const gameName = div.querySelector('.gameundertext').textContent;
+        if (gameName.toLowerCase().includes(searchValue.toLowerCase())) {
+            div.style.display = 'inline-block';
+            foundResults = true;
+        } else {
+            div.style.display = 'none';
+        }
+    });
+
+    if (!foundResults) {
+        const noResults = document.createElement('p');
+        noResults.textContent = 'No results found.';
+        noResults.style.textAlign = 'center';
+        noResults.style.fontFamily = 'Arial, sans-serif';
+        noResults.style.color = 'white';
+        noResults.style.fontWeight = 'bold';
+        noResults.style.fontSize = '24px';
+        noResults.className = 'noresults';
+        document.body.appendChild(noResults);
+    }
 }
