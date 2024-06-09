@@ -195,7 +195,9 @@ console.log(gameKeys)
 
 
 const gameCategories = {
-    'Recently Added (All Games)': gameKeys,
+    'Recently Added (All Games)': [
+        gameKeys
+    ],
     'Horror Games': [
         "Baldi's Basics",
         "FNAF 1",
@@ -212,7 +214,7 @@ const gameCategories = {
         "1v1.lol",
         "Eaglercraft 1.8.8",
         "Basketball Stars",
-        "Basketball Random",
+        "Basket Random",
         "Basketball Legends",
         "OvO",
         "Rooftop Snipers",
@@ -242,21 +244,26 @@ const gameCategories = {
         "Mr.Bullet 3D",
         "Rooftop Snipers",
         "1v1.lol",
+        "Stick Merge",
+        "Stick Merge 2",
+        "WarriorSurvival.io"
     ],
     'Strategy Games': [
         "BitLife",
         "Monkey Mart",
         "Idle Restaurants",
+        "GoTet.io",
+        "Cubes2048.io"
     ],
     'Simulation Games': [
         "BitLife",
         "Flight Simulator 3D v2.8",
         "Cookie Clicker",
-        "Pou",
+        "Pou"
     ],
     'Role-Playing Games': [
         "BitLife",
-        "Pou",
+        "Pou"
     ],
     'Platformer Games': [
         "Geometry Dash",
@@ -266,7 +273,7 @@ const gameCategories = {
         "Geometry Dash Classic",
         "Vex 8",
         "Doodle Jump",
-        "Appel",
+        "Appel"
     ],
     'Survival Games': [
         "WarriorSurvival.io",
@@ -278,7 +285,7 @@ const gameCategories = {
         "DeathCar.io",
         "Animal.io",
         "Trains.io",
-        "EatTheFish.io",
+        "EatTheFish.io"
     ],
     'Puzzle Games': [
         "Elastic Man",
@@ -289,7 +296,7 @@ const gameCategories = {
         "Stick Merge 2",
         "Dino Game",
         "Google Snake",
-        "Wordle Unlimited",
+        "Wordle Unlimited"
     ],
     'Racing Games': [
         "Slope",
@@ -298,18 +305,18 @@ const gameCategories = {
         "Tunnel Rush 2",
         "Crazy Cars",
         "Car Rush",
-        "Drift Dudes",
+        "Drift Dudes"
     ],
     'Sports Games': [
         "Google Baseball",
         "Retro Bowl",
         "Basketball Stars",
-        "Basketball Random",
+        "Basket Random",
         "Basketball Legends",
         "Soccer Heads",
         "Basketball Line",
+        "Boxing Random"
     ],
-
     'IO Games': [
         "Slither.io",
         "Agar.io",
@@ -333,9 +340,34 @@ const gameCategories = {
         "GoTet.io",
         "Knives.io",
         "Transporters.io",
-        "Cubes2048.io",
+        "Cubes2048.io"
     ],
-}
+    'Arcade Games': [
+        "Flappy Bird",
+        "Fruit Ninja",
+        "Eggy Car",
+        "Doodle Jump",
+        "Crossy Road",
+        "Subway Surfers",
+        "Geometry Dash",
+        "Geometry Dash Subzero",
+        "Geometry Dash Meltdown",
+        "Geometry Dash World Toxic Factory",
+        "Geometry Dash Classic",
+        "Vex 8",
+        "Rusher Crusher",
+        "Appel",
+        "Swingo",
+        "Drive Mad",
+        "Tower Crash 3D",
+        "Stair Race 3D",
+        "Mutazone",
+        "Bad Ice Cream",
+        "Bad Ice Cream 2",
+        "Bad Ice Cream 3"
+    ]
+};
+
 
 const horrorGames = gameCategories['Horror Games'];
 const adventureGames = gameCategories['Adventure Games'];
