@@ -92,6 +92,27 @@ const gameLinks = {
     'Knives.io': 'https://floopynetworkgamingservice.github.io/fgydfghdfghdfgh/',
     'Transporters.io': 'https://floopynetworkgamingservice.github.io/ghjuighjghjghj/',
     'Cubes2048.io': 'https://floopynetworkgamingservice.github.io/dfsgsdfgsdfg/',
+    'Dots.io': 'https://floopynetworkgamingservice.github.io/tyffghfghfg/',
+    'Pokémon Firered Version': 'https://floopynetworkgamingservice.github.io/cgkjkjlckljc/',
+    'Pokémon Emerald Version': 'https://floopynetworkgamingservice.github.io/dfgdfgfgf/',
+    'Pokémon Emerald Version 2': 'https://floopynetworkgamingservice.github.io/tydfftyftyfty/',
+    'Fancy Pants': 'https://floopynetworkgamingservice.github.io/fggfhfhgd/',
+    'Fancy Pants 2': 'https://floopynetworkgamingservice.github.io/dfgdfgssfg/',
+    'Fancy Pants 3': 'https://floopynetworkgamingservice.github.io/dsfgsdfgdfgs/',
+    'Papa\'s Pastaria': 'https://floopynetworkgamingservice.github.io/fhgjxgbfj/',
+    'Papa\'s Wingeria': 'https://floopynetworkgamingservice.github.io/fgkldfkl/',
+    'Papa\'s Taco Mia': 'https://floopynetworkgamingservice.github.io/sdsddfa/',
+    'Papa\'s Sushiria': 'https://floopynetworkgamingservice.github.io/ghghjgh/',
+    'Papa\'s Scooperia': 'https://floopynetworkgamingservice.github.io/bhjn/',
+    'Papa\'s Pizzeria': 'https://floopynetworkgamingservice.github.io/dfghdfghdfgh/',
+    'Papa\'s PanCakeria': 'https://floopynetworkgamingservice.github.io/dfsgsdfgsdfgf/',
+    'Papa\'s Hot Doggeria': 'https://floopynetworkgamingservice.github.io/sdfgrtsdfrsdf/',
+    'Papa\'s Freezeria': 'https://floopynetworkgamingservice.github.io/dfgssdfgsdfg/',
+    'Papa\'s Donuteria': 'https://floopynetworkgamingservice.github.io/yfgdfg/',
+    'Papa\'s Cupcakeria': 'https://floopynetworkgamingservice.github.io/sdfsdfasdf/',
+    'Papa\'s Cheeseria': 'https://floopynetworkgamingservice.github.io/dfgdfgdsfgd/',
+    'Papa\'s Burgeria': 'https://floopynetworkgamingservice.github.io/dsfsdfgsdfg/',
+    'Papa\'s Bakeria': 'https://floopynetworkgamingservice.github.io/dfssdfg/',
 };
 
 const gameDescriptions = {
@@ -188,6 +209,27 @@ const gameDescriptions = {
     'Knives.io': 'Knives.io is a popular multiplayer online game that challenges players to control a knife and eliminate opponents in a chaotic arena. Players must navigate through the map, collecting knives and power-ups to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, Knives.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
     'Transporters.io': 'Transporters.io is a fun and addictive multiplayer online game that challenges players to control a transporter and deliver goods to various destinations while avoiding obstacles and other players. Players must strategically navigate through the map, collecting and delivering cargo to earn points and outpace opponents. With its vibrant graphics, dynamic environments, and intense gameplay, Transporters.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of simulation and multiplayer games.',
     'Cubes2048.io': 'Cubes2048.io is a fast-paced and addictive multiplayer online game that challenges players to control a cube and merge identical cubes to create larger numbers while avoiding collisions with other players. Players must strategically combine cubes to reach the number 2048 and outmaneuver opponents to achieve victory. With its vibrant graphics, dynamic environments, and intense gameplay, Cubes2048.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of puzzle and multiplayer games.',
+    'Dots.io': 'Dots.io is a popular multiplayer online game that challenges players to control a dot and connect with other dots to create lines while avoiding collisions with other players. Players must strategically navigate through the map, collecting dots and outmaneuvering opponents to achieve victory. With its vibrant graphics, dynamic environments, and intense gameplay, Dots.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of puzzle and multiplayer games.',
+    'Pokémon Firered Version': 'Pokémon Firered Version is a classic role-playing game developed by Game Freak and published by Nintendo for the Game Boy Advance. In the game, players assume the role of a Pokémon Trainer on a quest to become the Pokémon Champion by capturing, training, and battling Pokémon creatures. With its engaging storyline, diverse cast of characters, and strategic turn-based battles, Pokémon Firered Version offers a rich and immersive experience that captivates players of all ages. The game features vibrant graphics, memorable music, and a vast world to explore, making it a beloved entry in the Pokémon series and a favorite among fans of role-playing games.',
+    'Pokémon Emerald Version': 'Pokémon Emerald Version is a classic role-playing game developed by Game Freak and published by Nintendo for the Game Boy Advance. In the game, players assume the role of a Pokémon Trainer on a quest to become the Pokémon Champion by capturing, training, and battling Pokémon creatures. With its engaging storyline, diverse cast of characters, and strategic turn-based battles, Pokémon Emerald Version offers a rich and immersive experience that captivates players of all ages. The game features vibrant graphics, memorable music, and a vast world to explore, making it a beloved entry in the Pokémon series and a favorite among fans of role-playing games.',
+    'Pokémon Emerald Version 2': 'Pokémon Emerald Version 2 is a sequel to the classic role-playing game Pokémon Emerald Version, offering new features, Pokémon, and challenges for players to enjoy. Developed by Game Freak and published by Nintendo for the Gameboy Advance, the game continues the core gameplay mechanics of the original, where players assume the role of a Pokémon Trainer on a quest to become the Pokémon Champion by capturing, training, and battling Pokémon creatures. With its engaging storyline, diverse cast of characters, and strategic turn-based battles, Pokémon Emerald Version 2 offers a rich and immersive experience that captivates players of all ages. The game features vibrant graphics, memorable music, and a vast world to explore, making it a beloved entry in the Pokémon series and a favorite among fans of role-playing games.',
+    'Fancy Pants': 'Fancy Pants is a popular platformer game series developed by Brad Borne that follows the adventures of a stick figure character known as Fancy Pants. In the game, players control Fancy Pants as he embarks on various quests and challenges, navigating through colorful and whimsical environments filled with enemies and obstacles. With its fluid animations, smooth controls, and charming art style, Fancy Pants offers a fun and engaging experience that appeals to players of all ages. The game features creative level designs, hidden secrets, and challenging platforming sequences that keep players entertained and coming back for more. Perfect for fans of platformer games and casual gaming, Fancy Pants delivers endless fun and excitement in a quirky and imaginative world.',
+    'Fancy Pants 2': 'Fancy Pants 2 is a sequel to the popular platformer game Fancy Pants, offering new levels, challenges, and features for players to enjoy. Developed by Brad Borne, the game continues the adventures of the stick figure character Fancy Pants as he embarks on new quests and challenges in colorful and whimsical environments. With its fluid animations, smooth controls, and charming art style, Fancy Pants 2 offers a fun and engaging experience that appeals to players of all ages. The game features creative level designs, hidden secrets, and challenging platforming sequences that keep players entertained and coming back for more. Perfect for fans of platformer games and casual gaming, Fancy Pants 2 delivers endless fun and excitement in a quirky and imaginative world.',
+    'Fancy Pants 3': 'Fancy Pants 3 is the third installment in the popular platformer game series developed by Brad Borne, offering new levels, challenges, and features for players to enjoy. In the game, players control the stick figure character Fancy Pants as he embarks on new quests and adventures in colorful and whimsical environments. With its fluid animations, smooth controls, and charming art style, Fancy Pants 3 offers a fun and engaging experience that appeals to players of all ages. The game features creative level designs, hidden secrets, and challenging platforming sequences that keep players entertained and coming back for more. Perfect for fans of platformer games and casual gaming, Fancy Pants 3 delivers endless fun and excitement in a quirky and imaginative world.',
+    'Papa\'s Pastaria': 'Papas Pastaria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a pasta restaurant and serve delicious dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from cooking pasta to preparing sauces and toppings. With its charming graphics, engaging gameplay, and intuitive controls, Papas Pastaria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Pastaria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Wingeria': 'Papas Wingeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a chicken wing restaurant and serve delicious dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from cooking wings to preparing sauces and sides. With its charming graphics, engaging gameplay, and intuitive controls, Papas Wingeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Wingeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Taco Mia': 'Papas Taco Mia is a popular cooking simulation game developed by Flipline Studios that challenges players to run a taco restaurant and serve delicious dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from cooking tacos to preparing fillings and toppings. With its charming graphics, engaging gameplay, and intuitive controls, Papas Taco Mia offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Taco Mia delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Sushiria': 'Papas Sushiria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a sushi restaurant and serve delicious dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from cooking sushi to preparing ingredients and sauces. With its charming graphics, engaging gameplay, and intuitive controls, Papas Sushiria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Sushiria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Scooperia': 'Papas Scooperia is a popular cooking simulation game developed by Flipline Studios that challenges players to run an ice cream parlor and serve delicious treats to hungry customers. In the game, players take on the role of a chef and manage all aspects of the parlor, from scooping ice cream to preparing toppings and sundaes. With its charming graphics, engaging gameplay, and intuitive controls, Papas Scooperia offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Scooperia delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Pizzeria': 'Papas Pizzeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a pizza restaurant and serve delicious pies to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from making dough to adding toppings and baking pizzas. With its charming graphics, engaging gameplay, and intuitive controls, Papas Pizzeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Pizzeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s PanCakeria': 'Papas Pancakeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a pancake restaurant and serve delicious breakfast dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from cooking pancakes to preparing toppings and syrups. With its charming graphics, engaging gameplay, and intuitive controls, Papas Pancakeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Pancakeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Hot Doggeria': 'Papas Hot Doggeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a hot dog restaurant and serve delicious dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from grilling hot dogs to preparing toppings and sides. With its charming graphics, engaging gameplay, and intuitive controls, Papas Hot Doggeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Hot Doggeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Freezeria': 'Papas Freezeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run an ice cream parlor and serve delicious treats to hungry customers. In the game, players take on the role of a chef and manage all aspects of the parlor, from blending ice cream to adding mix-ins and toppings. With its charming graphics, engaging gameplay, and intuitive controls, Papas Freezeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Freezeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Donuteria': 'Papas Donuteria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a donut restaurant and serve delicious treats to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from making dough to adding toppings and glazes. With its charming graphics, engaging gameplay, and intuitive controls, Papas Donuteria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Donuteria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Cupcakeria': 'Papas Cupcakeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a cupcake restaurant and serve delicious treats to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from baking cupcakes to adding frosting and decorations. With its charming graphics, engaging gameplay, and intuitive controls, Papas Cupcakeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Cupcakeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Cheeseria': 'Papas Cheeseria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a grilled cheese restaurant and serve delicious sandwiches to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from grilling sandwiches to adding fillings and sides. With its charming graphics, engaging gameplay, and intuitive controls, Papas Cheeseria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Cheeseria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Burgeria': 'Papas Burgeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a burger restaurant and serve delicious dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from grilling burgers to adding toppings and sides. With its charming graphics, engaging gameplay, and intuitive controls, Papas Burgeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Burgeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Papa\'s Bakeria': 'Papas Bakeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a bakery and serve delicious treats to hungry customers. In the game, players take on the role of a chef and manage all aspects of the bakery, from baking pies to adding fillings and toppings. With its charming graphics, engaging gameplay, and intuitive controls, Papas Bakeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Bakeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
 }
 
 const gameKeys = Object.keys(gameLinks);
@@ -208,7 +250,9 @@ const gameCategories = {
         "Subway Surfers",
         "Super Mario Wonder",
         "Crossy Road",
-        "Super Mario 64"
+        "Super Mario 64",
+        "Mutazone",
+        "Appel",
     ],
     'Multiplayer Games': [
         "1v1.lol",
@@ -238,7 +282,8 @@ const gameCategories = {
         "GoTet.io",
         "Knives.io",
         "Transporters.io",
-        "Cubes2048.io"
+        "Cubes2048.io",
+        "Dots.io",
     ],
     'Shooting Games': [
         "Mr.Bullet 3D",
@@ -246,24 +291,46 @@ const gameCategories = {
         "1v1.lol",
         "Stick Merge",
         "Stick Merge 2",
-        "WarriorSurvival.io"
+        "WarriorSurvival.io",
     ],
     'Strategy Games': [
         "BitLife",
         "Monkey Mart",
         "Idle Restaurants",
         "GoTet.io",
-        "Cubes2048.io"
+        "Cubes2048.io",
+        "Dots.io",
     ],
     'Simulation Games': [
         "BitLife",
         "Flight Simulator 3D v2.8",
         "Cookie Clicker",
-        "Pou"
+        "Pou",
+        "Idle Restaurants",
+        "Transporters.io",
+        "Cubes2048.io",
+        "Dots.io",
+        "Papa\'s Pastaria",
+        "Papa\'s Wingeria",
+        "Papa\'s Taco Mia",
+        "Papa\'s Sushiria",
+        "Papa\'s Scooperia",
+        "Papa\'s Pizzeria",
+        "Papa\'s PanCakeria",
+        "Papa\'s Hot Doggeria",
+        "Papa\'s Freezeria",
+        "Papa\'s Donuteria",
+        "Papa\'s Cupcakeria",
+        "Papa\'s Cheeseria",
+        "Papa\'s Burgeria",
+        "Papa\'s Bakeria",
     ],
     'Role-Playing Games': [
         "BitLife",
-        "Pou"
+        "Pou",
+        "Pokémon Firered Version",
+        "Pokémon Emerald Version",
+        "Pokémon Emerald Version 2",
     ],
     'Platformer Games': [
         "Geometry Dash",
@@ -273,7 +340,10 @@ const gameCategories = {
         "Geometry Dash Classic",
         "Vex 8",
         "Doodle Jump",
-        "Appel"
+        "Appel",
+        "Fancy Pants",
+        "Fancy Pants 2",
+        "Fancy Pants 3",
     ],
     'Survival Games': [
         "WarriorSurvival.io",
@@ -296,7 +366,9 @@ const gameCategories = {
         "Stick Merge 2",
         "Dino Game",
         "Google Snake",
-        "Wordle Unlimited"
+        "Wordle Unlimited",
+        "Cubes2048.io",
+        "Dots.io",
     ],
     'Racing Games': [
         "Slope",
@@ -305,7 +377,7 @@ const gameCategories = {
         "Tunnel Rush 2",
         "Crazy Cars",
         "Car Rush",
-        "Drift Dudes"
+        "Drift Dudes",
     ],
     'Sports Games': [
         "Google Baseball",
@@ -340,7 +412,8 @@ const gameCategories = {
         "GoTet.io",
         "Knives.io",
         "Transporters.io",
-        "Cubes2048.io"
+        "Cubes2048.io",
+        "Dots.io",
     ],
     'Arcade Games': [
         "Flappy Bird",
