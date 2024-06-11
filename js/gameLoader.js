@@ -473,173 +473,71 @@ const racingGames = gameCategories['Racing Games'];
 const sportsGames = gameCategories['Sports Games'];
 const ioGames = gameCategories['IO Games'];
 
-function showAllGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !gameKeys.includes(pTag.textContent)) {
-            div.style.display = 'none';
+function showGames(gameArray) {
+    $('.gamediv').each(function() {
+        const pTag = $(this).find('p');
+        if (pTag && !gameArray.includes(pTag.text())) {
+            $(this).css('display', 'none');
         } else {
-            div.style.display = 'inline-block';
+            $(this).css('display', 'inline-block');
         }
     });
 }
 
+function showAllGames() {
+    showGames(gameKeys);
+}
 
 function showHorrorGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !horrorGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(horrorGames);
 }
 
 function showAdventureGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !adventureGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(adventureGames);
 }
 
 function showMultiplayerGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !multiplayerGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(multiplayerGames);
 }
 
 function showShootingGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !shootingGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(shootingGames);
 }
 
 function showStrategyGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !strategyGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(strategyGames);
 }
 
 function showSimulationGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !simulationGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(simulationGames);
 }
 
 function showRolePlayingGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !rolePlayingGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(rolePlayingGames);
 }
 
 function showPlatformerGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !platformerGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(platformerGames);
 }
 
 function showSurvivalGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !survivalGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(survivalGames);
 }
 
 function showPuzzleGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !puzzleGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(puzzleGames);
 }
 
 function showRacingGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !racingGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(racingGames);
 }
 
 function showSportsGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !sportsGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(sportsGames);
 }
 
 function showIOGames() {
-    const gameDivs = document.querySelectorAll('.gamediv');
-    gameDivs.forEach((div) => {
-        const pTag = div.querySelector('p');
-        if (pTag && !ioGames.includes(pTag.textContent)) {
-            div.style.display = 'none';
-        } else {
-            div.style.display = 'inline-block';
-        }
-    });
+    showGames(ioGames);
 }
 
 
