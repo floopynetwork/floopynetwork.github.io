@@ -113,6 +113,11 @@ const gameLinks = {
     'Papa\'s Cheeseria': 'https://floopynetworkgamingservice.github.io/dfgdfgdsfgd/',
     'Papa\'s Burgeria': 'https://floopynetworkgamingservice.github.io/dsfsdfgsdfg/',
     'Papa\'s Bakeria': 'https://floopynetworkgamingservice.github.io/dfssdfg/',
+    'Dummy Never Fails': 'https://floopynetworkgamingservice.github.io/dfghfghfgdh/',
+    'Bloons Tower Defense 3': 'https://floopynetworkgamingservice.github.io/yfg/',
+    'Bloons Tower Defense 4': 'https://floopynetworkgamingservice.github.io/fg/',
+    'Stealing the Diamond': 'https://floopynetworkgamingservice.github.io/tg/',
+    'Fleeing the Complex': 'https://floopynetworkgamingservice.github.io/asdf/',
 };
 
 const gameDescriptions = {
@@ -230,6 +235,11 @@ const gameDescriptions = {
     'Papa\'s Cheeseria': 'Papas Cheeseria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a grilled cheese restaurant and serve delicious sandwiches to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from grilling sandwiches to adding fillings and sides. With its charming graphics, engaging gameplay, and intuitive controls, Papas Cheeseria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Cheeseria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
     'Papa\'s Burgeria': 'Papas Burgeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a burger restaurant and serve delicious dishes to hungry customers. In the game, players take on the role of a chef and manage all aspects of the restaurant, from grilling burgers to adding toppings and sides. With its charming graphics, engaging gameplay, and intuitive controls, Papas Burgeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Burgeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
     'Papa\'s Bakeria': 'Papas Bakeria is a popular cooking simulation game developed by Flipline Studios that challenges players to run a bakery and serve delicious treats to hungry customers. In the game, players take on the role of a chef and manage all aspects of the bakery, from baking pies to adding fillings and toppings. With its charming graphics, engaging gameplay, and intuitive controls, Papas Bakeria offers a fun and immersive experience that appeals to players of all ages. The game features a variety of recipes, customization options, and challenging levels that keep players entertained and coming back for more. Perfect for fans of cooking games and simulation games, Papas Bakeria delivers endless fun and culinary creativity in a vibrant and flavorful world.',
+    'Dummy Never Fails': 'Dummy Never Fails is a fun and addictive physics-based puzzle game that challenges players to launch a ragdoll dummy and hit a target using a variety of tools and obstacles. Developed by Tanoku, the game features intuitive controls, realistic physics, and challenging levels that test players\' problem-solving skills and creativity. With its vibrant graphics, engaging gameplay, and dynamic environments, Dummy Never Fails offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of tools, customization options, and user-generated levels that provide endless fun and creative possibilities for players to explore and enjoy.',
+    'Bloons Tower Defense 3': 'Bloons Tower Defense 3 is a popular tower defense game developed by Ninja Kiwi that challenges players to defend against waves of colorful balloons using a variety of monkey towers and upgrades. In the game, players strategically place towers along the path to pop balloons and prevent them from reaching the end. With its vibrant graphics, engaging gameplay, and challenging levels, Bloons Tower Defense 3 offers an addictive and rewarding experience that keeps players coming back for more. The game features a variety of towers, upgrades, and special abilities that provide endless strategies and possibilities for players to explore and master.',
+    'Bloons Tower Defense 4': 'Bloons Tower Defense 4 is a sequel to the popular tower defense game Bloons Tower Defense 3, offering new towers, upgrades, and challenges for players to enjoy. Developed by Ninja Kiwi, the game continues the core gameplay mechanics of the original, where players strategically place monkey towers along the path to pop balloons and prevent them from reaching the end. With its vibrant graphics, engaging gameplay, and challenging levels, Bloons Tower Defense 4 offers an addictive and rewarding experience that keeps players coming back for more. The game features a variety of towers, upgrades, and special abilities that provide endless strategies and possibilities for players to explore and master.',
+    'Stealing the Diamond': 'Stealing the Diamond is a fun and addictive interactive adventure game that challenges players to help the protagonist, Henry Stickmin, steal a valuable diamond from a museum. Developed by PuffballsUnited, the game features a variety of choices and outcomes that allow players to explore different paths and endings based on their decisions. With its charming graphics, engaging gameplay, and humorous storyline, Stealing the Diamond offers an entertaining and interactive experience that keeps players coming back for more. The game features multiple endings, hidden secrets, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
+    'Fleeing the Complex': 'Fleeing the Complex is a sequel to the popular interactive adventure game Stealing the Diamond, offering new choices, outcomes, and challenges for players to enjoy. Developed by PuffballsUnited, the game continues the story of the protagonist, Henry Stickmin, as he attempts to escape from a high-security prison complex. With its charming graphics, engaging gameplay, and humorous storyline, Fleeing the Complex offers an entertaining and interactive experience that keeps players coming back for more. The game features multiple endings, hidden secrets, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
 }
 
 const gameKeys = Object.keys(gameLinks);
@@ -253,6 +263,11 @@ const gameCategories = {
         "Super Mario 64",
         "Mutazone",
         "Appel",
+        "Fancy Pants",
+        "Fancy Pants 2",
+        "Fancy Pants 3",
+        "Stealing the Diamond",
+        "Fleeing the Complex",
     ],
     'Multiplayer Games': [
         "1v1.lol",
@@ -300,6 +315,8 @@ const gameCategories = {
         "GoTet.io",
         "Cubes2048.io",
         "Dots.io",
+        "Bloons Tower Defense 3",
+        "Bloons Tower Defense 4",
     ],
     'Simulation Games': [
         "BitLife",
@@ -369,6 +386,7 @@ const gameCategories = {
         "Wordle Unlimited",
         "Cubes2048.io",
         "Dots.io",
+        "Dummy Never Fails",
     ],
     'Racing Games': [
         "Slope",
@@ -400,7 +418,6 @@ const gameCategories = {
         "Hole.io",
         "Aquapark.io",
         "WarriorSurvival.io",
-        "JustFall.LOL",
         "NitroKnights.io",
         "BumperBall.io",
         "Archers.io",
@@ -738,6 +755,7 @@ function loadGameByDiv(event) {
 }
 
 function loadGame(gameName) {
+    window.scrollTo(0, 0);
     deleteGameDivs();
     const h1 = document.createElement('h1');
     h1.className = 'rainbow-text'
