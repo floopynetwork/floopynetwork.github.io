@@ -118,6 +118,26 @@ const gameLinks = {
     'Bloons Tower Defense 4': 'https://floopynetworkgamingservice.github.io/fg/',
     'Stealing the Diamond': 'https://floopynetworkgamingservice.github.io/tg/',
     'Fleeing the Complex': 'https://floopynetworkgamingservice.github.io/asdf/',
+    'Infiltrating the Airship': 'https://floopynetworkgamingservice.github.io/ghjghgfh/',
+    'Breaking the Bank': 'https://floopynetworkgamingservice.github.io/hgghjghj/',
+    'Escaping the Prison': 'https://floopynetworkgamingservice.github.io/fghdgdfgh/',
+    'The Impossible Quiz': 'https://floopynetworkgamingservice.github.io/dsttgfd/',
+    'Learn to Fly 2': 'https://floopynetworkgamingservice.github.io/fghfghfdg/',
+    'Learn to Fly 3': 'https://floopynetworkgamingservice.github.io/ghfjghjghfj/',
+    'Riddle School 2': 'https://floopynetworkgamingservice.github.io/hjgghjghjffghghhh/',
+    'Whack your Boss': 'https://floopynetworkgamingservice.github.io/ghffghdfgdh/',
+    'Monster Truck Destroyer': 'https://floopynetworkgamingservice.github.io/fghddfghfdgh/',
+    'Bloxorz': 'https://floopynetworkgamingservice.github.io/fghghbvn/',
+    'Poly Track': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig',
+    'Fruit Merge': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://107867007-460744551111723157.preview.editmysite.com/uploads/b/148239657-716773247581577736/files/mf.xml&container=ig',
+    'A Small World Cup': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://136620384-873177897590022156.preview.editmysite.com/uploads/b/4181373-127396464257261240/files/aswc.xml&container=ig',
+    'Snowball.io': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/SQLite4Unity3d@8516fc0bd1d2be662ca484f5dc506268b24763ef/Example/Assets/snowball.xml&container=ig',
+    'Angry Birds': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@30e7601c53b57634d2288fd993d8baaeae060eb2/CSConsole/Lexers/ab.xml&container=ig',
+    'Among Us': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gahaden/ags@a17bbae7f756eae92fbe0d28f2812f7f42687c1b/au.xml&container=ig',
+    'Duck Life': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@1b8b48a642e410d2e3db5f04deb7cf3fec30c513/lib/dl1.xml&container=ig',
+    'Duck Life 2': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@f5922fae305916c82f1c74e11fecdcc097755476/scripts/dl2.xml&container=ig',
+    'Duck Life 3': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/learning-Python-3@c4e9b8674140aaedb18b0546400d6f6ac5b34949/scripts/dl3.xml&container=ig',
+    'Duck Life 4': 'https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-4.xml&container=ig',
 };
 
 const gameDescriptions = {
@@ -240,6 +260,26 @@ const gameDescriptions = {
     'Bloons Tower Defense 4': 'Bloons Tower Defense 4 is a sequel to the popular tower defense game Bloons Tower Defense 3, offering new towers, upgrades, and challenges for players to enjoy. Developed by Ninja Kiwi, the game continues the core gameplay mechanics of the original, where players strategically place monkey towers along the path to pop balloons and prevent them from reaching the end. With its vibrant graphics, engaging gameplay, and challenging levels, Bloons Tower Defense 4 offers an addictive and rewarding experience that keeps players coming back for more. The game features a variety of towers, upgrades, and special abilities that provide endless strategies and possibilities for players to explore and master.',
     'Stealing the Diamond': 'Stealing the Diamond is a fun and addictive interactive adventure game that challenges players to help the protagonist, Henry Stickmin, steal a valuable diamond from a museum. Developed by PuffballsUnited, the game features a variety of choices and outcomes that allow players to explore different paths and endings based on their decisions. With its charming graphics, engaging gameplay, and humorous storyline, Stealing the Diamond offers an entertaining and interactive experience that keeps players coming back for more. The game features multiple endings, hidden secrets, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
     'Fleeing the Complex': 'Fleeing the Complex is a sequel to the popular interactive adventure game Stealing the Diamond, offering new choices, outcomes, and challenges for players to enjoy. Developed by PuffballsUnited, the game continues the story of the protagonist, Henry Stickmin, as he attempts to escape from a high-security prison complex. With its charming graphics, engaging gameplay, and humorous storyline, Fleeing the Complex offers an entertaining and interactive experience that keeps players coming back for more. The game features multiple endings, hidden secrets, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
+    'Infiltrating the Airship': 'Infiltrating the Airship is a sequel to the popular interactive adventure game Fleeing the Complex, offering new choices, outcomes, and challenges for players to enjoy. Developed by PuffballsUnited, the game continues the story of the protagonist, Henry Stickmin, as he attempts to infiltrate an airship and complete a daring mission. With its charming graphics, engaging gameplay, and humorous storyline, Infiltrating the Airship offers an entertaining and interactive experience that keeps players coming back for more. The game features multiple endings, hidden secrets, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
+    'Breaking the Bank': 'Breaking the Bank is the first installment in the popular interactive adventure game series featuring the protagonist, Henry Stickmin, as he attempts to pull off daring heists and capers. Developed by PuffballsUnited, the game challenges players to help Henry break into a bank and steal a valuable diamond using a variety of tools and strategies. With its charming graphics, engaging gameplay, and humorous storyline, Breaking the Bank offers an entertaining and interactive experience that keeps players coming back for more. The game features multiple choices, outcomes, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
+    'Escaping the Prison': 'Escaping the Prison is a sequel to the popular interactive adventure game Breaking the Bank, offering new choices, outcomes, and challenges for players to enjoy. Developed by PuffballsUnited, the game continues the story of the protagonist, Henry Stickmin, as he attempts to escape from a high-security prison using a variety of tools and strategies. With its charming graphics, engaging gameplay, and humorous storyline, Escaping the Prison offers an entertaining and interactive experience that keeps players coming back for more. The game features multiple choices, outcomes, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
+    'The Impossible Quiz': 'The Impossible Quiz is a popular online trivia game that challenges players to answer a series of difficult and unconventional questions to progress through the levels. Developed by Splapp-Me-Do, the game features a variety of mind-bending puzzles, riddles, and challenges that test players\' knowledge, logic, and creativity. With its quirky humor, colorful graphics, and catchy music, The Impossible Quiz offers an entertaining and engaging experience that keeps players coming back for more. The game features multiple levels, hidden secrets, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
+    'Learn to Fly 2': 'Learn to Fly 2 is a popular online game that challenges players to help a penguin learn to fly by launching it off a ramp and guiding it through the air using various tools and upgrades. Developed by Light Bringer Games, the game features intuitive controls, realistic physics, and challenging levels that test players\' timing, strategy, and creativity. With its charming graphics, engaging gameplay, and catchy music, Learn to Fly 2 offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of tools, upgrades, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Learn to Fly 3': 'Learn to Fly 3 is a sequel to the popular online game Learn to Fly 2, offering new tools, upgrades, and challenges for players to enjoy. Developed by Light Bringer Games, the game continues the story of the penguin as it attempts to learn to fly and reach new heights using various gadgets and contraptions. With its charming graphics, engaging gameplay, and catchy music, Learn to Fly 3 offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of tools, upgrades, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Riddle School 2': 'Riddle School 2 is a sequel to the popular point-and-click adventure game Riddle School, offering new puzzles, challenges, and mysteries for players to solve. Developed by Jonochrome, the game continues the story of the protagonist, Phil Eggtree, as he attempts to escape from a mysterious school filled with strange characters and obstacles. With its charming graphics, engaging gameplay, and quirky humor, Riddle School 2 offers an entertaining and immersive experience that keeps players coming back for more. The game features a variety of puzzles, hidden secrets, and creative solutions that provide endless fun and replay value for players to enjoy and discover.',
+    'Whack your Boss': 'Whack Your Boss is a popular interactive game that allows players to take out their frustrations on a virtual boss using a variety of creative and humorous methods. Developed by Doodie.com, the game features a variety of tools and objects that players can use to unleash their anger and relieve stress in a safe and entertaining way. With its quirky humor, colorful graphics, and interactive gameplay, Whack Your Boss offers an engaging and cathartic experience that keeps players coming back for more. The game features multiple scenarios, creative solutions, and humorous animations that provide endless fun and possibilities for players to explore and enjoy.',
+    'Monster Truck Destroyer': 'Monster Truck Destroyer is a fun and addictive racing game that challenges players to drive a monster truck through various obstacles and challenges to reach the finish line. Developed by GameTop, the game features intuitive controls, realistic physics, and challenging levels that test players\' driving skills and reflexes. With its vibrant graphics, engaging gameplay, and dynamic environments, Monster Truck Destroyer offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of trucks, upgrades, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Bloxorz': 'Bloxorz is a popular puzzle game that challenges players to navigate a block through a series of mazes and obstacles to reach the exit. Developed by Damien Clarke, the game features intuitive controls, challenging levels, and mind-bending puzzles that test players\' logic, spatial awareness, and problem-solving skills. With its minimalist graphics, engaging gameplay, and creative level designs, Bloxorz offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of levels, hidden secrets, and creative solutions that provide endless fun and possibilities for players to explore and enjoy.',
+    'Poly Track': 'Poly Track is a fun and addictive racing game that challenges players to drive a polygonal car through various obstacles and challenges to reach the finish line. Developed by GameTop, the game features intuitive controls, realistic physics, and challenging levels that test players\' driving skills and reflexes. With its vibrant graphics, engaging gameplay, and dynamic environments, Poly Track offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of cars, upgrades, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Fruit Merge': 'Fruit Merge is a fun and addictive puzzle game that challenges players to merge identical fruits to create new varieties and reach higher numbers. Developed by GameTop, the game features intuitive controls, colorful graphics, and challenging levels that test players\' logic, strategy, and creativity. With its engaging gameplay, vibrant visuals, and dynamic challenges, Fruit Merge offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of fruits, power-ups, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'A Small World Cup': 'A Small World Cup is a fun and addictive sports game that challenges players to compete in a miniature soccer tournament and score goals to win the championship. Developed by GameTop, the game features intuitive controls, realistic physics, and challenging levels that test players\' soccer skills and strategy. With its vibrant graphics, engaging gameplay, and dynamic environments, A Small World Cup offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of teams, tournaments, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Snowball.io': 'Snowball.io is a fun and addictive multiplayer online game that challenges players to control a snowball and eliminate opponents in a chaotic winter arena. Players must navigate through the map, collecting snowballs and power-ups to defeat enemies and emerge victorious. With its vibrant graphics, dynamic environments, and intense gameplay, Snowball.io offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and battle royale games.',
+    'Angry Birds': 'Angry Birds is a popular puzzle game developed by Rovio Entertainment that challenges players to launch birds from a slingshot and destroy structures to defeat evil pigs. In the game, players strategically aim and launch birds at various obstacles and enemies to complete levels and progress through the game. With its charming graphics, engaging gameplay, and challenging puzzles, Angry Birds offers an addictive and rewarding experience that keeps players coming back for more. The game features a variety of birds, power-ups, and levels that provide endless fun and possibilities for players to explore and enjoy.',
+    'Among Us': 'Among Us is a popular online multiplayer game developed by Innersloth that challenges players to work together to complete tasks on a spaceship while identifying and eliminating impostors. In the game, players must navigate through the map, complete tasks, and discuss suspicions to uncover the impostors and secure the ship. With its vibrant graphics, engaging gameplay, and social deduction mechanics, Among Us offers an entertaining and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of social deduction and party games.',
+    'Duck Life': 'Duck Life is an online adventure game where you train a duck to race in three disciplines: running, flying and swimming. You practice each of the disciplines individually to level up your duck.',
+    'Duck Life 2': 'Duck Life 2 is an adventure game where you train your duck to race in various disciplines such as running, flying, swimming and climbing to be the best duck adventurer in the world. Earn coins by training or racing fellow ducks.',
+    'Duck Life 3': 'Duck Life 3 is an adventure game where you train your duck to race in various disciplines such as running, flying, swimming and climbing to be the best duck adventurer in the world. Earn coins by training or racing fellow ducks.',
+    'Duck Life 4': 'Duck Life 4 is an adventure game where you train your duck to race in various disciplines such as running, flying, swimming and climbing to be the best duck adventurer in the world. Earn coins by training or racing fellow ducks.',
 }
 
 const gameKeys = Object.keys(gameLinks);
@@ -268,6 +308,14 @@ const gameCategories = {
         "Fancy Pants 3",
         "Stealing the Diamond",
         "Fleeing the Complex",
+        "Infiltrating the Airship",
+        "Breaking the Bank",
+        "Escaping the Prison",
+        "Among Us",
+        "Duck Life",
+        "Duck Life 2",
+        "Duck Life 3",
+        "Duck Life 4",
     ],
     'Multiplayer Games': [
         "1v1.lol",
@@ -299,6 +347,8 @@ const gameCategories = {
         "Transporters.io",
         "Cubes2048.io",
         "Dots.io",
+        "Snowball.io",
+        "Among Us",
     ],
     'Shooting Games': [
         "Mr.Bullet 3D",
@@ -341,6 +391,13 @@ const gameCategories = {
         "Papa\'s Cheeseria",
         "Papa\'s Burgeria",
         "Papa\'s Bakeria",
+        "Learn to Fly 2",
+        "Learn to Fly 3",
+        "Whack your Boss",
+        "Duck Life",
+        "Duck Life 2",
+        "Duck Life 3",
+        "Duck Life 4",
     ],
     'Role-Playing Games': [
         "BitLife",
@@ -387,6 +444,11 @@ const gameCategories = {
         "Cubes2048.io",
         "Dots.io",
         "Dummy Never Fails",
+        "The Impossible Quiz",
+        "Riddle School 2",
+        "Bloxorz",
+        "Fruit Merge",
+        "Angry Birds",
     ],
     'Racing Games': [
         "Slope",
@@ -396,6 +458,8 @@ const gameCategories = {
         "Crazy Cars",
         "Car Rush",
         "Drift Dudes",
+        "Monster Truck Destroyer",
+        "Poly Track",
     ],
     'Sports Games': [
         "Google Baseball",
@@ -405,7 +469,8 @@ const gameCategories = {
         "Basketball Legends",
         "Soccer Heads",
         "Basketball Line",
-        "Boxing Random"
+        "Boxing Random",
+        "A Small World Cup",
     ],
     'IO Games': [
         "Slither.io",
@@ -431,6 +496,7 @@ const gameCategories = {
         "Transporters.io",
         "Cubes2048.io",
         "Dots.io",
+        "Snowball.io",
     ],
     'Arcade Games': [
         "Flappy Bird",
@@ -454,7 +520,8 @@ const gameCategories = {
         "Mutazone",
         "Bad Ice Cream",
         "Bad Ice Cream 2",
-        "Bad Ice Cream 3"
+        "Bad Ice Cream 3",
+        "Angry Birds",
     ]
 };
 
@@ -748,6 +815,10 @@ function randomGame() {
 }
 
 function searchGame(event) {
+    const noResultsElements = document.querySelectorAll('.noresults');
+    noResultsElements.forEach((element) => {
+        element.parentNode.removeChild(element);
+    });
     const searchInput = document.querySelector('.gamesearchbar');
     const searchValue = searchInput.value;
     

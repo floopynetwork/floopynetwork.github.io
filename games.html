@@ -7,10 +7,11 @@
     <script src="js/menunav.js"></script>
     <link rel="icon" href="img/fakechromeicon.jpg">
     <script src="js/gameLoader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="updatebar">
-        <p class="updatetext">🤩 v1.2 has arrived! 5 NEW Games, Bug Fixes, 3 NEW Apps, and more! 🍿 <i>[v1.2]</i></p>
+        <p class="updatetext">👾 v1.3 just dropped! 20 NEW Games, Bug Fixes, NEW features, and more! 😀 <i>[v1.3]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
     <h1 id="top"><span class="floopy">Floopy</span> <span class="network">Network</span></h1>
@@ -30,7 +31,7 @@
 
     <h2 style="text-align: center;">
         <span class="game-count-1">PLAY</span> 
-        <span class="game-count-2" id="game-count">120</span> 
+        <span class="game-count-2" id="game-count">140</span> 
         <span class="game-count-1">GAMES</span>
     </h2>
 
@@ -67,6 +68,147 @@
             <button class="choicegamebtn"><img src="" alt="Game" width="150" height="150"></button>
             <p class="gameundertext"></p>
             <!-- PLACEHOLDER DIV PLEASE IGNORE!!! -->
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.1fd3515f0388d49dc3550c1e8163f094?rik=RBmhd2fdr4oDsw&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Duck Life 4</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.TwQu702rpXUJPZv-ItcwwgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Duck Life 3</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.4lowPbr1wCpJYtEChGlMzgHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Duck Life 2</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.2LCCgWrpFUyezVTO-xSH0gAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Duck Life</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.757a6b8e4782db72db8ec8b3cfeb24d0?rik=evnVp59ZDRu7Ig&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Among Us</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.2e129064a23f951e12e3f04077d67115?rik=3yCeWb1jxCQUFg&riu=http%3a%2f%2fwww.ranklogos.com%2fwp-content%2fuploads%2f2014%2f09%2fAngry-Birds-Logo.png&ehk=c9rkZ3Tf20S9xWWhmT27PJpJdz6uwdWp86Jv9opYBx0%3d&risl=&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Angry Birds</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.3270405ff42786aff0e0516bb6b88ed2?rik=DAlDwlyGxvlrhg&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Snowball.io</p>
+        </a>
+    </div>
+
+
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.8hlBXK4nXfHluN7OOz7LSQHaHa?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">A Small <br>World Cup</br></p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.7ZpxKcssWfP3xt_JSXOU1QHaEK?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Fruit Merge</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.lUMJvNYW2YDWplM6Tkp27gHaEK?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Poly Track</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.ehuPFUadrw-Y7r_IGg-zYgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Bloxorz</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.nkOtNyUpgPmetofnI-wM1QHaD4?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">Monster Truck <br>Destroyer</br></p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.qadWHWA489bhY3Sxt-mKwAAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Whack your Boss</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.MAuos2I20zvmE1PxdzfzTgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Riddle School 2</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.4Ba2nSeyesljzZotc0c_fgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Learn to Fly 3</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.ec3a42caa612fdeb7384f602d562c33c?rik=KnKwV0NwabYGKg&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext">Learn to Fly 2</p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.VBWCHEZ-86BKN72NHh0aOAHaEO?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">The Impossible <br>Quiz</br></p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.p0iFC5m-RbWSdFRpdbNIFAHaD4?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">Escaping the <br>Prison</br></p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/OIP.-JAdk855wQYuM1WKkOtMlwHaD4?rs=1&pid=ImgDetMain&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">Breaking the <br>Bank</br></p>
+        </a>
+    </div>
+
+    <div class="gamediv" onclick="loadGameByDiv(event)" style="position: relative; top: 15px;">
+        <a>
+            <button class="choicegamebtn"><img src="https://th.bing.com/th/id/R.4c8981717663065268896416f956df92?rik=ZtOefMbxnRMRXA&pid=ImgRaw&r=0&adlt=strict" alt="Game" width="150" height="150"></button>
+            <p class="gameundertext" style="font-size: 14px;">Infiltrating the <br>Airship</br></p>
         </a>
     </div>
 
