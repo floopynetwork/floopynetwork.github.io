@@ -138,6 +138,12 @@ const gameLinks = {
     'Duck Life 2': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/awesome-aws@f5922fae305916c82f1c74e11fecdcc097755476/scripts/dl2.xml&container=ig',
     'Duck Life 3': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/learning-Python-3@c4e9b8674140aaedb18b0546400d6f6ac5b34949/scripts/dl3.xml&container=ig',
     'Duck Life 4': 'https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-4.xml&container=ig',
+    'Dead Zed 2': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fdead-zed-2.xml&container=ig',
+    'Roblox Color Run': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fcolor.xml&container=ig',
+    'Roblox Bladeball': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fblb.xml&container=ig',
+    'Roblox Obby': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fobby.xml&container=ig',
+    'Roblox Rob The Bank Obby': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fftbr.xml&container=ig',
+    '60 Second Burger Run': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F60-second-burger-run.xml&container=ig',
 };
 
 const gameDescriptions = {
@@ -280,6 +286,12 @@ const gameDescriptions = {
     'Duck Life 2': 'Duck Life 2 is an adventure game where you train your duck to race in various disciplines such as running, flying, swimming and climbing to be the best duck adventurer in the world. Earn coins by training or racing fellow ducks.',
     'Duck Life 3': 'Duck Life 3 is an adventure game where you train your duck to race in various disciplines such as running, flying, swimming and climbing to be the best duck adventurer in the world. Earn coins by training or racing fellow ducks.',
     'Duck Life 4': 'Duck Life 4 is an adventure game where you train your duck to race in various disciplines such as running, flying, swimming and climbing to be the best duck adventurer in the world. Earn coins by training or racing fellow ducks.',
+    'Dead Zed 2': 'Ded Zed 2 is a fun and addictive zombie shooting game that challenges players to survive a zombie apocalypse and eliminate hordes of undead creatures. Developed by GameTop, the game features intuitive controls, realistic physics, and challenging levels that test players\' shooting skills and strategy. With its vibrant graphics, engaging gameplay, and dynamic environments, Ded Zed 2 offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of weapons, upgrades, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Roblox Color Run': 'Roblox Color Run is a fun and addictive multiplayer online game that challenges players to run through a colorful obstacle course and reach the finish line while avoiding obstacles and other players. Players must strategically navigate through the map, collecting power-ups and outpacing opponents to achieve victory. With its vibrant graphics, dynamic environments, and intense gameplay, Roblox Color Run offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of racing and multiplayer games.',
+    'Roblox Bladeball': 'Roblox Bladeball is a fun and addictive multiplayer online game that challenges players to compete in a fast-paced ball game and score goals to win the match. Players must strategically control their character, pass the ball, and outmaneuver opponents to achieve victory. With its vibrant graphics, dynamic environments, and intense gameplay, Roblox Bladeball offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of sports and multiplayer games.',
+    'Roblox Obby': 'Roblox Obby is a popular online game genre that challenges players to navigate through a series of obstacle courses and challenges to reach the finish line. Players must strategically jump, dodge, and outmaneuver obstacles to complete levels and progress through the game. With its vibrant graphics, engaging gameplay, and dynamic environments, Roblox Obby offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of levels, themes, and creative designs that provide endless fun and possibilities for players to explore and enjoy.',
+    'Roblox Rob The Bank Obby': 'Roblox Rob The Bank Obby is a popular online game genre that challenges players to navigate through a series of obstacle courses and challenges to reach the finish line. Players must strategically jump, dodge, and outmaneuver obstacles to complete levels and progress through the game. With its vibrant graphics, engaging gameplay, and dynamic environments, Roblox Rob The Bank Obby offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of levels, themes, and creative designs that provide endless fun and possibilities for players to explore and enjoy.',
+    '60 Second Burger Run': '60 Second Burger Run is a fun and addictive platformer game that challenges players to run, jump, and slide through a fast-paced obstacle course to deliver burgers to hungry customers. Developed by GameTop, the game features intuitive controls, vibrant graphics, and challenging levels that test players\' reflexes and timing. With its engaging gameplay, dynamic environments, and creative level designs, 60 Second Burger Run offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of obstacles, power-ups, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
 }
 
 const gameKeys = Object.keys(gameLinks);
@@ -316,6 +328,8 @@ const gameCategories = {
         "Duck Life 2",
         "Duck Life 3",
         "Duck Life 4",
+        "Roblox Obby",
+        "Roblox Rob The Bank Obby",
     ],
     'Multiplayer Games': [
         "1v1.lol",
@@ -349,6 +363,10 @@ const gameCategories = {
         "Dots.io",
         "Snowball.io",
         "Among Us",
+        "Roblox Color Run",
+        "Roblox Bladeball",
+        "Roblox Obby",
+        "Roblox Rob The Bank Obby",
     ],
     'Shooting Games': [
         "Mr.Bullet 3D",
@@ -357,6 +375,7 @@ const gameCategories = {
         "Stick Merge",
         "Stick Merge 2",
         "WarriorSurvival.io",
+        "Dead Zed 2",
     ],
     'Strategy Games': [
         "BitLife",
@@ -418,6 +437,8 @@ const gameCategories = {
         "Fancy Pants",
         "Fancy Pants 2",
         "Fancy Pants 3",
+        "Drive Mad",
+        "60 Second Burger Run",
     ],
     'Survival Games': [
         "WarriorSurvival.io",
@@ -429,7 +450,8 @@ const gameCategories = {
         "DeathCar.io",
         "Animal.io",
         "Trains.io",
-        "EatTheFish.io"
+        "EatTheFish.io",
+        "Dead Zed 2",
     ],
     'Puzzle Games': [
         "Elastic Man",
@@ -522,6 +544,7 @@ const gameCategories = {
         "Bad Ice Cream 2",
         "Bad Ice Cream 3",
         "Angry Birds",
+        "60 Second Burger Run",
     ]
 };
 

@@ -9,12 +9,26 @@
 </head>
 <body>
     <div class="updatebar">
-        <p class="updatetext">👾 v1.3 just dropped! 20 NEW Games, Bug Fixes, NEW features, and more! 😀 <i>[v1.3]</i></p>
+        <p class="updatetext">🏫 LAST DAY OF SCHOOL UPDATE IS HERE! 6 NEW Games, and more! SEE YOU IN SEPTEMBER! 😁 <i>[v1.4]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
 
     <h1 class="floopywebtext">FLOOPY WEB</h1>
-    <p style="text-align: center; text-shadow: 0 0 15px red;" class="floopywebdesc">Welcome to Floopy Web, where freedom meets the internet. Enter anything on your mind in the box below, it could be a thing you want to search up, or you want to unblock a webpage. Just type what you want to search up or what link you want to unblock then press the "GO" button.</p>
+
+    <i><p style="text-align: center;">Floopy Web closed, sorry :(</p></i>
+
+    <div class="menu">
+        <p class="menu-label">Floopy Menu</p>
+        <a onclick="injectHome()"><button class="homebtn"><img src="img/home.png" alt="Home"></button></a>
+        <a onclick="injectGames()"><button class="gamebtn"><img src="img/game.png" alt="Games"></button></a>
+        <a onclick="injectApps()"><button class="appsbtn"><img src="img/apps.png" alt="Apps"></button></a>
+        <a onclick="injectfloopyweb()"><button class="floopywebbtn"><img src="img/floopyweb.png" alt="floopy Web"></button></a>
+        <button class="morebtn"><img src="img/more.png" alt="More"></button>
+    </div>
+    <div class="content"></div>
+    <div class="star"></div>
+
+    <!-- <p style="text-align: center; text-shadow: 0 0 15px red;" class="floopywebdesc">Welcome to Floopy Web, where freedom meets the internet. Enter anything on your mind in the box below, it could be a thing you want to search up, or you want to unblock a webpage. Just type what you want to search up or what link you want to unblock then press the "GO" button.</p>
     <center>
         <textarea id="floopywebsearchbar" style="border: none; outline: none; background-color: #f1f1f1; font-family: Arial, sans-serif; font-size: 18px; padding: 10px; border-radius: 10px; width: 900px;" class="floopywebsearchbar"></textarea>
     </center>
@@ -46,17 +60,7 @@
     </center>
     
 
-    <div class="menu">
-        <p class="menu-label">Floopy Menu</p>
-        <a onclick="injectHome()"><button class="homebtn"><img src="img/home.png" alt="Home"></button></a>
-        <a onclick="injectGames()"><button class="gamebtn"><img src="img/game.png" alt="Games"></button></a>
-        <a onclick="injectApps()"><button class="appsbtn"><img src="img/apps.png" alt="Apps"></button></a>
-        <a onclick="injectfloopyweb()"><button class="floopywebbtn"><img src="img/floopyweb.png" alt="floopy Web"></button></a>
-        <button class="morebtn"><img src="img/more.png" alt="More"></button>
-    </div>
-    <div class="content"></div>
-    <div class="star"></div>
-
+    
     <script>
         document.getElementById('gobtn').addEventListener('click', function() {
             let query = document.getElementById('floopywebsearchbar').value.trim();
@@ -236,6 +240,6 @@
                 document.body.appendChild(newScript);
             });
         }
-    </script>
+    </script> -->
 </body>
 </html>
