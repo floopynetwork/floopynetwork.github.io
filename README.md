@@ -1,3 +1,13 @@
+<div align="center">
+    <img src="https://github.com/sladerbenk/floopynetwork/blob/master/img/logo.jpg?raw=true"> <br>
+    <p>Fast ass games.</p>
+    <p>Floppy Network is the best unblocked gaming site. Our goal is to provide the best user experience to every kid.</p>
+</div>
+
+> [!IMPORTANT]
+> If you fork this project, consider giving it a star in the original repository!
+
+
 <div align='center'>
 
 # Floopy Network
