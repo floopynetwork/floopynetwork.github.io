@@ -1,0 +1,69 @@
+/* Add this to your .menu class to make it look super hot */
+.menu {
+  background-image: linear-gradient(45deg, #ff8c00, #ffdf00, #00ff7f, #0080ff, #8b00ff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ffdf00, 0 0 30px #00ff7f, 0 0 40px #0080ff, 0 0 50px #8b00ff;
+  animation: superHotGradient 5s linear infinite;
+}
+
+@keyframes superHotGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Add this to your .homebtn class to make it look super hot */
+.homebtn {
+  background-image: linear-gradient(45deg, #ff8c00, #ffdf00, #00ff7f, #0080ff, #8b00ff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ffdf00, 0 0 30px #00ff7f, 0 0 40px #0080ff, 0 0 50px #8b00ff;
+  animation: superHotGradient 5s linear infinite;
+}
+
+/* Add this to your .gamebtn class to make it look super hot */
+.gamebtn {
+  background-image: linear-gradient(45deg, #ff8c00, #ffdf00, #00ff7f, #0080ff, #8b00ff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ffdf00, 0 0 30px #00ff7f, 0 0 40px #0080ff, 0 0 50px #8b00ff;
+  animation: superHotGradient 5s linear infinite;
+}
+
+/* Add this to your .appsbtn class to make it look super hot */
+.appsbtn {
+  background-image: linear-gradient(45deg, #ff8c00, #ffdf00, #00ff7f, #0080ff, #8b00ff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ffdf00, 0 0 30px #00ff7f, 0 0 40px #0080ff, 0 0 50px #8b00ff;
+  animation: superHotGradient 5s linear infinite;
+}
+
+/* Add this to your .floopywebbtn class to make it look super hot */
+.floopywebbtn {
+  background-image: linear-gradient(45deg, #ff8c00, #ffdf00, #00ff7f, #0080ff, #8b00ff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ffdf00, 0 0 30px #00ff7f, 0 0 40px #0080ff, 0 0 50px #8b00ff;
+  animation: superHotGradient 5s linear infinite;
+}
+
+/* Add this to your .morebtn class to make it look super hot */
+.morebtn {
+  background-image: linear-gradient(45deg, #ff8c00, #ffdf00, #00ff7f, #0080ff, #8b00ff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8c00, 0 0 20px #ffdf00, 0 0 30px #00ff7f, 0 0 40px #0080ff, 0 0 50px #8b00ff;
+  animation: superHotGradient 5s linear infinite;
+}
+
+/* Add this to your .backbtn class to make it look super hot */
+.backbtn {
+  background-image: linear-gradient(45deg, #ff8c00, #ffdf00, #00ff7f, #0080ff, #8b00ff);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0
