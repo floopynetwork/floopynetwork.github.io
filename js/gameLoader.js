@@ -295,7 +295,6 @@ const gameDescriptions = {
 }
 
 const gameKeys = Object.keys(gameLinks);
-console.log(gameKeys)
 
 
 const gameCategories = {
@@ -548,6 +547,29 @@ const gameCategories = {
     ]
 };
 
+let imgList = [];
+
+document.addEventListener("DOMContentLoaded", function () {
+    const gameDivs = document.querySelectorAll('div.gamediv');
+    gameDivs.forEach(gameDiv => {
+        const pText = gameDiv.querySelector('p').textContent;
+        const imgSrc = gameDiv.querySelector('img').src;
+        imgList.push(`${pText}: '${imgSrc}'`);
+    });
+});
+
+function findImage(gameKey) {
+    for (let i = 0; i < imgList.length; i++) {
+      let imgItem = imgList[i];
+      let [game, url] = imgItem.split(': ');
+      game = game.trim();
+      url = url.trim().replace(/^'|'$/g, '');
+      if (game === gameKey) {
+        return url;
+      }
+    }
+    return null;
+}
 
 const horrorGames = gameCategories['Horror Games'];
 const adventureGames = gameCategories['Adventure Games'];
@@ -653,11 +675,6 @@ function deleteGameDivs(event) {
     metaViewport.setAttribute('name', 'viewport');
     metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
 
-    const imgTag = document.querySelector('img');
-    if (imgTag) {
-        imgTag.remove();
-    }
-
     const h2Tag = document.querySelector('h2');
     if (h2Tag) {
         h2Tag.remove();
@@ -735,14 +752,18 @@ function deleteGameDivs(event) {
 }
 
 function loadGameByDiv(event) {
+    clearNotificationData();
     const clickedDiv = event.target.closest('.gamediv');
     const gameName = clickedDiv.querySelector('.gameundertext').textContent;
+    const gameLogo = clickedDiv.querySelector('img').src;
+
     if (clickedDiv) {
-        loadGame(gameName);
+        loadGame(gameName, gameLogo);
     }
 }
 
-function loadGame(gameName) {
+function loadGame(gameName, gameLogo) {
+    createNotification('Game Opened', 'Game opened successfully!', gameLogo, 3)
     window.scrollTo(0, 0);
     deleteGameDivs();
     const h1 = document.createElement('h1');
@@ -787,13 +808,16 @@ function loadGame(gameName) {
         description.textContent = 'This game is unavailable.';
     }
 
+    const buttonContainer = document.createElement('div');
+    buttonContainer.style.display = 'flex';
+    buttonContainer.style.justifyContent = 'center';
+    buttonContainer.style.alignItems = 'center';
+    buttonContainer.style.marginTop = '20px'; // Add this line to add some space between the buttons and the frame
+    document.body.appendChild(buttonContainer);
+
     const fullscreenBtn = document.createElement('button');
     fullscreenBtn.textContent = 'Launch in Fullscreen';
-    fullscreenBtn.style.position = 'absolute';
-    fullscreenBtn.style.justifyContent = 'center';
-    fullscreenBtn.style.alignItems = 'center';
     fullscreenBtn.style.padding = '10px';
-    fullscreenBtn.style.flexDirection = 'row';
     fullscreenBtn.style.border = 'none';
     fullscreenBtn.style.backgroundColor = 'red';
     fullscreenBtn.style.color = 'white';
@@ -819,10 +843,81 @@ function loadGame(gameName) {
         fullscreenBtn.style.backgroundColor = 'red';
         fullscreenBtn.style.color = 'white'; // Add this line to change the text color on mouseout
     });
-    fullscreenBtn.style.left = '50%'; // Add this line to center the button horizontally
-    fullscreenBtn.style.transform = 'translateX(-50%)'; // Add this line to center the button horizontally
-    fullscreenBtn.style.marginTop = '20px'; // Add this line to add some space between the button and the frame
-    document.body.appendChild(fullscreenBtn);
+    buttonContainer.appendChild(fullscreenBtn);
+
+    const windowBtn = document.createElement('button');
+    windowBtn.textContent = 'Launch in New Window';
+    windowBtn.style.padding = '10px';
+    windowBtn.style.border = 'none';
+    windowBtn.style.backgroundColor = 'blue';
+    windowBtn.style.color = 'white';
+    windowBtn.style.cursor = 'pointer';
+    windowBtn.style.borderRadius = '5px';
+    windowBtn.style.fontFamily = 'Arial, sans-serif';
+    windowBtn.style.fontWeight = 'bold';
+    windowBtn.style.fontSize = '16px';
+    windowBtn.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)';
+    windowBtn.style.transition = 'background-color 0.3s';
+    windowBtn.addEventListener('click', () => {
+        var win = window.open('', '_blank', 'toolbar=0,location=0,menubar=0'); // Open a new window
+        win.document.write('<iframe width="100%" height="100%" src="' + frame.src + '" frameborder="0" allowfullscreen></iframe>'); // Inject the iframe
+        injectGames();
+    });
+    windowBtn.addEventListener('mouseover', () => {
+        windowBtn.style.backgroundColor = 'white';
+        windowBtn.style.color = 'blue'; // Add this line to change the text color on mouseover
+    });
+    windowBtn.addEventListener('mouseout', () => {
+        windowBtn.style.backgroundColor = 'blue';
+        windowBtn.style.color = 'white'; // Add this line to change the text color on mouseout
+    });
+    buttonContainer.appendChild(windowBtn);
+
+    const frameSizeContainer = document.createElement('div')
+    frameSizeContainer.style.display = 'flex';
+    frameSizeContainer.style.justifyContent = 'center';
+    frameSizeContainer.style.alignItems = 'center';
+    frameSizeContainer.style.marginTop = '20px'; // Add this line to add some space between the buttons and the frame
+    document.body.appendChild(frameSizeContainer);
+
+    const framePlusButton = document.createElement('button');
+    framePlusButton.textContent = '+'
+    framePlusButton.style.width = '40px';
+    framePlusButton.style.height = '40px';
+    framePlusButton.style.backgroundColor = 'black';
+    framePlusButton.style.color = 'white';
+    framePlusButton.style.fontWeight = 'bold';
+    framePlusButton.style.cursor = 'pointer';
+    framePlusButton.style.fontFamily = 'Arial, sans-serif';
+    framePlusButton.style.fontSize = '16px'
+    framePlusButton.style.border = 'solid'
+    framePlusButton.style.borderColor = 'red'
+    framePlusButton.addEventListener('click', () => {
+        console.log('Button clicked!');
+        frame.style.width = `${frame.offsetWidth + 50}px`;
+        frame.style.height = `${frame.offsetHeight + 50}px`;
+    });
+
+    const frameMinusButton = document.createElement('button');
+    frameMinusButton.textContent = '-'
+    frameMinusButton.style.width = '40px';
+    frameMinusButton.style.height = '40px';
+    frameMinusButton.style.backgroundColor = 'black';
+    frameMinusButton.style.color = 'white';
+    frameMinusButton.style.fontWeight = 'bold';
+    frameMinusButton.style.cursor = 'pointer';
+    frameMinusButton.style.fontFamily = 'Arial, sans-serif';
+    frameMinusButton.style.fontSize = '16px'
+    frameMinusButton.style.border = 'solid'
+    frameMinusButton.style.borderColor = 'blue'
+    frameMinusButton.addEventListener('click', () => {
+        console.log('Button clicked!');
+        frame.style.width = `${frame.offsetWidth - 50}px`;
+        frame.style.height = `${frame.offsetHeight - 50}px`;
+    });
+
+    frameSizeContainer.appendChild(framePlusButton);
+    frameSizeContainer.appendChild(frameMinusButton);
 
     frameContainer.appendChild(frame);
     document.body.appendChild(frameContainer);
@@ -831,10 +926,12 @@ function loadGame(gameName) {
 }
 
 function randomGame() {
+    clearNotificationData();
     console.log('Random Game');
     const games = Object.keys(gameLinks);
     const randomGame = games[Math.floor(Math.random() * games.length)];
-    loadGame(randomGame);
+    loadGame(randomGame, findImage(randomGame));
+    console.log('image: '+ findImage(randomGame))
 }
 
 function searchGame(event) {

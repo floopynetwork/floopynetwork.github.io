@@ -8,6 +8,7 @@
     <script src="js/menunav.js"></script>
     <script src="js/homeMessages.js"></script>
     <script src="js/gameLoader.js"></script>
+    <script src="js/notifications.js"></script>
     <link rel="icon" href="img/fakechromeicon.jpg">
     <script>
         function deletePhoneDiv() {
@@ -29,6 +30,9 @@
         <p class="updatetext">🏫 LAST DAY OF SCHOOL UPDATE IS HERE! 6 NEW Games, and more! SEE YOU IN SEPTEMBER! 😁 <i>[v1.4]</i></p>
         <a onclick="injectChangelog()"><button class="changelogminibtn">View Changelog</button></a>
     </div>
+    <center>
+        <button class="panicbutton" onclick="window.location.href='https://www.google.com'">PANIC BUTTON</button>
+    </center>
     <h1 id="top"><span class="floopy">Floopy</span> <span class="network">Network</span></h1>
     <p class="undertop">Welcome to Floopy Network.</p>
 
@@ -40,6 +44,7 @@
     </div>
     
     <script>
+        createNotification('Welcome', 'Welcome to the home page on Floopy Network!', 'img/logo.jpg', 3);
         var draggableDiv = document.getElementById("draggableDiv");
         var dragOverlay = document.getElementById("dragOverlay");
     
@@ -77,8 +82,6 @@
     </script>
 
     <h2 style="color: deepskyblue; text-align: center;">We are now partnered with Shark Networks!</h2>
-
-    <center><img src="img/logo.jpg" alt="Logo" class="logo"></center>
     <h2 class="rainbow-text">Top 5 Games</h2>
     <center>
         <div class="gamediv" onclick="loadGameByDiv(event)">
