@@ -44,7 +44,11 @@
     </div>
     
     <script>
-        createNotification('Welcome', 'Welcome to the home page on Floopy Network!', 'img/logo.jpg', 3);
+        function openNews() {
+            document.querySelectorAll('link[rel="stylesheet"]').forEach(link => link.parentNode.removeChild(link));
+            injectNews();
+        }
+        createNotification('Welcome', 'Welcome to the home page on Floopy Network!', 'img/logo.jpg', 5);
         var draggableDiv = document.getElementById("draggableDiv");
         var dragOverlay = document.getElementById("dragOverlay");
     
@@ -125,9 +129,7 @@
 
     <h2 class="rainbow-text">Unblocked News</h2>
 
-    <center>
-        <p style="font-size: larger; font-weight: bold;" class="substitute"><span style="color: yellow;">6/13/2024</span> News | Sad News! Shark Networks is down! I cannot say what happend to Shark Networks because Fredrick (the owner of Shark Networks) wants me to keep the details classified.</p>
-    </center>
+    <button onclick="openNews();" class="floopynewsbutton">Open Floopy News</button>
 
     <h2 class="rainbow-text">What is coming next on Floopy Network?</h2>
     <center>

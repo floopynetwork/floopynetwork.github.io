@@ -547,15 +547,20 @@ const gameCategories = {
     ]
 };
 
-let imgList = [];
+const imgList = [];
 
-document.addEventListener("DOMContentLoaded", function () {
+function initializeGameDivs() {
     const gameDivs = document.querySelectorAll('div.gamediv');
     gameDivs.forEach(gameDiv => {
         const pText = gameDiv.querySelector('p').textContent;
         const imgSrc = gameDiv.querySelector('img').src;
         imgList.push(`${pText}: '${imgSrc}'`);
     });
+}
+
+// Ensure game divs are initialized when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    initializeGameDivs(); // Initial call to initialize game divs
 });
 
 function findImage(gameKey) {

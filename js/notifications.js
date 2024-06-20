@@ -1,56 +1,50 @@
 let notificationMarginBottom = 100;
-let notificationOverflow = 0;
 let notificationCount = 0;
 
-function deleteNotifications() {
-    console.log('DELETE NOTIFICATIONS HAS BEEN CALLED')
-    const notificationsContainer = document.querySelector('.notifications-container');
-    if (notificationsContainer) {
-        let start = performance.now();
-        let requestId = null;
-        function animate(time) {
-            let timePassed = time - start;
-            if (timePassed >= 500) { // decrease the duration to 0.5 seconds
+function deleteNotification(notification) {
+    console.log('DELETE NOTIFICATION HAS BEEN CALLED');
+    let start = performance.now();
+    let requestId = null;
+
+    function animate(time) {
+        let timePassed = time - start;
+        if (timePassed >= 500) {
             cancelAnimationFrame(requestId);
-            notificationsContainer.remove();
+            notification.remove();
+            adjustNotificationPositions();
             return;
-            }
-            notificationsContainer.style.transform = `translateX(${timePassed / 1.43}px)`; // move 350px in 0.5 seconds
-            requestId = requestAnimationFrame(animate);
         }
+        notification.style.transform = `translateX(${timePassed / 1.43}px)`; // move 350px in 0.5 seconds
         requestId = requestAnimationFrame(animate);
     }
+    requestId = requestAnimationFrame(animate);
+}
+
+function adjustNotificationPositions() {
+    const notifications = document.querySelectorAll('.notifications-container');
+    notifications.forEach((notification, index) => {
+        notification.style.marginBottom = `${notificationMarginBottom + (index * 260)}px`;
+    });
 }
 
 function createNotification(title, description, image, time) {
-    notificationCount += 1
-    if (notificationCount === 1) {
-        notificationOverflow = 0;
-        notificationMarginBottom = 100;
-    }
-    time += notificationOverflow;
-    console.log(notificationMarginBottom)
     // Create the HTML elements
-    var notificationsContainer = document.createElement('div');
-    notificationsContainer.style.marginBottom = String(notificationMarginBottom) + 'px'
-    notificationsContainer.className = 'notifications-container';
+    var notification = document.createElement('div');
+    notification.className = 'notifications-container';
 
     var notificationTitle = document.createElement('h1');
     notificationTitle.className = 'notification-title';
     notificationTitle.textContent = title;
 
     var closeButton = document.createElement('button');
-    closeButton.style.position = 'absolute';
-    closeButton.style.top = '0';
-    closeButton.style.right = '0';
-    closeButton.style.backgroundColor = 'red';
-    closeButton.style.color = 'white';
-    closeButton.style.fontWeight = 'bold';
-    closeButton.style.padding = '5px 10px';
-    closeButton.style.border = 'none';
-    closeButton.style.cursor = 'pointer';
+    closeButton.className = 'notification-close-button';
     closeButton.textContent = 'CLOSE';
-    closeButton.onclick = deleteNotifications;
+    closeButton.onclick = () => {
+        clearInterval(timerInterval);
+        clearInterval(timestampInterval);
+        deleteNotification(notification);
+        notificationCount -= 1;
+    };
 
     var notificationDescription = document.createElement('p');
     notificationDescription.className = 'notification-description';
@@ -63,40 +57,60 @@ function createNotification(title, description, image, time) {
     logoImage.className = 'logo';
     logoContainer.appendChild(logoImage);
 
-    // Add the elements to the notifications container
-    notificationsContainer.appendChild(notificationTitle);
-    notificationsContainer.appendChild(closeButton);
-    notificationsContainer.appendChild(notificationDescription);
-    notificationsContainer.appendChild(logoContainer);
+    // Add the elements to the notification container
+    notification.appendChild(notificationTitle);
+    notification.appendChild(closeButton);
+    notification.appendChild(notificationDescription);
+    notification.appendChild(logoContainer);
 
     // Add a timer to the bottom of the notification
     var timerElement = document.createElement('p');
     timerElement.className = 'notification-timer';
-    timerElement.textContent = 'Notification will disappear in ' + time
-    notificationsContainer.appendChild(timerElement);
+    timerElement.textContent = 'Notification will disappear in ' + time;
+    notification.appendChild(timerElement);
 
-    // Add the notifications container to the body
-    document.body.appendChild(notificationsContainer);
+    // Add a timestamp to the top left of the notification
+    var timestampElement = document.createElement('p');
+    timestampElement.className = 'notification-timestamp';
+    timestampElement.textContent = 'Notification just now';
+    notification.appendChild(timestampElement);
 
-    // Set welcomeNotificationOccurred to true
-    welcomeNotificationOccurred = true;
+    // Add the notification to the body
+    document.body.appendChild(notification);
 
     // Start the timer
-    var timerInterval = setInterval(function() {
+    var timerInterval = setInterval(function () {
         time--;
-        timerElement.textContent = 'Notification will disappear in ' + time
+        timerElement.textContent = 'Notification will disappear in ' + time;
         if (time <= 0) {
             clearInterval(timerInterval);
-            deleteNotifications();
+            clearInterval(timestampInterval);
+            deleteNotification(notification);
             notificationCount -= 1;
         }
     }, 1000); // decrement every 1 second
-    notificationMarginBottom += 260;
-    notificationOverflow += 1;
+
+    // Start the timestamp updater
+    let secondsAgo = 0;
+    const timestampInterval = setInterval(function () {
+        secondsAgo++;
+        if (secondsAgo < 60) {
+            timestampElement.textContent = `Notification ${secondsAgo} sec${secondsAgo > 1 ? 's' : ''} ago`;
+        } else if (secondsAgo < 3600) {
+            const minutesAgo = Math.floor(secondsAgo / 60);
+            timestampElement.textContent = `Notification ${minutesAgo} min${minutesAgo > 1 ? 's' : ''} ago`;
+        } else {
+            const hoursAgo = Math.floor(secondsAgo / 3600);
+            timestampElement.textContent = `Notification ${hoursAgo} hour${hoursAgo > 1 ? 's' : ''} ago`;
+        }
+    }, 1000);
+
+    notificationCount += 1;
+    adjustNotificationPositions();
 }
 
 function clearNotificationData() {
-    notificationOverflow = 0;
-    notificationMarginBottom = 100;
     notificationCount = 0;
+    const notifications = document.querySelectorAll('.notifications-container');
+    notifications.forEach(notification => notification.remove());
 }
