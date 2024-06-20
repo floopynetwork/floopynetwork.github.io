@@ -295,6 +295,7 @@ const gameDescriptions = {
 }
 
 const gameKeys = Object.keys(gameLinks);
+const gameValues = Object.values(gameLinks);
 
 
 const gameCategories = {
@@ -754,6 +755,11 @@ function deleteGameDivs(event) {
     if (noResults) {
         noResults.remove();
     }
+
+    const floopynewsbutton = document.querySelector('.floopynewsbutton');
+    if (floopynewsbutton) {
+        floopynewsbutton.remove();
+    }
 }
 
 function loadGameByDiv(event) {
@@ -767,10 +773,74 @@ function loadGameByDiv(event) {
     }
 }
 
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function loadSideGames() {
+    // This shows other games you can play on the right and left side of the screen
+    const leftSideGames = gameKeys.slice(0, 8); // Assuming gameKeys is an array of game keys
+    const rightSideGames = gameKeys.slice(8, 16); // Assuming the next set of games for the right side
+    const usedIndexesLeft = [];
+    const usedIndexesRight = [];
+
+    function createGameElements(sideGames, usedIndexes, side) {
+        sideGames.forEach((gameKey, index) => {
+            let randomIndex = Math.floor(Math.random() * sideGames.length);
+            while (usedIndexes.includes(randomIndex)) {
+                randomIndex = Math.floor(Math.random() * sideGames.length);
+            }
+            usedIndexes.push(randomIndex);
+
+            const randomGameValue = findImage(sideGames[randomIndex]);
+
+            const img = document.createElement('img');
+            img.className = 'side-game-img';
+            img.src = randomGameValue; // Assuming gameKeys is an array of image URLs
+            img.style.width = '100px';
+            img.style.height = '100px';
+            img.style.marginBottom = '10px';
+            img.style.display = 'block';
+
+            const button = document.createElement('button');
+            button.className = 'side-game-button';
+            button.style.borderColor = getRandomColor();
+            button.style.position = 'relative'; // Relative position to place tooltip
+            button.onclick = function() {
+                clearGameElements();
+                loadGame(sideGames[randomIndex], randomGameValue); // Correctly passing the game key and image
+            };
+            button.appendChild(img);
+
+            const container = document.createElement('div');
+            container.className = 'side-game-div';
+            container.style.position = 'absolute';
+            container.style.top = `${100 + (index * 150)}px`; // Adjust the top position based on index
+            container.style[side] = '10px';
+            container.appendChild(button);
+
+            document.body.appendChild(container); // Append the container to the body
+        });
+    }
+
+    // Create left side game elements
+    createGameElements(leftSideGames, usedIndexesLeft, 'left');
+
+    // Create right side game elements
+    createGameElements(rightSideGames, usedIndexesRight, 'right');
+}
+
+
 function loadGame(gameName, gameLogo) {
     createNotification('Game Opened', 'Game opened successfully!', gameLogo, 3)
     window.scrollTo(0, 0);
     deleteGameDivs();
+    loadSideGames();
     const h1 = document.createElement('h1');
     h1.className = 'rainbow-text'
     h1.textContent = gameName;
@@ -928,6 +998,17 @@ function loadGame(gameName, gameLogo) {
     document.body.appendChild(frameContainer);
 
     document.body.appendChild(description);
+}
+
+function clearGameElements() {
+    const elementsToKeep = ['menu', 'menu-label', 'homebtn', 'gamebtn', 'appsbtn', 'floopywebbtn', 'morebtn', 'star', 'panicbutton', 'updatebar', 'updatetext', 'changelogminibtn'];
+    const toDelete = document.querySelectorAll('h1, div, button, p');
+    toDelete.forEach((element) => {
+        const elementId = element.id;
+        if (!elementsToKeep.includes(elementId) && !elementsToKeep.includes(element.className)) {
+            element.remove();
+        }
+    });
 }
 
 function randomGame() {

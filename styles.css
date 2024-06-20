@@ -849,3 +849,25 @@ body {
   animation: menuBtnPop 0.5s ease-in-out infinite;
   border: 4px solid white;
 }
+
+.side-game-button {
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0px 0px;
+  height: 105px;
+}
+
+.side-game-button:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+}
+
+.side-game-button img {
+  width: fit-content;
+  height: fit-content;
+}
