@@ -569,7 +569,6 @@ body {
 .gamesearchbtn:hover {
   animation: menuBtnPop 0.5s ease-in-out infinite;
   border: 4px solid whitesmoke;
-  color: red;
 }
 
 .gamesearchbar,
@@ -587,14 +586,11 @@ body {
   cursor: pointer;
   transition: 0.5s;
   padding: 0px 0px;
-  border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
-  border-image-slice: 1;
-  animation: menuGradient 1s linear infinite;
 }
 
 .choicegamebtn:hover {
-  animation: menuBtnPop 0.5s ease-in-out infinite;
   border: 4px solid white;
+  animation: rainbowGlow 2s linear infinite;
 }
 
 .gamediv {
@@ -870,4 +866,69 @@ body {
 .side-game-button img {
   width: fit-content;
   height: fit-content;
+}
+
+.settingsdiv {
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+select {
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0px 0px;
+  border-image-source: linear-gradient(45deg, yellow, orange, yellow, orange, yellow, orange);
+  border-image-slice: 1;
+  font-size: larger;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #44f321;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
 }
