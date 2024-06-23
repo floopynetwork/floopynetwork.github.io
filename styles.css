@@ -932,3 +932,59 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+
+.webpageinput {
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+  padding: 0px 0px;
+  border-image-source: linear-gradient(45deg, yellow, orange, yellow, orange, yellow, orange);
+  border-image-slice: 1;
+  font-size: larger;
+}
+
+.webpageinput:hover {
+  animation: shake 1s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+}
+
+.titlebutton {
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0px 0px;
+  border-image-source: linear-gradient(45deg, yellow, lime, yellow, lime, yellow, lime);
+  border-image-slice: 1;
+  font-size: 20px;
+}
+
+.titlebutton:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid darkcyan;
+}
+
+.githubbutton {
+  display: inline-block;
+  background-color: #1c1c1c;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0px 0px;
+  font-size: 20px;
+}
+
+.githubbutton:hover {
+  animation: menuBtnPop 0.5s ease-in-out infinite;
+  border: 4px solid whitesmoke;
+}

@@ -1057,3 +1057,7 @@ function searchGame(event) {
         document.body.appendChild(noResults);
     }
 }
+
+function addGame() {
+    console.log('COMING SOON');
+}

@@ -6,12 +6,7 @@ function injectContent(url) {
             document.body.innerHTML = data;
             reattachScripts();
             attachEventListeners();
-            if (typeof initializeGameDivs === 'function') {
-                initializeGameDivs();
-            }
-            if (typeof initializeToggleSwitch === 'function') {
-                initializeToggleSwitch();
-            }
+            applyPreferences(); // Apply preferences after injecting content
         })
         .catch(error => {
             console.error(`Failed to fetch ${url}: ${error}`);
@@ -33,6 +28,7 @@ function reattachScripts() {
 
 document.addEventListener("DOMContentLoaded", function () {
     attachEventListeners();
+    applyPreferences(); // Apply preferences on initial load
 });
 
 function attachEventListeners() {
@@ -77,7 +73,7 @@ function attachEventListeners() {
                 createButtonWithImage('homebtn', 'img/home.png', 'Home', injectHome);
                 createButtonWithImage('gamebtn', 'img/game.png', 'Games', injectGames);
                 createButtonWithImage('appsbtn', 'img/apps.png', 'Apps', injectApps);
-                createButtonWithImage('floopywebbtn', 'img/floopyweb.png', 'Floopy Web', injectFloopyWeb);
+                createButtonWithImage('floopywebbtn', 'img/floopyweb.png', 'Floopy Web', injectfloopyweb);
 
                 const moreButton = document.createElement('button');
                 moreButton.classList.add('morebtn');
@@ -132,4 +128,10 @@ function injectChangelog() {
 
 function injectNews() {
     injectContent('news.html');
+}
+
+function applyPreferences() {
+    applySavedPreferences();
+    initializeToggleSwitch();
+    initializeBackgroundSelect();
 }
