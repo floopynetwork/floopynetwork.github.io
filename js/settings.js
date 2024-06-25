@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    applyPreferences(); // Apply preferences on initial load
+    initializePreferences();
 });
 
-function applyPreferences() {
-    applySavedPreferences();
+function initializePreferences() {
+    applySavedFontPreference();
+    applySavedBackgroundPreference();
     initializeToggleSwitch();
     initializeBackgroundSelect();
 }
@@ -118,6 +119,7 @@ function turnOff() {
 }
 
 function initializeToggleSwitch() {
+    applySavedSwitchState();
     const toggleSwitch = document.getElementById('toggleSwitch');
     if (toggleSwitch) {
         toggleSwitch.addEventListener('change', function() {
@@ -128,7 +130,6 @@ function initializeToggleSwitch() {
             }
             saveSwitchState();
         });
-        applySavedSwitchState(); // Apply saved switch state
     }
 }
 
@@ -143,10 +144,4 @@ function initializeBackgroundSelect() {
             handleBackgroundChange(this);
         });
     }
-}
-
-function applySavedPreferences() {
-    applySavedFontPreference();
-    applySavedBackgroundPreference();
-    applySavedSwitchState();
 }

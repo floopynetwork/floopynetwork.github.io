@@ -760,6 +760,11 @@ function deleteGameDivs(event) {
     if (floopynewsbutton) {
         floopynewsbutton.remove();
     }
+
+    const githubbutton = document.querySelector('.githubbutton');
+    if (githubbutton) {
+        githubbutton.remove();
+    }
 }
 
 function loadGameByDiv(event) {
