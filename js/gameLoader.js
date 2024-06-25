@@ -548,6 +548,9 @@ const gameCategories = {
     ]
 };
 
+const windowOnlyGames = ['Eaglercraft 1.8.8', 'Super Mario 64']
+
+
 const imgList = [];
 
 function initializeGameDivs() {
@@ -765,6 +768,11 @@ function deleteGameDivs(event) {
     if (githubbutton) {
         githubbutton.remove();
     }
+
+    const favoritebtn = document.querySelector('.favoritebtn');
+    if (favoritebtn) {
+        favoritebtn.remove();
+    }
 }
 
 function loadGameByDiv(event) {
@@ -851,6 +859,8 @@ function loadGame(gameName, gameLogo) {
     h1.textContent = gameName;
     document.body.appendChild(h1);
 
+
+
     const frameContainer = document.createElement('div');
     frameContainer.style.display = 'flex';
     frameContainer.style.justifyContent = 'center';
@@ -864,6 +874,10 @@ function loadGame(gameName, gameLogo) {
     frame.style.height = '800px';
     frame.style.overflow = 'hidden';
     frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation');
+    frame.setAttribute('vspace', 'none')
+    frame.setAttribute('hspace', 'none')
+    frame.setAttribute('marginheight', 'none')
+    frame.setAttribute('marginwidth', 'none')
 
     const description = document.createElement('p');
     description.style.textAlign = 'center';
@@ -876,7 +890,12 @@ function loadGame(gameName, gameLogo) {
     frameContainer.appendChild(description);
 
     if (gameName in gameLinks) {
-        frame.src = gameLinks[gameName];
+        if (windowOnlyGames.includes(gameName)) {
+            frame.src = 'windowonlygame.html';
+        }
+        else {
+            frame.src = gameLinks[gameName];
+        }
     } else {
         frame.src = '404.html';
         console.log(gameName + ' not found in gameLinks')
@@ -940,7 +959,7 @@ function loadGame(gameName, gameLogo) {
     windowBtn.style.transition = 'background-color 0.3s';
     windowBtn.addEventListener('click', () => {
         var win = window.open('', '_blank', 'toolbar=0,location=0,menubar=0'); // Open a new window
-        win.document.write('<iframe width="100%" height="100%" src="' + frame.src + '" frameborder="0" allowfullscreen></iframe>'); // Inject the iframe
+        win.document.write('<iframe width="100%" height="100%" src="' + gameLinks[gameName] + '" frameborder="0" allowfullscreen></iframe>'); // Inject the iframe
         injectGames();
     });
     windowBtn.addEventListener('mouseover', () => {

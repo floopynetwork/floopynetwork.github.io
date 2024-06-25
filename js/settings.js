@@ -58,6 +58,11 @@ function saveBackgroundPitchBlack() {
     applySavedBackgroundPreference();
 }
 
+function saveBackgroundStrawberry() {
+    localStorage.setItem('backgroundColor', '#ffcccc');
+    applySavedBackgroundPreference();
+}
+
 function applySavedBackgroundPreference() {
     const savedBackgroundColor = localStorage.getItem('backgroundColor');
     if (savedBackgroundColor) {
@@ -96,6 +101,9 @@ function handleBackgroundChange(selectElement) {
             break;
         case 'option5':
             saveBackgroundPitchBlack();
+            break;
+        case 'option6':
+            saveBackgroundStrawberry();
             break;
     }
 }
