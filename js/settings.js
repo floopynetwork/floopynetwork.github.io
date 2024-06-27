@@ -153,3 +153,8 @@ function initializeBackgroundSelect() {
         });
     }
 }
+
+function setTitle() {
+    const title = document.getElementById('webpageTitle').value;
+    document.title = title;
+}

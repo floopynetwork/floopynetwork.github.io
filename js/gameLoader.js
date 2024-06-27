@@ -144,6 +144,11 @@ const gameLinks = {
     'Roblox Obby': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fobby.xml&container=ig',
     'Roblox Rob The Bank Obby': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fftbr.xml&container=ig',
     '60 Second Burger Run': 'https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2F60-second-burger-run.xml&container=ig',
+    'Archimedes Client (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/hgfghjghjg/',
+    'Ayuncraft Client (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/vbngvbngvn/',
+    'DragonX Client V2 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/cnmjkfgkjnsigmakklfg/',
+    'DragonX Client V3 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/fkgkgfgyattklgfjklfg/',
+    'Resent Client 3.6 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/sdfgjkllsdfgjk/',
 };
 
 const gameDescriptions = {
@@ -292,6 +297,11 @@ const gameDescriptions = {
     'Roblox Obby': 'Roblox Obby is a popular online game genre that challenges players to navigate through a series of obstacle courses and challenges to reach the finish line. Players must strategically jump, dodge, and outmaneuver obstacles to complete levels and progress through the game. With its vibrant graphics, engaging gameplay, and dynamic environments, Roblox Obby offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of levels, themes, and creative designs that provide endless fun and possibilities for players to explore and enjoy.',
     'Roblox Rob The Bank Obby': 'Roblox Rob The Bank Obby is a popular online game genre that challenges players to navigate through a series of obstacle courses and challenges to reach the finish line. Players must strategically jump, dodge, and outmaneuver obstacles to complete levels and progress through the game. With its vibrant graphics, engaging gameplay, and dynamic environments, Roblox Rob The Bank Obby offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of levels, themes, and creative designs that provide endless fun and possibilities for players to explore and enjoy.',
     '60 Second Burger Run': '60 Second Burger Run is a fun and addictive platformer game that challenges players to run, jump, and slide through a fast-paced obstacle course to deliver burgers to hungry customers. Developed by GameTop, the game features intuitive controls, vibrant graphics, and challenging levels that test players\' reflexes and timing. With its engaging gameplay, dynamic environments, and creative level designs, 60 Second Burger Run offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of obstacles, power-ups, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Archimedes Client (Eaglercraft)': 'Archimedes Client is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Ayuncraft Client (Eaglercraft)': 'Ayuncraft Client is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'DragonX Client V2 (Eaglercraft)': 'DragonX Client V2 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'DragonX Client V3 (Eaglercraft)': 'DragonX Client V3 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Resent Client 3.6 (Eaglercraft)': 'Resent Client 3.6 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
 }
 
 const gameKeys = Object.keys(gameLinks);
@@ -330,6 +340,12 @@ const gameCategories = {
         "Duck Life 4",
         "Roblox Obby",
         "Roblox Rob The Bank Obby",
+        "Eaglercraft 1.8.8",
+        "Archimedes Client (Eaglercraft)",
+        "Ayuncraft Client (Eaglercraft)",
+        "DragonX Client V2 (Eaglercraft)",
+        "DragonX Client V3 (Eaglercraft)",
+        "Resent Client 3.6 (Eaglercraft)",
     ],
     'Multiplayer Games': [
         "1v1.lol",
@@ -417,6 +433,12 @@ const gameCategories = {
         "Duck Life 2",
         "Duck Life 3",
         "Duck Life 4",
+        "Eaglercraft 1.8.8",
+        "Archimedes Client (Eaglercraft)",
+        "Ayuncraft Client (Eaglercraft)",
+        "DragonX Client V2 (Eaglercraft)",
+        "DragonX Client V3 (Eaglercraft)",
+        "Resent Client 3.6 (Eaglercraft)",
     ],
     'Role-Playing Games': [
         "BitLife",
@@ -548,7 +570,14 @@ const gameCategories = {
     ]
 };
 
-const windowOnlyGames = ['Eaglercraft 1.8.8', 'Super Mario 64']
+const windowOnlyGames = ['Eaglercraft 1.8.8', 
+    'Super Mario 64', 
+    'Archimedes Client (Eaglercraft)',
+    'Ayuncraft Client (Eaglercraft)',
+    'DragonX Client V2 (Eaglercraft)',
+    'DragonX Client V3 (Eaglercraft)',
+    'Resent Client 3.6 (Eaglercraft)',
+]
 
 
 const imgList = [];
