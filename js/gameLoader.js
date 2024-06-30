@@ -149,6 +149,10 @@ const gameLinks = {
     'DragonX Client V2 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/cnmjkfgkjnsigmakklfg/',
     'DragonX Client V3 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/fkgkgfgyattklgfjklfg/',
     'Resent Client 3.6 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/sdfgjkllsdfgjk/',
+    'Resent Client 4.0 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/fdkdfkkgyattkfgjkf/',
+    'Mega Client (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/hjghgjghj/',
+    'Pi Client 1.0 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/fkljklfx/',
+    'Precision Client (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/fghghfghf/',
 };
 
 const gameDescriptions = {
@@ -302,6 +306,10 @@ const gameDescriptions = {
     'DragonX Client V2 (Eaglercraft)': 'DragonX Client V2 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
     'DragonX Client V3 (Eaglercraft)': 'DragonX Client V3 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
     'Resent Client 3.6 (Eaglercraft)': 'Resent Client 3.6 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Resent Client 4.0 (Eaglercraft)': 'Resent Client 4.0 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Mega Client (Eaglercraft)': 'Mega Client is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Pi Client 1.0 (Eaglercraft)': 'Pi Client 1.0 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Precision Client (Eaglercraft)': 'Precision Client is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
 }
 
 const gameKeys = Object.keys(gameLinks);
@@ -346,6 +354,10 @@ const gameCategories = {
         "DragonX Client V2 (Eaglercraft)",
         "DragonX Client V3 (Eaglercraft)",
         "Resent Client 3.6 (Eaglercraft)",
+        "Resent Client 4.0 (Eaglercraft)",
+        "Mega Client (Eaglercraft)",
+        "Pi Client 1.0 (Eaglercraft)",
+        "Precision Client (Eaglercraft)",
     ],
     'Multiplayer Games': [
         "1v1.lol",
@@ -439,6 +451,10 @@ const gameCategories = {
         "DragonX Client V2 (Eaglercraft)",
         "DragonX Client V3 (Eaglercraft)",
         "Resent Client 3.6 (Eaglercraft)",
+        "Resent Client 4.0 (Eaglercraft)",
+        "Mega Client (Eaglercraft)",
+        "Pi Client 1.0 (Eaglercraft)",
+        "Precision Client (Eaglercraft)",
     ],
     'Role-Playing Games': [
         "BitLife",
@@ -570,13 +586,18 @@ const gameCategories = {
     ]
 };
 
-const windowOnlyGames = ['Eaglercraft 1.8.8', 
+const windowOnlyGames = [
+    'Eaglercraft 1.8.8', 
     'Super Mario 64', 
     'Archimedes Client (Eaglercraft)',
     'Ayuncraft Client (Eaglercraft)',
     'DragonX Client V2 (Eaglercraft)',
     'DragonX Client V3 (Eaglercraft)',
     'Resent Client 3.6 (Eaglercraft)',
+    'Resent Client 4.0 (Eaglercraft)',
+    'Mega Client (Eaglercraft)',
+    'Pi Client 1.0 (Eaglercraft)',
+    'Precision Client (Eaglercraft)'
 ]
 
 
@@ -988,7 +1009,7 @@ function loadGame(gameName, gameLogo) {
     windowBtn.style.transition = 'background-color 0.3s';
     windowBtn.addEventListener('click', () => {
         var win = window.open('', '_blank', 'toolbar=0,location=0,menubar=0'); // Open a new window
-        win.document.write('<iframe width="100%" height="100%" src="' + gameLinks[gameName] + '" frameborder="0" allowfullscreen></iframe>'); // Inject the iframe
+        win.document.write('<title>' + gameName + '</title><iframe width="100%" height="100%" src="' + gameLinks[gameName] + '" frameborder="0" allowfullscreen></iframe>'); // Inject the iframe
         injectGames();
     });
     windowBtn.addEventListener('mouseover', () => {
@@ -1086,6 +1107,14 @@ function searchGame(event) {
         return;
     }
     
+    foundGames = [];
+
+    function addFoundGame(gameName) {
+        if (!foundGames.includes(gameName)) {
+            foundGames.push(gameName);
+        }
+    }
+
     const gameDivs = document.querySelectorAll('.gamediv');
     let foundResults = false;
     gameDivs.forEach((div) => {
@@ -1093,10 +1122,42 @@ function searchGame(event) {
         if (gameName.toLowerCase().includes(searchValue.toLowerCase())) {
             div.style.display = 'inline-block';
             foundResults = true;
+            addFoundGame(gameName);
         } else {
             div.style.display = 'none';
         }
     });
+
+    // Search the game descriptions in the list gameDescriptions
+    const gameDescriptionsKeys = Object.keys(gameDescriptions);
+    gameDescriptionsKeys.forEach((gameKey) => {
+        const gameDescription = gameDescriptions[gameKey];
+        if (gameDescription.toLowerCase().includes(searchValue.toLowerCase())) {
+            foundResults = true;
+            addFoundGame(gameKey);
+        }
+    });
+
+    // Display the found games
+    if (foundGames.length > 0) {
+        const noResultsElements = document.querySelectorAll('.noresults');
+        noResultsElements.forEach((element) => {
+            element.parentNode.removeChild(element);
+        });
+        const noResults = document.querySelector('.noresults');
+        if (noResults) {
+            noResults.remove();
+        }
+        foundGames.forEach((gameName) => {
+            const gameDivs = document.querySelectorAll('.gamediv');
+            gameDivs.forEach((div) => {
+                const gameNameElement = div.querySelector('.gameundertext');
+                if (gameNameElement.textContent === gameName) {
+                    div.style.display = 'inline-block';
+                }
+            });
+        });
+    }
 
     if (!foundResults) {
         const noResults = document.createElement('p');
