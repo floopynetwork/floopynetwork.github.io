@@ -153,6 +153,16 @@ const gameLinks = {
     'Mega Client (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/hjghgjghj/',
     'Pi Client 1.0 (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/fkljklfx/',
     'Precision Client (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/fghghfghf/',
+    'Kone Client (Eaglercraft)': 'https://floopynetworkgamingservice.github.io/hgghlkgh/',
+    'Shell Shockers': 'https://floopynetworkgamingservice.github.io/fgdfgdfg/',
+    'Smash Karts': 'https://smartcart1.github.io/s/smash-karts/',
+    'Crystal Seeker': 'https://scratch.mit.edu/projects/463553665/embed',
+    'Roblox 3D Online': 'https://scratch.mit.edu/projects/710170957/embed',
+    'Happy Wheels': 'https://floopynetworkgamingservice.github.io/ghjghfgh/',
+    'Snow Rider 3D': 'https://floopynetworkgamingservice.github.io/ghjffghj/',
+    'Pako Highway': 'https://floopynetworkgamingservice.github.io/fgdfgdfgh/',
+    'Bally': 'https://floopynetworkgamingservice.github.io/dfdsfgfffffffff/',
+    'Block World': 'https://floopynetworkgamingservice.github.io/bhjghjgh/',
 };
 
 const gameDescriptions = {
@@ -310,6 +320,16 @@ const gameDescriptions = {
     'Mega Client (Eaglercraft)': 'Mega Client is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
     'Pi Client 1.0 (Eaglercraft)': 'Pi Client 1.0 is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
     'Precision Client (Eaglercraft)': 'Precision Client is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Kone Client (Eaglercraft)': 'Kone Client is a client for Eaglercraft, Eaglercraft is Minecraft that you can play in your browser.',
+    'Shell Shockers': 'Shell Shockers is a fun and addictive multiplayer online game that challenges players to compete in egg-themed battles and eliminate opponents to achieve victory. Players must strategically control their egg character, aim and shoot at enemies, and outmaneuver opponents to win the match. With its vibrant graphics, dynamic environments, and intense gameplay, Shell Shockers offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of action and first-person shooter games.',
+    'Smash Karts': 'Smash Karts is a fun and addictive multiplayer online game that challenges players to compete in fast-paced kart battles and eliminate opponents to achieve victory. Players must strategically control their kart, collect power-ups, and outmaneuver opponents to win the match. With its vibrant graphics, dynamic environments, and intense gameplay, Smash Karts offers an engaging and thrilling experience that keeps players coming back for more. The game features various game modes, customization options, and competitive leaderboards, making it a favorite among fans of racing and multiplayer games.',
+    'Crystal Seeker': 'Crystal Seeker is a fun and addictive platformer game that challenges players to collect crystals and reach the exit in a series of challenging levels. Developed by ggenije, the game features intuitive controls, vibrant graphics, and mind-bending puzzles that test players\' logic, strategy, and creativity. With its engaging gameplay, dynamic environments, and creative level designs, Crystal Seeker offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of obstacles, power-ups, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Roblox 3D Online': 'Roblox 3D Online is a Scratch game that recreated Roblox. It is a fun and addictive multiplayer online game that challenges players to explore a 3D world, build and customize their own characters, and interact with other players in a virtual environment. Players can create their own games, play with friends, and participate in various activities and challenges to earn rewards and achievements. With its vibrant graphics, engaging gameplay, and dynamic environments, Roblox 3D Online offers an entertaining and immersive experience that keeps players coming back for more. The game features various game modes, customization options, and social features that provide endless fun and possibilities for players to explore and enjoy.',
+    'Happy Wheels': 'Happy Wheels is a popular physics-based platformer game that challenges players to navigate through a series of obstacle courses and challenges using various characters and vehicles. Developed by Jim Bonacci, the game features intuitive controls, realistic physics, and challenging levels that test players\' reflexes and strategy. With its quirky humor, colorful graphics, and creative level designs, Happy Wheels offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of characters, vehicles, and user-generated levels that provide endless fun and possibilities for players to explore and enjoy.',
+    'Snow Rider 3D': 'Snow Rider 3D is a fun and addictive racing game that challenges players to ride a snowmobile through various obstacles and challenges to reach the finish line. Developed by GameTop, the game features intuitive controls, realistic physics, and challenging levels that test players\' driving skills and reflexes. With its vibrant graphics, engaging gameplay, and dynamic environments, Snow Rider 3D offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of snowmobiles, upgrades, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Pako Highway': 'Pako Highway is a fun and addictive racing game that challenges players to drive a car through a busy highway and avoid obstacles and traffic to reach the finish line. Developed by GameTop, the game features intuitive controls, realistic physics, and challenging levels that test players\' driving skills and reflexes. With its vibrant graphics, engaging gameplay, and dynamic environments, Pako Highway offers an entertaining and thrilling experience that keeps players coming back for more. The game features a variety of cars, upgrades, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Bally': 'Bally is a fun and addictive puzzle game that challenges players to match colorful balls and clear the board to achieve victory. Developed by GameTop, the game features intuitive controls, vibrant graphics, and challenging levels that test players\' logic, strategy, and creativity. With its engaging gameplay, dynamic environments, and creative level designs, Bally offers an entertaining and rewarding experience that keeps players coming back for more. The game features a variety of power-ups, obstacles, and achievements that provide endless fun and possibilities for players to explore and enjoy.',
+    'Block World': 'Block World is a fun and addictive sandbox game that challenges players to explore, build, and create in a blocky world filled with endless possibilities. Developed by GameTop, the game features intuitive controls, vibrant graphics, and dynamic environments that allow players to unleash their creativity and imagination. With its engaging gameplay, open-world design, and creative tools, Block World offers an entertaining and immersive experience that keeps players coming back for more. The game features a variety of building materials, customization options, and user-generated content that provide endless fun and possibilities for players to explore and enjoy.',
 }
 
 const gameKeys = Object.keys(gameLinks);
@@ -358,6 +378,9 @@ const gameCategories = {
         "Mega Client (Eaglercraft)",
         "Pi Client 1.0 (Eaglercraft)",
         "Precision Client (Eaglercraft)",
+        "Kone Client (Eaglercraft)",
+        "Crystal Seeker",
+        "Block World",
     ],
     'Multiplayer Games': [
         "1v1.lol",
@@ -395,6 +418,19 @@ const gameCategories = {
         "Roblox Bladeball",
         "Roblox Obby",
         "Roblox Rob The Bank Obby",
+        "Archimedes Client (Eaglercraft)",
+        "Ayuncraft Client (Eaglercraft)",
+        "DragonX Client V2 (Eaglercraft)",
+        "DragonX Client V3 (Eaglercraft)",
+        "Resent Client 3.6 (Eaglercraft)",
+        "Resent Client 4.0 (Eaglercraft)",
+        "Mega Client (Eaglercraft)",
+        "Pi Client 1.0 (Eaglercraft)",
+        "Precision Client (Eaglercraft)",
+        "Kone Client (Eaglercraft)",
+        "Shell Shockers",
+        "Smash Karts",
+        "Roblox 3D Online",
     ],
     'Shooting Games': [
         "Mr.Bullet 3D",
@@ -404,6 +440,7 @@ const gameCategories = {
         "Stick Merge 2",
         "WarriorSurvival.io",
         "Dead Zed 2",
+        "Shell Shockers",
     ],
     'Strategy Games': [
         "BitLife",
@@ -455,6 +492,9 @@ const gameCategories = {
         "Mega Client (Eaglercraft)",
         "Pi Client 1.0 (Eaglercraft)",
         "Precision Client (Eaglercraft)",
+        "Kone Client (Eaglercraft)",
+        "Roblox 3D Online",
+        "Block World",
     ],
     'Role-Playing Games': [
         "BitLife",
@@ -477,6 +517,8 @@ const gameCategories = {
         "Fancy Pants 3",
         "Drive Mad",
         "60 Second Burger Run",
+        "Crystal Seeker",
+        "Happy Wheels",
     ],
     'Survival Games': [
         "WarriorSurvival.io",
@@ -509,6 +551,7 @@ const gameCategories = {
         "Bloxorz",
         "Fruit Merge",
         "Angry Birds",
+        "Bally",
     ],
     'Racing Games': [
         "Slope",
@@ -520,6 +563,11 @@ const gameCategories = {
         "Drift Dudes",
         "Monster Truck Destroyer",
         "Poly Track",
+        "Smash Karts",
+        "Roblox Color Run",
+        "Happy Wheels",
+        "Snow Rider 3D",
+        "Pako Highway",
     ],
     'Sports Games': [
         "Google Baseball",
@@ -583,6 +631,7 @@ const gameCategories = {
         "Bad Ice Cream 3",
         "Angry Birds",
         "60 Second Burger Run",
+        "Bally",
     ]
 };
 
@@ -597,7 +646,8 @@ const windowOnlyGames = [
     'Resent Client 4.0 (Eaglercraft)',
     'Mega Client (Eaglercraft)',
     'Pi Client 1.0 (Eaglercraft)',
-    'Precision Client (Eaglercraft)'
+    'Precision Client (Eaglercraft)',
+    'Kone Client (Eaglercraft)',
 ]
 
 
@@ -909,6 +959,8 @@ function loadGame(gameName, gameLogo) {
     h1.textContent = gameName;
     document.body.appendChild(h1);
 
+    console.log(imgList);
+
 
 
     const frameContainer = document.createElement('div');
@@ -923,11 +975,12 @@ function loadGame(gameName, gameLogo) {
     frame.style.width = '800px';
     frame.style.height = '800px';
     frame.style.overflow = 'hidden';
-    frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation');
+    frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-top-navigation-by-user-activation');
     frame.setAttribute('vspace', 'none')
     frame.setAttribute('hspace', 'none')
     frame.setAttribute('marginheight', 'none')
     frame.setAttribute('marginwidth', 'none')
+    frame.setAttribute('allow-popups', 'false');
 
     const description = document.createElement('p');
     description.style.textAlign = 'center';
@@ -1065,6 +1118,40 @@ function loadGame(gameName, gameLogo) {
         frame.style.height = `${frame.offsetHeight - 50}px`;
     });
 
+    const ifYouLiked = document.createElement('p');
+    ifYouLiked.textContent = 'If you liked ' + gameName + ', you might also like these games:';
+    ifYouLiked.style.textAlign = 'center';
+    ifYouLiked.style.fontFamily = 'Arial, sans-serif';
+    ifYouLiked.style.color = 'white';
+    ifYouLiked.style.fontWeight = 'bold';
+    ifYouLiked.style.fontSize = '24px';
+    ifYouLiked.style.marginTop = '20px';
+
+    // Choose 5 random games in the same category as the current game
+
+    const randomGames = [];
+    const gameCategoryKeys = Object.keys(gameCategories);
+    const gameCategoryValues = Object.values(gameCategories);
+    const currentGameCategory = gameCategoryValues.find((category) => category.includes(gameName));
+    const currentGameCategoryIndex = gameCategoryValues.indexOf(currentGameCategory);
+    const currentGameCategoryKey = gameCategoryKeys[currentGameCategoryIndex];
+    const currentGameCategoryGames = gameCategories[currentGameCategoryKey];
+    const currentGameCategoryGamesFiltered = currentGameCategoryGames.filter((game) => game !== gameName);
+
+    // Now get five games that are randomized and push them to randomGames (make sure that the games don't repeat)
+
+    while (randomGames.length < 10) {
+        const randomGame = currentGameCategoryGamesFiltered[Math.floor(Math.random() * currentGameCategoryGamesFiltered.length)];
+        if (!randomGames.includes(randomGame)) {
+            randomGames.push(randomGame);
+        }
+    }
+
+    console.log(randomGames);
+
+    
+
+
     frameSizeContainer.appendChild(framePlusButton);
     frameSizeContainer.appendChild(frameMinusButton);
 
@@ -1072,6 +1159,52 @@ function loadGame(gameName, gameLogo) {
     document.body.appendChild(frameContainer);
 
     document.body.appendChild(description);
+
+    document.body.appendChild(ifYouLiked);
+
+    // For each game in randomGames create a game div
+    randomGames.forEach((game) => {
+        const gameDiv = document.createElement('div');
+        gameDiv.className = 'gamediv';
+        gameDiv.style.display = 'inline-block';
+        gameDiv.style.width = '200px';
+        gameDiv.style.height = '150px';
+        gameDiv.style.margin = '10px';
+        gameDiv.style.border = '1px solid white';
+        gameDiv.style.borderRadius = '5px';
+        gameDiv.style.overflow = 'hidden';
+        gameDiv.style.position = 'relative';
+        gameDiv.style.cursor = 'pointer';
+        gameDiv.onclick = function() {
+            clearGameElements();
+            loadGame(game, findImage(game));
+        }
+            
+
+        const gameLogo = document.createElement('img');
+        gameLogo.src = findImage(game);
+        gameLogo.style.width = '100%';
+        gameLogo.style.height = '100%';
+        gameLogo.style.objectFit = 'cover';
+
+        const gameUndertext = document.createElement('p');
+        gameUndertext.className = 'gameundertext';
+        gameUndertext.style.position = 'absolute';
+        gameUndertext.style.bottom = '0';
+        gameUndertext.style.width = '100%';
+        gameUndertext.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        gameUndertext.style.color = 'white';
+        gameUndertext.style.fontFamily = 'Arial, sans-serif';
+        gameUndertext.style.fontWeight = 'bold';
+        gameUndertext.style.textAlign = 'center';
+        gameUndertext.textContent = game;
+
+        randomGames.push([game, gameLogo.src]);
+
+        gameDiv.appendChild(gameLogo);
+        gameDiv.appendChild(gameUndertext);
+        document.body.appendChild(gameDiv);
+    });
 }
 
 function clearGameElements() {
@@ -1173,5 +1306,24 @@ function searchGame(event) {
 }
 
 function addGame() {
-    console.log('COMING SOON');
+    const gameName = prompt('Enter the name of the game:');
+    const gameLink = prompt('Enter the link to the game:');
+    
+    // Add game to the lists
+    gameLinks[gameName] = gameLink;
+    gameKeys.push(gameName);
+
+    gameDescriptions[gameName] = 'This is a new game added to the list.';
+
+    // Check if the game link has http or https and if it dosen't start with https or http, add it
+    if (!gameLink.startsWith('http://') && !gameLink.startsWith('https://')) {
+        gameLinks[gameName] = 'https://' + gameLink;
+    }
+
+    // Game Image
+    const image = 'https://th.bing.com/th/id/OIP.KzTA1dfj3JSb8MTxUyWFzwAAAA?w=240&h=240&rs=1&pid=ImgDetMain&adlt=strict';
+    imgList.push(`${gameName}: '${image}'`);
+
+    // Launch game
+    loadGame(gameName, image);
 }

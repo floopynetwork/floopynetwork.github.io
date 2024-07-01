@@ -3,34 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializePreferences() {
-    applySavedFontPreference();
     applySavedBackgroundPreference();
-    initializeToggleSwitch();
     initializeBackgroundSelect();
-}
-
-function saveFontRetro() {
-    localStorage.setItem('fontFamily', "'Press Start 2P', sans-serif");
-    applySavedFontPreference();
-}
-
-function saveFontNormal() {
-    localStorage.setItem('fontFamily', "'Segoe UI', sans-serif");
-    applySavedFontPreference();
-}
-
-function applySavedFontPreference() {
-    const savedFontFamily = localStorage.getItem('fontFamily');
-    if (savedFontFamily) {
-        document.body.style.fontFamily = savedFontFamily;
-    }
-}
-
-function saveSwitchState() {
-    const toggleSwitch = document.getElementById('toggleSwitch');
-    if (toggleSwitch) {
-        localStorage.setItem('switchState', toggleSwitch.checked);
-    }
 }
 
 function saveBackgroundDark() {
@@ -70,19 +44,6 @@ function applySavedBackgroundPreference() {
     }
 }
 
-function applySavedSwitchState() {
-    const toggleSwitch = document.getElementById('toggleSwitch');
-    if (toggleSwitch) {
-        const savedSwitchState = localStorage.getItem('switchState');
-        if (savedSwitchState !== null) {
-            toggleSwitch.checked = JSON.parse(savedSwitchState);
-        } else {
-            toggleSwitch.checked = false;
-        }
-        toggleSwitch.dispatchEvent(new Event('change'));
-    }
-}
-
 function handleBackgroundChange(selectElement) {
     const value = selectElement.value;
     localStorage.setItem('selectedBackgroundOption', value);
@@ -105,39 +66,6 @@ function handleBackgroundChange(selectElement) {
         case 'option6':
             saveBackgroundStrawberry();
             break;
-    }
-}
-
-function turnOn() {
-    const toggleSwitch = document.getElementById('toggleSwitch');
-    if (toggleSwitch) {
-        toggleSwitch.checked = true;
-        toggleSwitch.dispatchEvent(new Event('change'));
-        saveSwitchState();
-    }
-}
-
-function turnOff() {
-    const toggleSwitch = document.getElementById('toggleSwitch');
-    if (toggleSwitch) {
-        toggleSwitch.checked = false;
-        toggleSwitch.dispatchEvent(new Event('change'));
-        saveSwitchState();
-    }
-}
-
-function initializeToggleSwitch() {
-    applySavedSwitchState();
-    const toggleSwitch = document.getElementById('toggleSwitch');
-    if (toggleSwitch) {
-        toggleSwitch.addEventListener('change', function() {
-            if (this.checked) {
-                saveFontRetro();
-            } else {
-                saveFontNormal();
-            }
-            saveSwitchState();
-        });
     }
 }
 
